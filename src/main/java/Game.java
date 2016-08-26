@@ -29,8 +29,8 @@ public class Game extends PApplet {
         player.keyReleased();
     }
     public void setup() {
-        background = loadImage("menuwood.png");
-        header = loadImage("temp_banner_480.png");
+        background = loadImage("assets/menuwood.png");
+        header = loadImage("assets/temp_banner_480.png");
         noStroke();
         for (TileType tileType : TileType.values()) {
             tileType.loadImage(this);
