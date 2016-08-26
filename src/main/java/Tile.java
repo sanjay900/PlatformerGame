@@ -16,6 +16,6 @@ public class Tile {
 
     public void reset() {
         if(type != TileType.BREAKABLE)return;
-
+//        ProcessingRunner.instance
     }
 }
