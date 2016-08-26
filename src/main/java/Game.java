@@ -16,7 +16,6 @@ import java.util.List;
 public class Game extends PApplet {
     int deaths = 0;
     Mode mode = Mode.MENU;
-    List<Map> maps = new ArrayList<>();
     Map current;
     Player player;
     List<Button> buttons = new ArrayList<>();
@@ -90,11 +89,9 @@ public class Game extends PApplet {
     }
 
     public void nextLevel() {
-        maps.add(current = LevelParser.parseLevel(this, Map.levelNum++));
-        if(current == null) {
-            maps.remove(null);
-            current = maps.get(maps.size() - 1);
-        }
+        Map map =  LevelParser.parseLevel(this, Map.levelNum++);
+        if (map != null)
+            current = map;
     }
 
 
