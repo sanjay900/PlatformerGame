@@ -79,10 +79,22 @@ public class Player {
 
         if (up && ground) {
             velocity.add(0, -jump);
+            ground = false;
         }
-        if (ground) model.setAnimation(AnimationCycles.WALKING.getAnimation());
-        else model.setAnimation(AnimationCycles.JUMP.getAnimation());
+        if (ground) {
+            if (Math.abs(velocity.x) < 0.2f) {
+                model.stopAnimation();
+            } else {
+                model.startAnimation();
+            }
+            if (last != AnimationCycles.WALKING) {
+                model.setAnimation((last=AnimationCycles.WALKING).getAnimation(),2f);
+            }
+        } else if (last != AnimationCycles.JUMP) {
+            model.setAnimation((last=AnimationCycles.JUMP).getAnimation(),2f);
+        }
     }
+    private AnimationCycles last = AnimationCycles.WALKING;
 
     private void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
@@ -126,7 +138,7 @@ public class Player {
         game.pushMatrix();
         game.translate(position.x+playerWidth/2,position.y+playerHeight);
         game.rotateX(HALF_PI);
-        if(velocity.x < 0) game.rotateZ(PI);
+        if(velocity.x > 0) game.rotateZ(PI);
         model.drawModel();
         game.popMatrix();
     }
