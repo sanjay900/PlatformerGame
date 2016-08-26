@@ -1,5 +1,4 @@
 import com.sanjay900.ProcessingRunner;
-import processing.core.PImage;
 
 import java.awt.geom.Rectangle2D;
 
@@ -24,7 +23,7 @@ public class Breakable extends Tile {
         lastCount = game.frameCount;
     }
 
-    public boolean breaking() {
+    public boolean broken() {
         return breaking && game.frameCount - lastCount >= game.frameRate/2;
     }
 }

@@ -7,7 +7,7 @@ import static processing.core.PConstants.*;
  * Created by sanjay on 26/08/2016.
  */
 public class Map {
-    static int levelNum = 1;
+    static int levelNum = 4;
     Game game;
     Tile[][] platforms;
     Tile playerStart;
@@ -39,7 +39,7 @@ public class Map {
 
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;
-                        if (!breakTile.breaking()) {
+                        if (!breakTile.broken()) {
                             if (breakTile.breaking) TileType.BREAKABLE.model.drawModel();
                             else TileType.BLOCK.model.drawModel();
                         }
