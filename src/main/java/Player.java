@@ -1,3 +1,4 @@
+import processing.core.PImage;
 import processing.core.PVector;
 
 import java.awt.*;
