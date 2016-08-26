@@ -1,7 +1,6 @@
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +25,10 @@ public class Game extends PApplet {
     }
     public void setup() {
         noStroke();
-        maps.add(new Map(new File("test1.txt"),this));
+        for (TileType tileType : TileType.values()) {
+            tileType.loadImage(this);
+        }
+        maps.add(LevelParser.parseLevel(this,1));
         current = maps.get(0);
     }
     public void draw() {
