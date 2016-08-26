@@ -10,7 +10,9 @@ public class LevelParser {
         Map map = new Map(game);
         BufferedImage current;
         try {
-            current = ImageIO.read(new File("levels/level" + levelNum + ".png"));
+            File f = new File("levels/level" + levelNum + ".png");
+            if(!f.exists()) return map;
+            current = ImageIO.read(f);
             map.platforms = new Tile[current.getWidth()][current.getHeight()];
             float squareHeight = game.height / 24;
             float squareWidth = game.width / 32;
@@ -22,6 +24,12 @@ public class LevelParser {
                     if(c == Color.GREEN.getRGB()) {
                         game.player = new Player(x * squareWidth, y * squareHeight,game);
                         map.playerStart = new Tile(bounds, null);
+                        continue;
+                    }
+                    if(c == Color.GRAY.getRGB()) {
+                        Breakable breakable = new Breakable(bounds);
+                        map.platforms[x][y] = breakable;
+                        map.breakables.add(breakable);
                         continue;
                     }
                     for (TileType tileType : TileType.values()) {

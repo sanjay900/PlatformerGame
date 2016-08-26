@@ -1,6 +1,3 @@
-import MD2.Animation;
-import MD2.Importer;
-import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -56,10 +53,8 @@ public class Game extends PApplet {
         for (TileType tileType : TileType.values()) {
             tileType.loadImage(this);
         }
-        maps.add(LevelParser.parseLevel(this,Map.levelNum++));
-
+        nextLevel();
         player.readImages(this);
-        current = maps.get(0);
         Button temp;
         buttons.add(temp=new Button(this,250,340,300,100,"Play"));
         temp.setOnMouseClicked(()->mode=Mode.GAME);
@@ -73,16 +68,20 @@ public class Game extends PApplet {
             drawGame();
         }
     }
-    void drawMenu() {
+    private void drawMenu() {
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
     }
-    void drawGame() {
+    private void drawGame() {
         background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();
+    }
+
+    public void nextLevel() {
+        maps.add(current = LevelParser.parseLevel(this, Map.levelNum++));
     }
 
 
