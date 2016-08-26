@@ -8,6 +8,7 @@ import java.util.List;
  * Created by sanjay on 26/08/2016.
  */
 public class Game extends PApplet {
+    public static Game instance;
     List<Map> maps = new ArrayList<>();
     Map current;
     Player player;
