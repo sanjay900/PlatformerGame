@@ -2,7 +2,6 @@ import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +32,11 @@ public class Game extends PApplet {
         background = loadImage("menuwood.png");
         header = loadImage("temp_banner_480.png");
         noStroke();
-        maps.add(new Map(new File("test1.txt"),this));
+        for (TileType tileType : TileType.values()) {
+            tileType.loadImage(this);
+        }
+        maps.add(LevelParser.parseLevel(this,Map.levelNum++));
+        player.readImages(this);
         current = maps.get(0);
         Button temp;
         buttons.add(temp=new Button(this,250,340,300,100,"Play"));
