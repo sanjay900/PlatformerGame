@@ -1,18 +1,22 @@
+import MD2.MD2Model;
 import processing.core.PApplet;
 import processing.core.PImage;
 import processing.core.PVector;
 
 import java.awt.geom.Rectangle2D;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
+
+import static processing.core.PConstants.*;
 
 /**
  * Created by sanjay on 26/08/2016.
  */
 public class Player {
-    static final float BOUNDING_BOX_MODIFIER = 1.265f;
-    PImage leftImage;
-    PImage rightImage;
+    static final float BOUNDING_BOX_MODIFIER = 1.15f;
+    MD2Model model;
     Game game;
     PVector position;
     float playerWidth;
@@ -26,9 +30,12 @@ public class Player {
         this.game = game;
     }
 
-    public void readImages(PApplet applet) {
-        leftImage = applet.loadImage("assets/character/character_left.png");
-        rightImage = applet.loadImage("assets/character/character_right.png");
+    public void readImages(Game applet) {
+        try {
+            model = applet.importer.importModel(new File("assets/models/bob.md2"),applet.loadImage("assets/models/bob_3d2.png"),applet);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public void updatePosition() {
         boolean ground = false;
@@ -58,7 +65,7 @@ public class Player {
                 if (velocity.y > 0) {
                     position = new PVector(position.x, test.get().bounds.y - playerHeight);
                 } else if (velocity.y < 0) {
-                    position = new PVector(position.x, test.get().bounds.y + (playerHeight / BOUNDING_BOX_MODIFIER));
+                    position = new PVector(position.x, test.get().bounds.y + playerHeight);
                 }
                 velocity = new PVector(velocity.x, 0);
             }
@@ -73,6 +80,8 @@ public class Player {
         if (up && ground) {
             velocity.add(0, -13f);
         }
+        if (ground) model.setAnimation(AnimationCycles.WALKING.getAnimation());
+        else model.setAnimation(AnimationCycles.JUMP.getAnimation());
     }
 
     private void die() {
@@ -93,8 +102,12 @@ public class Player {
         return new Rectangle2D.Float(position.x, position.y,playerWidth,playerHeight);
     }
     public void draw() {
-        if(velocity.x < 0) game.image(leftImage, position.x,position.y,leftImage.width, leftImage.height);
-        else game.image(rightImage, position.x,position.y,rightImage.width, rightImage.height);
+        game.pushMatrix();
+        game.translate(position.x+playerWidth/2,position.y+playerHeight);
+        game.rotateX(HALF_PI);
+        if(velocity.x < 0) game.rotateZ(PI);
+        model.drawModel();
+        game.popMatrix();
     }
     boolean up = false;
     boolean left = false;

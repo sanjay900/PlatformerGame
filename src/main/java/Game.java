@@ -1,8 +1,14 @@
+import MD2.Animation;
+import MD2.Importer;
+import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PImage;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,11 +22,13 @@ public class Game extends PApplet {
     List<Button> buttons = new ArrayList<>();
     PImage background;
     PImage header;
+    MD2Model model;
+    Importer importer = new Importer();
     public static void main(String[] args) {
         ProcessingRunner.run(new Game());
     }
     public void settings() {
-        size(800,600);
+        size(800,600,P3D);
     }
     public void keyPressed() {
         player.keyPressed();
@@ -31,11 +39,25 @@ public class Game extends PApplet {
     public void setup() {
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
+        try {
+            model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/block.png"),this);
+
+            model.setAnimation(new Animation(1,0,1,0.1f));
+            TileType.BLOCK.loadModel(model);
+            model = importer.importModel(new File("assets/models/sticky.md2"),loadImage("assets/models/sticky.png"),this);
+
+            TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
+            TileType.SPIKE.loadModel(model);
+            model.setAnimation(new Animation(1,0,1,0.1f));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         noStroke();
         for (TileType tileType : TileType.values()) {
             tileType.loadImage(this);
         }
         maps.add(LevelParser.parseLevel(this,Map.levelNum++));
+
         player.readImages(this);
         current = maps.get(0);
         Button temp;
@@ -62,6 +84,9 @@ public class Game extends PApplet {
         player.updatePosition();
         player.draw();
     }
+
+
+
     public enum Mode {
         MENU,GAME
     }

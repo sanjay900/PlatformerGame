@@ -39,6 +39,9 @@
     <orderEntry type="library" name="Maven: org.jogamp.gluegen:gluegen-rt:natives-solaris-i586:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.jogamp.gluegen:gluegen-rt:natives-windows-amd64:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.jogamp.gluegen:gluegen-rt:natives-windows-i586:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.sanjay900:ImportersForProcessing:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.sanjay900:UIHandler:1.0" level="project" />
+    <orderEntry type="library" name="Maven: nz.ac.victoria.ecs:ecs:100" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.10" level="project" />
   </component>
 </module>
