@@ -1,3 +1,6 @@
+import MD2.Animation;
+import MD2.Importer;
+import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -41,11 +44,16 @@ public class Game extends PApplet {
 
             model.setAnimation(new Animation(1,0,1,0.1f));
             TileType.BLOCK.loadModel(model);
+            model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/break.png"),this);
+
+            model.setAnimation(new Animation(1,0,1,0.1f));
+            TileType.BREAKABLE.loadModel(model);
             model = importer.importModel(new File("assets/models/sticky.md2"),loadImage("assets/models/sticky.png"),this);
 
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
             model.setAnimation(new Animation(1,0,1,0.1f));
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -36,17 +36,18 @@ public class Map {
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE) {
                         game.rotate(PI,0,1,0);
                     }
-                    tile.type.model.drawModel();
+
+                    if (tile instanceof Breakable) {
+                        Breakable breakTile = (Breakable) tile;
+                        if (!breakTile.breaking()) {
+                            if (breakTile.breaking) TileType.BREAKABLE.model.drawModel();
+                            else TileType.BLOCK.model.drawModel();
+                        }
+                    } else {
+                        tile.type.model.drawModel();
+                    }
                 }
                 game.popMatrix();
-                //game.image(tile.type.image, tile.getBounds().x, tile.getBounds().y, tile.getBounds().width, tile.getBounds().height);
-                if (tile instanceof Breakable) {
-                    Breakable breakTile = (Breakable) tile;
-                    if (breakTile.breaking()) continue;
-                    game.image(breakTile.image, breakTile.bounds.x, breakTile.bounds.y, breakTile.bounds.width, breakTile.bounds.height);
-                    continue;
-                }
-                game.image(tile.type.image, tile.bounds.x, tile.bounds.y, tile.bounds.width, tile.bounds.height);
             }
         }
     }

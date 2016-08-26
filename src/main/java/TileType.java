@@ -16,8 +16,8 @@ public enum TileType {
         this.color = color.getRGB();
     }
     void loadImage(PApplet applet) {
-        image = applet.loadImage(fileName);
-    }
+//        image = applet.loadImage(fileName);
+   }
     void loadModel(MD2Model model) {
         this.model = model;
     }

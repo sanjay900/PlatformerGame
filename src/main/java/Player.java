@@ -17,9 +17,6 @@ import static processing.core.PConstants.*;
 public class Player {
     static final float BOUNDING_BOX_MODIFIER = 1.15f;
     MD2Model model;
-    static final float BOUNDING_BOX_MODIFIER = 1.265f;
-    static PImage leftImage;
-    static PImage rightImage;
     Game game;
     PVector position;
     float playerWidth;
@@ -49,8 +46,6 @@ public class Player {
         position.add(velocity.x,0);
         velocity = new PVector(velocity.x*drag,velocity.y);
         ArrayList<Tile> collided = collides();
-        if (collided.stream().anyMatch(tile -> tile.type == TileType.SPIKE||tile.type == TileType.UPSIDE_DOWN_SPIKE)) die();
-        if (collided.stream().anyMatch(tile -> tile.type == TileType.EXIT)) game.nextLevel();
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
@@ -64,8 +59,6 @@ public class Player {
         }
         position.add(0,velocity.y);
         collided = collides();
-        if (collided.stream().anyMatch(tile -> tile.type == TileType.SPIKE||tile.type == TileType.UPSIDE_DOWN_SPIKE))die();
-        if (collided.stream().anyMatch(tile -> tile.type == TileType.EXIT)) game.nextLevel();
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
@@ -103,6 +96,16 @@ public class Player {
             for (Tile tile : game.current.platforms[y]) {
                 if (tile == null) continue;
                 if (tile.getBounds().intersects(getBounds())) {
+                    if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE)  {
+                        die();
+                        collide.clear();
+                        return collide;
+                    }
+                    if (tile.type == TileType.EXIT) {
+                        game.nextLevel();
+                        collide.clear();
+                        return collide;
+                    }
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;
                         if (breakTile.breaking()) continue;
@@ -125,8 +128,6 @@ public class Player {
         if(velocity.x < 0) game.rotateZ(PI);
         model.drawModel();
         game.popMatrix();
-        if (velocity.x < 0) game.image(leftImage, position.x, position.y, leftImage.width, leftImage.height);
-        else game.image(rightImage, position.x, position.y, rightImage.width, rightImage.height);
     }
     boolean up = false;
     boolean left = false;

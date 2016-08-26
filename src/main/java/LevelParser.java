@@ -29,7 +29,7 @@ public class LevelParser {
                     if(c == Color.GRAY.getRGB()) {
                         Breakable breakable = new Breakable(bounds);
                         map.platforms[x][y] = breakable;
-                        map.breakables.add(breakable);
+                        Map.breakables.add(breakable);
                         continue;
                     }
                     for (TileType tileType : TileType.values()) {
