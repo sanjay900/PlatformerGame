@@ -18,13 +18,19 @@ public class Game extends PApplet {
     public void settings() {
         size(800,600);
     }
+    public void keyPressed() {
+        player.keyPressed();
+    }
+    public void keyReleased() {
+        player.keyReleased();
+    }
     public void setup() {
         noStroke();
         maps.add(new Map(new File("test1.txt"),this));
         current = maps.get(0);
     }
     public void draw() {
-         background(255);
+        background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();
