@@ -6,17 +6,17 @@ import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Optional;
 
-/**
- * Created by sanjay on 26/08/2016.
- */
 public class Player {
     static final float BOUNDING_BOX_MODIFIER = 1.265f;
-    PImage leftImage;
-    PImage rightImage;
+    static PImage leftImage;
+    static PImage rightImage;
     Game game;
     PVector position;
     float playerWidth;
     float playerHeight;
+    float drag = 0.75f;
+    float momentum = 2f;
+    float jump = 12f;
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
     public Player(float x, float y, Game game) {
@@ -34,9 +34,10 @@ public class Player {
         boolean ground = false;
         velocity.add(gravity);
         position.add(velocity.x,0);
-        velocity = new PVector(velocity.x*0.6f,velocity.y);
+        velocity = new PVector(velocity.x*drag,velocity.y);
         ArrayList<Tile> collided = collides();
-        if (collided.stream().anyMatch(tile -> tile.type == TileType.SPIKE||tile.type == TileType.UPSIDE_DOWN_SPIKE))die();
+        if (collided.stream().anyMatch(tile -> tile.type == TileType.SPIKE||tile.type == TileType.UPSIDE_DOWN_SPIKE)) die();
+        if (collided.stream().anyMatch(tile -> tile.type == TileType.EXIT)) game.nextLevel();
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
@@ -51,6 +52,7 @@ public class Player {
         position.add(0,velocity.y);
         collided = collides();
         if (collided.stream().anyMatch(tile -> tile.type == TileType.SPIKE||tile.type == TileType.UPSIDE_DOWN_SPIKE))die();
+        if (collided.stream().anyMatch(tile -> tile.type == TileType.EXIT)) game.nextLevel();
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
@@ -64,27 +66,36 @@ public class Player {
             }
         }
         if (left) {
-            velocity.add(-4f,0);
+            velocity.add(-momentum,0);
         }
         if (right) {
-            velocity.add(4f,0);
+            velocity.add(momentum,0);
         }
 
         if (up && ground) {
-            velocity.add(0, -13f);
+            velocity.add(0, -jump);
         }
     }
 
     private void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
+        Map.breakables.forEach(Breakable::reset);
     }
     private ArrayList<Tile> collides() {
         ArrayList<Tile> collide = new ArrayList<>();
         for (int y = 0; y < game.current.platforms.length; y++) {
             for (Tile tile : game.current.platforms[y]) {
                 if (tile == null) continue;
-                if (tile.getBounds().intersects(getBounds())) collide.add(tile);
+                if (tile.getBounds().intersects(getBounds())) {
+                    if (tile instanceof Breakable) {
+                        Breakable breakTile = (Breakable) tile;
+                        if (breakTile.breaking()) continue;
+                        else if (!breakTile.breaking) breakTile.startBreak();
+                    }
+                    collide.add(tile);
+                }
+
             }
         }
         return collide;
@@ -93,8 +104,8 @@ public class Player {
         return new Rectangle2D.Float(position.x, position.y,playerWidth,playerHeight);
     }
     public void draw() {
-        if(velocity.x < 0) game.image(leftImage, position.x,position.y,leftImage.width, leftImage.height);
-        else game.image(rightImage, position.x,position.y,rightImage.width, rightImage.height);
+        if (velocity.x < 0) game.image(leftImage, position.x, position.y, leftImage.width, leftImage.height);
+        else game.image(rightImage, position.x, position.y, rightImage.width, rightImage.height);
     }
     boolean up = false;
     boolean left = false;

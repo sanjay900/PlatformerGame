@@ -3,12 +3,9 @@ import processing.core.PImage;
 
 import java.awt.*;
 
-/**
- * Created by jacob on 27/08/2016.
- */
 public enum TileType {
     BLOCK("assets/tiles/block.png", Color.BLACK),SPIKE("assets/tiles/spike.png", Color.RED), EXIT("assets/tiles/exit.png", Color.YELLOW),
-    UPSIDE_DOWN_SPIKE("assets/tiles/spike_upside_down.png", new Color(127, 0, 0)), BREAKABLE("assets/tiles/breakable.png", Color.GRAY);
+    UPSIDE_DOWN_SPIKE("assets/tiles/spike_upside_down.png", new Color(127, 0, 0)), BREAKABLE("assets/tiles/breakable_breaking.png", Color.GRAY);
     PImage image;
     String fileName;
     int color;
