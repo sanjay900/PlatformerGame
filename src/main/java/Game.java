@@ -24,7 +24,9 @@ public class Game extends PApplet {
         current = maps.get(0);
     }
     public void draw() {
+         background(255);
         current.drawFrame();
+        player.updatePosition();
         player.draw();
     }
 }
