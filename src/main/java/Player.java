@@ -96,7 +96,7 @@ public class Player {
     }
     private AnimationCycles last = AnimationCycles.WALKING;
 
-    private void die() {
+    void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
         Map.breakables.forEach(Breakable::reset);

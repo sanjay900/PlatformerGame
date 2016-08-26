@@ -3,6 +3,7 @@ import MD2.Importer;
 import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
+import processing.core.PConstants;
 import processing.core.PImage;
 
 import java.io.File;
@@ -30,6 +31,14 @@ public class Game extends PApplet {
         size(800,600,P3D);
     }
     public void keyPressed() {
+        if (key == ESC) {
+            Map.levelNum = 1;
+            nextLevel();
+            key = 0;
+            player.die();
+            deaths = 0;
+            mode = Mode.MENU;
+        }
         player.keyPressed();
     }
     public void keyReleased() {
@@ -81,13 +90,15 @@ public class Game extends PApplet {
         buttons.forEach(Button::draw);
     }
     private void drawGame() {
+        hint(PConstants.ENABLE_DEPTH_TEST);
         background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();
-
+        textSize(40);
+        hint(PConstants.DISABLE_DEPTH_TEST);
+        text("Death Counter: "+deaths,50,40);
     }
-
     public void nextLevel() {
         Map map =  LevelParser.parseLevel(this, Map.levelNum++);
         if (map != null)
