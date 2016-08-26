@@ -2,8 +2,10 @@
  * Created by sanjay on 26/08/2016.
  */
 public class Map {
+    static int levelNum = 1;
     Game game;
     Tile[][] platforms;
+    Tile playerStart;
     public Map(Game game) {
         this.game = game;
     }

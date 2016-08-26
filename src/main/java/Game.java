@@ -28,7 +28,8 @@ public class Game extends PApplet {
         for (TileType tileType : TileType.values()) {
             tileType.loadImage(this);
         }
-        maps.add(LevelParser.parseLevel(this,1));
+        maps.add(LevelParser.parseLevel(this,Map.levelNum++));
+        player.readImages(this);
         current = maps.get(0);
     }
     public void draw() {

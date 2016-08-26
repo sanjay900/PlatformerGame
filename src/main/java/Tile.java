@@ -13,4 +13,9 @@ import java.awt.geom.Rectangle2D;
 public class Tile {
     Rectangle2D.Float bounds;
     TileType type;
+
+    public void reset() {
+        if(type != TileType.BREAKABLE)return;
+
+    }
 }

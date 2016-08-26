@@ -16,16 +16,16 @@ public class LevelParser {
             float squareWidth = game.width / 32;
             for (int x = 0; x < current.getWidth(); x++) {
                 for (int y = 0; y < current.getHeight(); y++) {
-                    Rectangle2D.Float bounds = new Rectangle2D.Float((x) * squareWidth, y * squareHeight, squareWidth, squareHeight);
+                    Rectangle2D.Float bounds = new Rectangle2D.Float(x * squareWidth, y * squareHeight, squareWidth, squareHeight);
                     int c = current.getRGB(x,y);
                     if(c == Color.WHITE.getRGB()) continue;
                     if(c == Color.GREEN.getRGB()) {
-                        game.player = new Player((x) * squareWidth, y * squareHeight,game);
+                        game.player = new Player(x * squareWidth, y * squareHeight,game);
+                        map.playerStart = new Tile(bounds, null);
                         continue;
                     }
                     for (TileType tileType : TileType.values()) {
                         if(c == tileType.color) {
-                            System.out.println(tileType.name());
                             map.platforms[x][y] = new Tile(bounds, tileType);
                             break;
                         }

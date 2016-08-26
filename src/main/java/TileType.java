@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 import processing.core.PImage;
 
-        import java.awt.*;
+import java.awt.*;
 
 /**
  * Created by jacob on 27/08/2016.
