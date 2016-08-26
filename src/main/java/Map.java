@@ -39,7 +39,7 @@ public class Map {
 
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;
-                        if (!breakTile.breaking()) {
+                        if (!breakTile.broken()) {
                             if (breakTile.breaking) TileType.BREAKABLE.model.drawModel();
                             else TileType.BLOCK.model.drawModel();
                         }

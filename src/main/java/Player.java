@@ -1,6 +1,4 @@
 import MD2.MD2Model;
-import processing.core.PApplet;
-import processing.core.PImage;
 import processing.core.PVector;
 
 import java.awt.geom.Rectangle2D;
@@ -80,10 +78,22 @@ public class Player {
 
         if (up && ground) {
             velocity.add(0, -jump);
+            ground = false;
         }
-        if (ground) model.setAnimation(AnimationCycles.WALKING.getAnimation());
-        else model.setAnimation(AnimationCycles.JUMP.getAnimation());
+        if (ground) {
+            if (Math.abs(velocity.x) < 0.2f) {
+                model.stopAnimation();
+            } else {
+                model.startAnimation();
+            }
+            if (last != AnimationCycles.WALKING) {
+                model.setAnimation((last=AnimationCycles.WALKING).getAnimation(),2f);
+            }
+        } else if (last != AnimationCycles.JUMP) {
+            model.setAnimation((last=AnimationCycles.JUMP).getAnimation(),2f);
+        }
     }
+    private AnimationCycles last = AnimationCycles.WALKING;
 
     private void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
@@ -108,7 +118,7 @@ public class Player {
                     }
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;
-                        if (breakTile.breaking()) continue;
+                        if (breakTile.broken()) continue;
                         else if (!breakTile.breaking) breakTile.startBreak();
                     }
                     collide.add(tile);
@@ -125,7 +135,7 @@ public class Player {
         game.pushMatrix();
         game.translate(position.x+playerWidth/2,position.y+playerHeight);
         game.rotateX(HALF_PI);
-        if(velocity.x < 0) game.rotateZ(PI);
+        if(velocity.x > 0) game.rotateZ(PI);
         model.drawModel();
         game.popMatrix();
     }

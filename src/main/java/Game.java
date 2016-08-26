@@ -42,17 +42,17 @@ public class Game extends PApplet {
         try {
             model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/block.png"),this);
 
-            model.setAnimation(new Animation(1,0,1,0.1f));
+            model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BLOCK.loadModel(model);
             model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/break.png"),this);
 
-            model.setAnimation(new Animation(1,0,1,0.1f));
+            model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BREAKABLE.loadModel(model);
             model = importer.importModel(new File("assets/models/sticky.md2"),loadImage("assets/models/sticky.png"),this);
 
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
-            model.setAnimation(new Animation(1,0,1,0.1f));
+            model.setAnimation(new Animation(1,0,1,0.1f),2f);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,6 +63,7 @@ public class Game extends PApplet {
         }
         nextLevel();
         player.readImages(this);
+        player.model.setAnimation(AnimationCycles.WALKING.getAnimation(),2f);
         Button temp;
         buttons.add(temp=new Button(this,250,340,300,100,"Play"));
         temp.setOnMouseClicked(()->mode=Mode.GAME);
@@ -77,6 +78,7 @@ public class Game extends PApplet {
         }
     }
     private void drawMenu() {
+        player.model.drawModel();
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
@@ -86,6 +88,7 @@ public class Game extends PApplet {
         current.drawFrame();
         player.updatePosition();
         player.draw();
+
     }
 
     public void nextLevel() {

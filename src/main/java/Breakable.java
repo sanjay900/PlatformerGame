@@ -24,7 +24,7 @@ public class Breakable extends Tile {
         lastCount = game.frameCount;
     }
 
-    public boolean breaking() {
+    public boolean broken() {
         return breaking && game.frameCount - lastCount >= game.frameRate/2;
     }
 }

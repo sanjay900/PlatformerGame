@@ -8,7 +8,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum AnimationCycles {
-    WALKING(new Animation(0,8,0,0,1,1)),
-    JUMP(new Animation(9,13,0,0,1,1));
+    WALKING(new Animation(0,8,0,1,1,0.5f)),
+    JUMP(new Animation(11,12,0,1,1,0.3f));
     Animation animation;
 }
