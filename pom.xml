@@ -28,7 +28,7 @@
 
     <repositories>
         <repository>
-            <url>http://socketio.tangentmc.net:8081/repository/victoria/</url>
+            <url>http://socketio.tangentmc.net:8081/repository/victoria</url>
             <id>tangentmc</id>
         </repository>
     </repositories>

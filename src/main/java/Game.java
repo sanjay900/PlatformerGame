@@ -8,13 +8,13 @@ import processing.core.PImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
  * Created by sanjay on 26/08/2016.
  */
 public class Game extends PApplet {
+    int deaths = 0;
     Mode mode = Mode.MENU;
     List<Map> maps = new ArrayList<>();
     Map current;
@@ -37,6 +37,7 @@ public class Game extends PApplet {
         player.keyReleased();
     }
     public void setup() {
+        player = new Player(0,0,this);
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
         try {
@@ -58,9 +59,6 @@ public class Game extends PApplet {
             e.printStackTrace();
         }
         noStroke();
-        for (TileType tileType : TileType.values()) {
-            tileType.loadImage(this);
-        }
         nextLevel();
         player.readImages(this);
         player.model.setAnimation(AnimationCycles.WALKING.getAnimation(),2f);
@@ -93,6 +91,10 @@ public class Game extends PApplet {
 
     public void nextLevel() {
         maps.add(current = LevelParser.parseLevel(this, Map.levelNum++));
+        if(current == null) {
+            maps.remove(null);
+            current = maps.get(maps.size() - 1);
+        }
     }
 
 

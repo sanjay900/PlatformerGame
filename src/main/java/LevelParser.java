@@ -1,3 +1,5 @@
+import processing.core.PVector;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
@@ -11,7 +13,7 @@ public class LevelParser {
         BufferedImage current;
         try {
             File f = new File("levels/level" + levelNum + ".png");
-            if(!f.exists()) return map;
+            if(!f.exists()) return null;
             current = ImageIO.read(f);
             map.platforms = new Tile[current.getWidth()][current.getHeight()];
             float squareHeight = game.height / 24;
@@ -22,7 +24,7 @@ public class LevelParser {
                     int c = current.getRGB(x,y);
                     if(c == Color.WHITE.getRGB()) continue;
                     if(c == Color.GREEN.getRGB()) {
-                        game.player = new Player(x * squareWidth, y * squareHeight,game);
+                        game.player.position = new PVector(x * squareWidth, y * squareHeight);
                         map.playerStart = new Tile(bounds, null);
                         continue;
                     }

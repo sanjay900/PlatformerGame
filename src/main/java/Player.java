@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
-import static processing.core.PConstants.*;
+import static processing.core.PConstants.HALF_PI;
+import static processing.core.PConstants.PI;
 
 /**
  * Created by sanjay on 26/08/2016.
@@ -99,6 +100,7 @@ public class Player {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
         Map.breakables.forEach(Breakable::reset);
+        game.deaths++;
     }
     private ArrayList<Tile> collides() {
         ArrayList<Tile> collide = new ArrayList<>();
@@ -114,6 +116,7 @@ public class Player {
                     if (tile.type == TileType.EXIT) {
                         game.nextLevel();
                         collide.clear();
+                        velocity = new PVector();
                         return collide;
                     }
                     if (tile instanceof Breakable) {
@@ -151,5 +154,6 @@ public class Player {
         if (game.key == 'd') right = false;
         if (game.key == 'a') left = false;
         if (game.key == 'w') up = false;
+        if (game.key == 'p') die();
     }
 }

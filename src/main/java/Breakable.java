@@ -1,5 +1,4 @@
 import com.sanjay900.ProcessingRunner;
-import processing.core.PImage;
 
 import java.awt.geom.Rectangle2D;
 
