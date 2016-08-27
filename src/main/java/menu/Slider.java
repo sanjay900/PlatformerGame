@@ -5,14 +5,11 @@ package menu;
  */
 
 import processing.core.PApplet;
-import processing.core.PConstants;
-
-import java.awt.*;
 
 /**
  * Created by surface on 26/08/2016.
  */
-class HScrollbar {
+public class Slider {
     int swidth, sheight;    // width and height of bar
     float xpos, ypos;       // x and y position of bar
     float spos, newspos;    // x position of slider
@@ -22,7 +19,7 @@ class HScrollbar {
     boolean locked;
     float ratio;
     PApplet applet;
-    HScrollbar (float xp, float yp, int sw, int sh, int l, PApplet applet) {
+    public Slider(float xp, float yp, int sw, int sh, int l, PApplet applet) {
         this.applet = applet;
         swidth = sw;
         sheight = sh;
@@ -37,49 +34,49 @@ class HScrollbar {
         loose = l;
     }
 
-    void update() {
+    public void update() {
         if (overEvent()) {
             over = true;
         } else {
             over = false;
         }
-        if (mousePressed && over) {
+        if (applet.mousePressed && over) {
             locked = true;
         }
-        if (!mousePressed) {
+        if (!applet.mousePressed) {
             locked = false;
         }
         if (locked) {
-            newspos = constrain(mouseX-sheight/2, sposMin, sposMax);
+            newspos = constrain(applet.mouseX-sheight/2, sposMin, sposMax);
         }
-        if (abs(newspos - spos) > 1) {
+        if (applet.abs(newspos - spos) > 1) {
             spos = spos + (newspos-spos)/loose;
         }
     }
 
     float constrain(float val, float minv, float maxv) {
-        return min(max(val, minv), maxv);
+        return applet.min(applet.max(val, minv), maxv);
     }
 
     boolean overEvent() {
-        if (mouseX > xpos && mouseX < xpos+swidth &&
-                mouseY > ypos && mouseY < ypos+sheight) {
+        if (applet.mouseX > xpos && applet.mouseX < xpos+swidth &&
+                applet.mouseY > ypos && applet.mouseY < ypos+sheight) {
             return true;
         } else {
             return false;
         }
     }
 
-    void display() {
-        noStroke();
-        fill(204);
-        rect(xpos, ypos, swidth, sheight);
+    public void display() {
+        applet.noStroke();
+        applet.fill(204);
+        applet.rect(xpos, ypos, swidth, sheight);
         if (over || locked) {
-            fill(0, 0, 0);
+            applet.fill(0, 0, 0);
         } else {
-            fill(102, 102, 102);
+            applet.fill(102, 102, 102);
         }
-        rect(spos, ypos, sheight, sheight);
+        applet.rect(spos, ypos, sheight, sheight);
     }
 
     float getPos() {
@@ -88,4 +85,3 @@ class HScrollbar {
         return spos * ratio;
     }
 }
-    Processing was initiated by

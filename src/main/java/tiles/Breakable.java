@@ -1,6 +1,7 @@
 package tiles;
 
 import com.sanjay900.ProcessingRunner;
+import game.Game;
 
 import java.awt.geom.Rectangle2D;
 

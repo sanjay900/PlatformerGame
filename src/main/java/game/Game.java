@@ -3,6 +3,7 @@ package game;
 import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
+import menu.Slider;
 import levels.LevelParser;
 import levels.Map;
 import menu.Button;
@@ -31,6 +32,7 @@ public class Game extends PApplet {
     PImage backgroundIngame;
     PImage header;
     MD2Model model;
+    Slider slider;
     Importer importer = new Importer();
     public static void main(String[] args) {
         ProcessingRunner.run(new Game());
@@ -102,6 +104,7 @@ public class Game extends PApplet {
         temp.setOnMouseClicked(()->mode=Mode.GAME);
         buttons.add(temp=new Button(this,250,450,300,100,"Quit"));
         temp.setOnMouseClicked(this::exit);
+        slider = new Slider(250,240,400,100,1,this);
     }
     public void draw() {
         if (mode == Mode.MENU) {
@@ -109,12 +112,20 @@ public class Game extends PApplet {
         } else if (mode == Mode.GAME) {
             drawGame();
         }
+
     }
     private void drawMenu() {
         player.model.drawModel();
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
+        background(255);
+        fill(255);
+        slider.update();
+        slider.display();
+
+        stroke(0);
+        line(0, height/2, width, height/2);
     }
     private void drawGame() {
         hint(PConstants.ENABLE_DEPTH_TEST);
