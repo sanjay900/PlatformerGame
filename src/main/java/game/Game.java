@@ -44,7 +44,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key == ESC) {
-            Map.levelNum = 6;
+            Map.levelNum = 0;
             nextLevel();
             key = 0;
             player.die();
@@ -143,13 +143,18 @@ public class Game extends PApplet {
         buttons.forEach(Button::draw);
     }
     private void drawGame() {
-
+        pushMatrix();
+        float scrollAmt = (float) (768-(player.getBounds().getX()+player.getBounds().getWidth()));
+        if (scrollAmt < 0) {
+            translate(scrollAmt,0);
+        }
         hint(PConstants.ENABLE_DEPTH_TEST);
         background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();
         textSize(40);
+        popMatrix();
         hint(PConstants.DISABLE_DEPTH_TEST);
         text("Deaths: "+deaths+"    Coins: "+coins,250,40);
     }
