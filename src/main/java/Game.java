@@ -34,7 +34,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key == ESC) {
-            Map.levelNum = 1;
+            Map.levelNum = 6;
             nextLevel();
             key = 0;
             player.die();
@@ -79,6 +79,9 @@ public class Game extends PApplet {
             model = importer.importModel(new File("assets/models/key.md2"),loadImage("assets/models/KEY.png"),this);
             TileType.KEY.loadModel(model);
             model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
+            model = importer.importModel(new File("assets/models/coin.md2"),loadImage("assets/models/COIN.png"),this);
+            TileType.COIN.loadModel(model);
+            model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
 
 
         } catch (IOException e) {
@@ -109,7 +112,7 @@ public class Game extends PApplet {
     }
     private void drawGame() {
         hint(PConstants.ENABLE_DEPTH_TEST);
-        background(backgroundIngame);
+        background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();

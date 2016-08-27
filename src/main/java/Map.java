@@ -1,3 +1,4 @@
+import processing.core.PApplet;
 import processing.core.PVector;
 
 import java.awt.geom.Rectangle2D;
@@ -51,6 +52,9 @@ public class Map {
                 if (tile instanceof Key && ((Key) tile).gotten) {
                     continue;
                 }
+                if (tile instanceof Coin && ((Coin) tile).gotten) {
+                    continue;
+                }
                 game.pushMatrix();
                 game.translate(tile.getBounds().x+(float)tile.getBounds().getWidth()/2, tile.getBounds().y+(float)tile.getBounds().getHeight(), 0);
 
@@ -62,10 +66,18 @@ public class Map {
                         game.translate(0, -(float) tile.getBounds().getHeight(), 0);
                     }
                 }
+                if (tile instanceof Coin) {
+                    game.scale(0.75f);
+                }
                 game.scale((float)tile.getBounds().getWidth(),(float)tile.getBounds().getHeight(),(float)tile.getBounds().getWidth());
                 game.rotate(HALF_PI,1,0,0);
                 game.rotate(HALF_PI,0,0,1);
                 if (tile.type.model != null) {
+
+                    if (tile instanceof Coin) {
+                        game.rotate(((Coin) tile).lastAngle+=game.random(0.1f,0.5f));
+                        if (((Coin) tile).lastAngle >= TWO_PI) ((Coin) tile).lastAngle = 0;
+                    }
                     if (tile.type == TileType.KEY_SLOT || tile.type == TileType.KEY_SLOT_FILLED) {
                         game.rotate(PI,0,0,1);
                     }

@@ -34,6 +34,11 @@ public class LevelParser {
                         map.breakables.add(breakable);
                         continue;
                     }
+                    if (c == TileType.COIN.color) {
+                        Coin key = new Coin(bounds);
+                        map.platforms[x][y] = key;
+                        continue;
+                    }
                     if (c == TileType.KEY.color) {
                         Key key = new Key(bounds);
                         map.platforms[x][y] = key;
