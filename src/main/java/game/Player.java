@@ -26,8 +26,8 @@ public class Player {
     public PVector position;
     float playerWidth;
     float playerHeight;
-    float drag = 0.95f;
-    float acceleration = 1f;
+    float drag = 0.75f;
+    float acceleration = 2f;
     float jump = 12f;
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);

@@ -144,10 +144,11 @@ public class Game extends PApplet {
     }
     private void drawGame() {
         pushMatrix();
-        float scrollAmt = (float) (500-(player.getBounds().getX()+player.getBounds().getWidth()));
-        scrollAmt = constrain(scrollAmt,(float) (800-(player.getBounds().getX()+player.getBounds().getWidth())),(float) (500-(player.getBounds().getX()+player.getBounds().getWidth())));
+        float scrollAmt = (float) (400-(player.getBounds().getX()+player.getBounds().getWidth()));
+        float totalScroll = (float) (800-current.platforms.length*player.getBounds().getWidth());
+
         if (scrollAmt < 0) {
-            translate(scrollAmt,0);
+            translate(constrain(totalScroll,scrollAmt,0),0);
         }
         hint(PConstants.ENABLE_DEPTH_TEST);
         background(255);

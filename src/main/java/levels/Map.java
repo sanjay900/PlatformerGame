@@ -30,25 +30,6 @@ public class Map {
         float tileHeight = (float) playerStart.bounds.getHeight();
         for (int i = 0; i < keys.size(); i++) {
             Key tile = keys.get(i);
-            if (tile.gotten) {
-                PVector to = new PVector(800 - ((i + 1) * tileWidth * 4), tileHeight);
-                PVector from = new PVector(tile.bounds.x, tile.bounds.y);
-                if (abs(from.dist(to)) < 11) {
-                    tile.invisible = true;
-                }
-                PVector velocity = to.sub(from).normalize().mult(20);
-                PVector dest = from.add(velocity);
-                tile.setBounds(new Rectangle2D.Float(dest.x, dest.y, tileWidth, tileHeight));
-            }
-            game.pushMatrix();
-            game.translate(tile.getBounds().x+(float)tile.getBounds().getWidth()/2, tile.getBounds().y+(float)tile.getBounds().getHeight(), 0);
-            game.scale((float)tile.getBounds().getWidth(),(float)tile.getBounds().getHeight(),(float)tile.getBounds().getWidth());
-            game.rotate(HALF_PI,1,0,0);
-            game.rotate(HALF_PI,0,0,1);
-            if (!tile.invisible)
-                tile.type.model.drawModel();
-            game.rotate(PI,0,0,1);
-            game.popMatrix();
             game.pushMatrix();
             float dx = 32-((i+1)*4)-0.5f;
             float dy = 2;
@@ -66,7 +47,29 @@ public class Map {
         }
     }
     public void drawFrame() {
-
+        float tileWidth = (float) playerStart.bounds.getWidth();
+        float tileHeight = (float) playerStart.bounds.getHeight();
+        for (int i = 0; i < keys.size(); i++) {
+            Key tile = keys.get(i);
+            if (tile.gotten) {
+                PVector to = new PVector((float)(game.player.getBounds().getX()+400) - ((i + 1) * tileWidth * 4), tileHeight);
+                PVector from = new PVector(tile.bounds.x, tile.bounds.y);
+                if (abs(from.dist(to)) < 11) {
+                    tile.invisible = true;
+                }
+                PVector velocity = to.sub(from).normalize().mult(40);
+                PVector dest = from.add(velocity);
+                tile.setBounds(new Rectangle2D.Float(dest.x, dest.y, tileWidth, tileHeight));
+            }
+            game.pushMatrix();
+            game.translate(tile.getBounds().x + (float) tile.getBounds().getWidth() / 2, tile.getBounds().y + (float) tile.getBounds().getHeight(), 0);
+            game.scale((float) tile.getBounds().getWidth(), (float) tile.getBounds().getHeight(), (float) tile.getBounds().getWidth());
+            game.rotate(HALF_PI, 1, 0, 0);
+            game.rotate(HALF_PI, 0, 0, 1);
+            if (!tile.invisible)
+                tile.type.model.drawModel();
+            game.popMatrix();
+        }
         Tile tile;
         for (Tile[] platform : platforms) {
             for (Tile aPlatform : platform) {
