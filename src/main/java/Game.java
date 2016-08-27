@@ -16,11 +16,13 @@ import java.util.List;
  */
 public class Game extends PApplet {
     int deaths = 0;
+    int coins = 0;
     Mode mode = Mode.MENU;
     Map current;
     Player player;
     List<Button> buttons = new ArrayList<>();
     PImage background;
+    PImage backgroundIngame;
     PImage header;
     MD2Model model;
     Importer importer = new Importer();
@@ -32,7 +34,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key == ESC) {
-            Map.levelNum = 9;
+            Map.levelNum = 1;
             nextLevel();
             key = 0;
             player.die();
@@ -46,6 +48,7 @@ public class Game extends PApplet {
     }
     public void setup() {
         player = new Player(0,0,this);
+        backgroundIngame = loadImage("assets/BACK.png");
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
         try {
@@ -65,7 +68,7 @@ public class Game extends PApplet {
 
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BREAKABLE.loadModel(model);
-            model = importer.importModel(new File("assets/models/sticky.md2"),loadImage("assets/models/sticky.png"),this);
+            model = importer.importModel(new File("assets/models/spikes.md2"),loadImage("assets/models/spikes.png"),this);
 
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
@@ -106,13 +109,13 @@ public class Game extends PApplet {
     }
     private void drawGame() {
         hint(PConstants.ENABLE_DEPTH_TEST);
-        background(255);
+        background(backgroundIngame);
         current.drawFrame();
         player.updatePosition();
         player.draw();
         textSize(40);
         hint(PConstants.DISABLE_DEPTH_TEST);
-        text("Deaths: "+deaths,50,40);
+        text("Deaths: "+deaths+"    Coins: "+coins,250,40);
     }
     public void nextLevel() {
         Map map =  LevelParser.parseLevel(this, Map.levelNum++);

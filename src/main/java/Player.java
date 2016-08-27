@@ -104,9 +104,11 @@ public class Player {
         for (Tile[] platform : game.current.platforms) {
             for (Tile tile : platform) {
                 if (tile != null && tile.type == TileType.KEY_SLOT_FILLED) tile.type = TileType.KEY_SLOT;
+                if (tile instanceof Coin) ((Coin) tile).reset();
             }
         }
         game.deaths++;
+        game.coins = 0;
     }
     private ArrayList<Tile> collides() {
         ArrayList<Tile> collide = new ArrayList<>();
@@ -116,6 +118,11 @@ public class Player {
                 if (tile.getBounds().intersects(getBounds())) {
                     if (tile instanceof Key) {
                         ((Key) tile).gotten = true;
+                        continue;
+                    }
+                    if (tile instanceof Coin) {
+                        if (!((Coin) tile).gotten) game.coins++;
+                        ((Coin) tile).gotten = true;
                         continue;
                     }
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE)  {
