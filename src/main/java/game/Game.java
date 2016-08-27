@@ -47,7 +47,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key ==ENTER && mode == Mode.MENU) {
-            Map.levelNum = (int) slider.getPos()/250;
+            Map.levelNum = (int) slider.getPos();
             nextLevel();
             key = 0;
             player.die();
