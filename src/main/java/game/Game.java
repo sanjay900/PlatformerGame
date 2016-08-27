@@ -3,16 +3,17 @@ package game;
 import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
-import menu.Slider;
+import com.sanjay900.ProcessingRunner;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import levels.LevelParser;
 import levels.Map;
 import menu.Button;
-import processing.core.PVector;
-import tiles.TileType;
-import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
+import tiles.TileType;
 
 import java.io.File;
 import java.io.IOException;
@@ -55,8 +56,23 @@ public class Game extends PApplet {
     public void keyReleased() {
         player.keyReleased();
     }
+    public void playSound(File f, boolean infinite) {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        final Media media = new Media(f.toURI().toString());
+        final MediaPlayer mediaPlayer = new MediaPlayer(media);
+        if(infinite) mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+        mediaPlayer.play();
+    }
     public void setup() {
-        player = new Player(0,0,this);
+        new Thread(() -> {
+            new JFXPanel();
+            playSound(new File("assets/RUBBER.mp3"), true);
+        }).start();
+                player = new Player(0, 0, this);
         backgroundIngame = loadImage("assets/BACK.png");
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
@@ -127,6 +143,7 @@ public class Game extends PApplet {
         buttons.forEach(Button::draw);
     }
     private void drawGame() {
+
         hint(PConstants.ENABLE_DEPTH_TEST);
         background(255);
         current.drawFrame();

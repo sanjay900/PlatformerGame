@@ -1,8 +1,8 @@
 package game;
 
 import MD2.MD2Model;
-import tiles.*;
 import processing.core.PVector;
+import tiles.*;
 
 import java.awt.event.KeyEvent;
 import java.awt.geom.Rectangle2D;
@@ -13,6 +13,7 @@ import java.util.Optional;
 
 import static processing.core.PConstants.HALF_PI;
 import static processing.core.PConstants.PI;
+import static processing.core.PConstants.SHIFT;
 
 /**
  * Created by sanjay on 26/08/2016.
@@ -21,11 +22,12 @@ public class Player {
     static final float BOUNDING_BOX_MODIFIER = 1.15f;
     MD2Model model;
     Game game;
+    boolean dontMove = false;
     public PVector position;
     float playerWidth;
     float playerHeight;
-    float drag = 0.75f;
-    float acceleration = 2f;
+    float drag = 0.95f;
+    float acceleration = 1f;
     float jump = 12f;
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
@@ -45,21 +47,27 @@ public class Player {
     }
     public void updatePosition() {
         boolean ground = false;
+        if (!dontMove)
         velocity.add(gravity);
-        position.add(velocity.x,0);
+
+        if (!dontMove)
+            position.add(velocity.x,0);
+        if (!dontMove)
         velocity = new PVector(velocity.x*drag,velocity.y);
+
         ArrayList<Tile> collided = collides();
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
-                if (velocity.x > 0) {
+                if (velocity.x > 0f) {
                     position = new PVector(test.get().bounds.x - (playerWidth), position.y);
-                } else if (velocity.x < 0) {
+                } else if (velocity.x < 0f) {
                     position = new PVector(test.get().bounds.x + (playerWidth), position.y);
                 }
                 velocity = new PVector(0, velocity.y);
             }
         }
+        if (!dontMove)
         position.add(0,velocity.y);
         collided = collides();
         if (!collided.isEmpty()) {
@@ -80,9 +88,11 @@ public class Player {
         if (right) {
             velocity.add(acceleration,0);
         }
-
-        if (up && ground) {
-            velocity.add(0, -jump);
+        if ((down && dontMove)) {
+            velocity.add(0, acceleration);
+        }
+        if ((up && (ground || dontMove))) {
+            velocity.add(0, !dontMove?-jump:-acceleration);
             ground = false;
         }
         if (ground) {
@@ -97,6 +107,7 @@ public class Player {
         } else if (last != AnimationCycles.JUMP) {
             model.setAnimation((last= AnimationCycles.JUMP).getAnimation(),2f);
         }
+        System.out.println("velocity: " + velocity.x + ", " + velocity.y);
     }
     private AnimationCycles last = AnimationCycles.WALKING;
 
@@ -167,15 +178,20 @@ public class Player {
     boolean up = false;
     boolean left = false;
     boolean right = false;
+    boolean down = false;
     public void keyPressed() {
+        dontMove = dontMove || game.keyCode == SHIFT;
         right = game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT || right;
         left = game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT ||left;
+        down = game.key == 's' || game.keyCode == KeyEvent.VK_DOWN ||down;
         up = game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE || up;
     }
     public void keyReleased() {
-        if (game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT ) right = false;
-        if (game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT) left = false;
-        if (game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE ) up = false;
-        if (game.key == 'p' | game.key == 'r') die();
+        if (game.keyCode == SHIFT) dontMove = false;
+        if (game.key == 'D' || game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT ) right = false;
+        if (game.key == 'A' || game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT) left = false;
+        if (game.key == 'S' || game.key == 's' || game.keyCode == KeyEvent.VK_DOWN) down = false;
+        if (game.key == 'W' || game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE ) up = false;
+        if (game.key == 'P' || game.key == 'R' || game.key == 'p' || game.key == 'r') die();
     }
 }

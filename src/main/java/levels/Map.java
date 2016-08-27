@@ -15,7 +15,7 @@ import static processing.core.PConstants.*;
  * Created by sanjay on 26/08/2016.
  */
 public class Map {
-    public static int levelNum = 1;
+    public static int levelNum = 7;
     Game game;
     public Tile[][] platforms;
     public Tile playerStart;
