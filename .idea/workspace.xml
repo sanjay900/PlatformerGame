@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="Arrows + space">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/levels/level0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level1.png" afterPath="$PROJECT_DIR$/levels/level1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level10.png" afterPath="$PROJECT_DIR$/levels/level10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level11.png" afterPath="$PROJECT_DIR$/levels/level11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level12.png" afterPath="$PROJECT_DIR$/levels/level12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level3.png" afterPath="$PROJECT_DIR$/levels/level3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level4.png" afterPath="$PROJECT_DIR$/levels/level4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level5.png" afterPath="$PROJECT_DIR$/levels/level5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level6.png" afterPath="$PROJECT_DIR$/levels/level6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level7.png" afterPath="$PROJECT_DIR$/levels/level7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/level9.png" afterPath="$PROJECT_DIR$/levels/level9.png" />
+    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/src/main/java/levels/Map.java" />
@@ -38,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            <state relative-caret-position="134">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+            <state relative-caret-position="69">
+              <caret line="147" column="185" selection-start-line="147" selection-start-column="185" selection-end-line="147" selection-end-column="185" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -739,7 +728,7 @@
       <option name="presentableId" value="Default" />
       <updated>1472200241532</updated>
       <workItem from="1472200244139" duration="72184000" />
-      <workItem from="1472296491378" duration="2348000" />
+      <workItem from="1472296491378" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -867,11 +856,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472274622055</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Arrows + space">
+      <created>1472300968445</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1472300968445</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74532000" />
+    <option name="totallyTimeSpent" value="74983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="738" extended-state="0" />
@@ -1234,16 +1230,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/levels/LevelParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Breakable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1280,20 +1266,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+        <state relative-caret-position="134">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/levels/LevelParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        <state relative-caret-position="102">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="147" column="185" selection-start-line="147" selection-start-column="185" selection-end-line="147" selection-end-column="185" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

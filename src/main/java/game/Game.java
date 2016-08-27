@@ -144,7 +144,8 @@ public class Game extends PApplet {
     }
     private void drawGame() {
         pushMatrix();
-        float scrollAmt = (float) (768-(player.getBounds().getX()+player.getBounds().getWidth()));
+        float scrollAmt = (float) (500-(player.getBounds().getX()+player.getBounds().getWidth()));
+        scrollAmt = constrain(scrollAmt,(float) (800-(player.getBounds().getX()+player.getBounds().getWidth())),(float) (500-(player.getBounds().getX()+player.getBounds().getWidth())));
         if (scrollAmt < 0) {
             translate(scrollAmt,0);
         }
@@ -155,6 +156,7 @@ public class Game extends PApplet {
         player.draw();
         textSize(40);
         popMatrix();
+        current.drawKeys();
         hint(PConstants.DISABLE_DEPTH_TEST);
         text("Deaths: "+deaths+"    Coins: "+coins,250,40);
     }

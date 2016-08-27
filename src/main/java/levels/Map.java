@@ -25,13 +25,13 @@ public class Map {
         this.game = game;
         breakables = new ArrayList<>();
     }
-    public void drawFrame() {
+    public void drawKeys() {
         float tileWidth = (float) playerStart.bounds.getWidth();
         float tileHeight = (float) playerStart.bounds.getHeight();
         for (int i = 0; i < keys.size(); i++) {
             Key tile = keys.get(i);
             if (tile.gotten) {
-                PVector to = new PVector(game.width - ((i + 1) * tileWidth * 4), tileHeight);
+                PVector to = new PVector(800 - ((i + 1) * tileWidth * 4), tileHeight);
                 PVector from = new PVector(tile.bounds.x, tile.bounds.y);
                 if (abs(from.dist(to)) < 11) {
                     tile.invisible = true;
@@ -64,6 +64,9 @@ public class Map {
             }
             game.popMatrix();
         }
+    }
+    public void drawFrame() {
+
         Tile tile;
         for (Tile[] platform : platforms) {
             for (Tile aPlatform : platform) {
