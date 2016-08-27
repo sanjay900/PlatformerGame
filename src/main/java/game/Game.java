@@ -10,6 +10,7 @@ import javafx.scene.media.MediaPlayer;
 import levels.LevelParser;
 import levels.Map;
 import menu.Button;
+import menu.Slider;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
@@ -36,6 +37,7 @@ public class Game extends PApplet {
     PImage header;
     PImage pauseScreen;
     MD2Model model;
+    Slider slider;
     Importer importer = new Importer();
     public static void main(String[] args) {
         ProcessingRunner.run(new Game());
@@ -44,6 +46,13 @@ public class Game extends PApplet {
         size(800,600,P3D);
     }
     public void keyPressed() {
+        if (key ==ENTER && mode == Mode.MENU) {
+            Map.levelNum = (int) slider.getPos()/250;
+            nextLevel();
+            key = 0;
+            player.die();
+            deaths = 0;
+        }
         if (key == ESC) {
             Map.levelNum = 0;
             nextLevel();
@@ -126,6 +135,8 @@ public class Game extends PApplet {
                 exit();
             }
         });
+        slider = new Slider(250,340+200,300,10,1,"Level Select",this);
+
     }
     public void mouseReleased() {
         pauseBetween =false;
@@ -143,6 +154,8 @@ public class Game extends PApplet {
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
+        slider.display();
+        slider.update();
     }
     private void drawGame() {
         pushMatrix();

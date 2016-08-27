@@ -1,0 +1,13 @@
+game\Game.class
+menu\Slider.class
+game\AnimationCycles.class
+levels\Map.class
+tiles\Key.class
+tiles\Breakable.class
+game\Game$Mode.class
+tiles\TileType.class
+menu\Button.class
+tiles\Tile.class
+game\Player.class
+levels\LevelParser.class
+tiles\Coin.class

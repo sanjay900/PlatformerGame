@@ -67,7 +67,7 @@ public class Slider {
 
     public void display() {
         applet.fill(255);
-        applet.text(name,xpos-100,ypos+50);
+        applet.text(getPos()+name,xpos-100,ypos+50);
         applet.noStroke();
         applet.fill(204);
         applet.rect(xpos, ypos, swidth, sheight);
@@ -82,6 +82,6 @@ public class Slider {
     public float getPos() {
         // Convert spos to be values between
         // 0 and the total width of the scrollbar
-        return spos-xpos;
+        return (spos-xpos)/10;
     }
 }
