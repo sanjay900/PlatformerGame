@@ -32,7 +32,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key == ESC) {
-            Map.levelNum = 5;
+            Map.levelNum = 9;
             nextLevel();
             key = 0;
             player.die();

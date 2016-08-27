@@ -100,6 +100,12 @@ public class Player {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
         game.current.breakables.forEach(Breakable::reset);
+        game.current.keys.forEach(Key::reset);
+        for (Tile[] platform : game.current.platforms) {
+            for (Tile tile : platform) {
+                if (tile != null && tile.type == TileType.KEY_SLOT_FILLED) tile.type = TileType.KEY_SLOT;
+            }
+        }
         game.deaths++;
     }
     private ArrayList<Tile> collides() {
@@ -108,7 +114,7 @@ public class Player {
             for (Tile tile : game.current.platforms[y]) {
                 if (tile == null) continue;
                 if (tile.getBounds().intersects(getBounds())) {
-                    if (tile instanceof Key && !((Key) tile).gotten) {
+                    if (tile instanceof Key) {
                         ((Key) tile).gotten = true;
                         continue;
                     }

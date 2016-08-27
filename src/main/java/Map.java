@@ -48,10 +48,8 @@ public class Map {
         for (Tile[] platform : platforms) {
             for (Tile aPlatform : platform) {
                 if ((tile = aPlatform) == null) continue;
-                if (tile instanceof Key) {
-                    if (((Key) tile).gotten)  {
-                        continue;
-                    }
+                if (tile instanceof Key && ((Key) tile).gotten) {
+                    continue;
                 }
                 game.pushMatrix();
                 game.translate(tile.getBounds().x+(float)tile.getBounds().getWidth()/2, tile.getBounds().y+(float)tile.getBounds().getHeight(), 0);

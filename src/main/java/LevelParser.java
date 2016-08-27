@@ -6,11 +6,9 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class LevelParser {
     public static Map parseLevel(Game game, int levelNum) {
-        ArrayList<Key> keys = new ArrayList<>();
         Map map = new Map(game);
         BufferedImage current;
         try {
@@ -38,8 +36,8 @@ public class LevelParser {
                     }
                     if (c == TileType.KEY.color) {
                         Key key = new Key(bounds);
-                        map.keys.add(key);
                         map.platforms[x][y] = key;
+                        map.keys.add(key);
                         continue;
                     }
                     for (TileType tileType : TileType.values()) {
