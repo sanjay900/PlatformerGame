@@ -111,9 +111,9 @@ public class Player {
         int lineFront = 20;
         game.pushMatrix();
         game.stroke(0);
-        game.strokeWeight(2.5f);
+        game.strokeWeight(1.25f);
         game.line(position.x + playerWidth/2, position.y, position.z + lineFront, (velocity.x + position.x) + playerWidth/2, (velocity.y + position.y), (velocity.z + position.z) + lineFront);
-        game.scale(2);
+        game.scale(4);
         game.noStroke();
         game.popMatrix();
     }
