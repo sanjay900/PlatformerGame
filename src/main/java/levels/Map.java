@@ -51,7 +51,7 @@ public class Map {
             if (tile.gotten) {
                 PVector to = new PVector((float)(game.player.getBounds().getX()+400) - ((i + 1) * tileWidth * 4), tileHeight);
                 PVector from = new PVector(tile.bounds.x, tile.bounds.y);
-                if (abs(from.dist(to)) < 11) {
+                if (abs(from.dist(to)) < 20) {
                     tile.invisible = true;
                 }
                 PVector velocity = to.sub(from).normalize().mult(40);
