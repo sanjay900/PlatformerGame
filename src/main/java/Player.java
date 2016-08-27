@@ -99,7 +99,7 @@ public class Player {
     void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
-        Map.breakables.forEach(Breakable::reset);
+        game.current.breakables.forEach(Breakable::reset);
         game.deaths++;
     }
     private ArrayList<Tile> collides() {
@@ -108,12 +108,17 @@ public class Player {
             for (Tile tile : game.current.platforms[y]) {
                 if (tile == null) continue;
                 if (tile.getBounds().intersects(getBounds())) {
+                    if (tile instanceof Key && !((Key) tile).gotten) {
+                        ((Key) tile).gotten = true;
+                        continue;
+                    }
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE)  {
                         die();
                         collide.clear();
                         return collide;
                     }
                     if (tile.type == TileType.EXIT) {
+                        if (game.current.keys.stream().anyMatch(key -> !key.gotten)) continue;
                         game.nextLevel();
                         collide.clear();
                         velocity = new PVector();

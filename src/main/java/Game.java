@@ -32,7 +32,7 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key == ESC) {
-            Map.levelNum = 1;
+            Map.levelNum = 5;
             nextLevel();
             key = 0;
             player.die();
@@ -53,7 +53,15 @@ public class Game extends PApplet {
 
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BLOCK.loadModel(model);
-            model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/break.png"),this);
+            model = importer.importModel(new File("assets/models/keyholefill.md2"),loadImage("assets/models/KEYholefill.png"),this);
+
+            model.setAnimation(new Animation(1,0,1,0.1f),2f);
+            TileType.KEY_SLOT_FILLED.loadModel(model);
+            model = importer.importModel(new File("assets/models/keyhole.md2"),loadImage("assets/models/KEYhole.png"),this);
+
+            model.setAnimation(new Animation(1,0,1,0.1f),2f);
+            TileType.KEY_SLOT.loadModel(model);
+            model = importer.importModel(new File("assets/models/brokern.md2"),loadImage("assets/models/brokern.png"),this);
 
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BREAKABLE.loadModel(model);
@@ -62,6 +70,13 @@ public class Game extends PApplet {
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
+            model = importer.importModel(new File("assets/models/WORLD.md2"),loadImage("assets/models/WORLD.png"),this);
+            TileType.EXIT.loadModel(model);
+            model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
+            model = importer.importModel(new File("assets/models/key.md2"),loadImage("assets/models/KEY.png"),this);
+            TileType.KEY.loadModel(model);
+            model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
+
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -97,7 +112,7 @@ public class Game extends PApplet {
         player.draw();
         textSize(40);
         hint(PConstants.DISABLE_DEPTH_TEST);
-        text("Death Counter: "+deaths,50,40);
+        text("Deaths: "+deaths,50,40);
     }
     public void nextLevel() {
         Map map =  LevelParser.parseLevel(this, Map.levelNum++);
