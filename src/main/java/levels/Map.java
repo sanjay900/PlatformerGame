@@ -11,9 +11,6 @@ import java.util.List;
 import static processing.core.PApplet.abs;
 import static processing.core.PConstants.*;
 
-/**
- * Created by sanjay on 26/08/2016.
- */
 public class Map {
     public static int levelNum = 0;
     Game game;
