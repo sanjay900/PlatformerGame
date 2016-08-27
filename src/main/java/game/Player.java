@@ -1,10 +1,10 @@
 package game;
 
 import MD2.MD2Model;
-import game.Game;
 import tiles.*;
 import processing.core.PVector;
 
+import java.awt.event.KeyEvent;
 import java.awt.geom.Rectangle2D;
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class Player {
     float playerWidth;
     float playerHeight;
     float drag = 0.75f;
-    float momentum = 2f;
+    float acceleration = 2f;
     float jump = 12f;
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
@@ -75,10 +75,10 @@ public class Player {
             }
         }
         if (left) {
-            velocity.add(-momentum,0);
+            velocity.add(-acceleration,0);
         }
         if (right) {
-            velocity.add(momentum,0);
+            velocity.add(acceleration,0);
         }
 
         if (up && ground) {
@@ -168,14 +168,14 @@ public class Player {
     boolean left = false;
     boolean right = false;
     public void keyPressed() {
-        right = game.key == 'd' || right;
-        left = game.key == 'a' || left;
-        up = game.key == 'w' || up;
+        right = game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT || right;
+        left = game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT ||left;
+        up = game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE || up;
     }
     public void keyReleased() {
-        if (game.key == 'd') right = false;
-        if (game.key == 'a') left = false;
-        if (game.key == 'w') up = false;
+        if (game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT ) right = false;
+        if (game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT) left = false;
+        if (game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE ) up = false;
         if (game.key == 'p' | game.key == 'r') die();
     }
 }

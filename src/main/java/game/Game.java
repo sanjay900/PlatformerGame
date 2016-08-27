@@ -7,6 +7,7 @@ import menu.Slider;
 import levels.LevelParser;
 import levels.Map;
 import menu.Button;
+import processing.core.PVector;
 import tiles.TileType;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
@@ -22,6 +23,7 @@ import java.util.List;
  * Created by sanjay on 26/08/2016.
  */
 public class Game extends PApplet {
+    boolean pauseBetween = false;
     int deaths = 0;
     int coins = 0;
     Mode mode = Mode.MENU;
@@ -32,7 +34,6 @@ public class Game extends PApplet {
     PImage backgroundIngame;
     PImage header;
     MD2Model model;
-    Slider slider;
     Importer importer = new Importer();
     public static void main(String[] args) {
         ProcessingRunner.run(new Game());
@@ -91,7 +92,6 @@ public class Game extends PApplet {
             TileType.COIN.loadModel(model);
             model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
 
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -100,11 +100,17 @@ public class Game extends PApplet {
         player.readImages(this);
         player.model.setAnimation(AnimationCycles.WALKING.getAnimation(),2f);
         Button temp;
-        buttons.add(temp=new Button(this,250,340,300,100,"Play"));
+        buttons.add(temp=new Button(this,250,340,300,75,"Play"));
         temp.setOnMouseClicked(()->mode=Mode.GAME);
-        buttons.add(temp=new Button(this,250,450,300,100,"Quit"));
-        temp.setOnMouseClicked(this::exit);
-        slider = new Slider(250,240,400,100,1,this);
+        buttons.add(temp=new Button(this,250,340+80,300,75,"Quit"));
+        temp.setOnMouseClicked(()->{
+            if (!pauseBetween) {
+                exit();
+            }
+        });
+    }
+    public void mouseReleased() {
+        pauseBetween =false;
     }
     public void draw() {
         if (mode == Mode.MENU) {
@@ -119,8 +125,6 @@ public class Game extends PApplet {
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
-        slider.update();
-        slider.display();
     }
     private void drawGame() {
         hint(PConstants.ENABLE_DEPTH_TEST);

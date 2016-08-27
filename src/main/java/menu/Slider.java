@@ -18,8 +18,9 @@ public class Slider {
     boolean over;           // is the mouse over the slider?
     boolean locked;
     float ratio;
+    String name;;
     PApplet applet;
-    public Slider(float xp, float yp, int sw, int sh, int l, PApplet applet) {
+    public Slider(float xp, float yp, int sw, int sh, int l, String name, PApplet applet) {
         this.applet = applet;
         swidth = sw;
         sheight = sh;
@@ -32,14 +33,11 @@ public class Slider {
         sposMin = xpos;
         sposMax = xpos + swidth - sheight;
         loose = l;
+        this.name = name;
     }
 
     public void update() {
-        if (overEvent()) {
-            over = true;
-        } else {
-            over = false;
-        }
+        over = overEvent();
         if (applet.mousePressed && over) {
             locked = true;
         }
@@ -49,13 +47,13 @@ public class Slider {
         if (locked) {
             newspos = constrain(applet.mouseX-sheight/2, sposMin, sposMax);
         }
-        if (applet.abs(newspos - spos) > 1) {
+        if (PApplet.abs(newspos - spos) > 1) {
             spos = spos + (newspos-spos)/loose;
         }
     }
 
-    float constrain(float val, float minv, float maxv) {
-        return applet.min(applet.max(val, minv), maxv);
+    private float constrain(float val, float minv, float maxv) {
+        return PApplet.min(PApplet.max(val, minv), maxv);
     }
 
     boolean overEvent() {
@@ -68,6 +66,8 @@ public class Slider {
     }
 
     public void display() {
+        applet.fill(255);
+        applet.text(name,xpos-100,ypos+50);
         applet.noStroke();
         applet.fill(204);
         applet.rect(xpos, ypos, swidth, sheight);
@@ -79,9 +79,9 @@ public class Slider {
         applet.rect(spos, ypos, sheight, sheight);
     }
 
-    float getPos() {
+    public float getPos() {
         // Convert spos to be values between
         // 0 and the total width of the scrollbar
-        return spos * ratio;
+        return spos-xpos;
     }
 }
