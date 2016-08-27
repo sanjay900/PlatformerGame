@@ -116,6 +116,10 @@ public class Player {
         game.scale(4);
         game.noStroke();
         game.popMatrix();
+        if (getBounds().getX()<=0) die();
+        if (getBounds().getX()+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
+        if (getBounds().getY()<=0) die();
+        if (getBounds().getY()+getBounds().getHeight()>=game.current.platforms.length*getBounds().getHeight()) die();
     }
     private AnimationCycles last = AnimationCycles.WALKING;
 
