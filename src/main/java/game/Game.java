@@ -56,7 +56,6 @@ public class Game extends PApplet {
             deaths = 0;
         }
         if (key == ESC) {
-            Map.levelNum = 0;
             nextLevel();
             key = 0;
             player.die();
@@ -107,7 +106,7 @@ public class Game extends PApplet {
 
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
             TileType.BREAKABLE.loadModel(model);
-            model = importer.importModel(new File("assets/models/spikes.md2"),loadImage("assets/models/spikes.png"),this);
+            model = importer.importModel(new File("assets/models/dapokiy.obj.md2"),loadImage("assets/models/dapokiy.png"),this);
 
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
@@ -126,13 +125,10 @@ public class Game extends PApplet {
             e.printStackTrace();
         }
         noStroke();
-        nextLevel();
         player.readImages(this);
         player.model.setAnimation(AnimationCycles.WALKING.getAnimation(),2f);
         Button temp;
         buttons.add(temp=new Button(this,250,340,300,75,"Play"));
-        temp.setOnMouseClicked(()->mode=Mode.GAME);
-        buttons.add(temp=new Button(this,250,340+80,300,75,"Level Select"));
         temp.setOnMouseClicked(()->mode=Mode.SELECTION);
         buttons.add(temp=new Button(this,250,340+170,300,75,"Quit"));
         temp.setOnMouseClicked(()->{
@@ -149,7 +145,6 @@ public class Game extends PApplet {
         currentPack = packs.get(0);
     }
     public void nextPack() {
-
         if (pauseBetween) return;
         pauseBetween = true;
         currentPack = packs.get((1+packs.indexOf(currentPack))%packs.size());
@@ -157,7 +152,6 @@ public class Game extends PApplet {
     public void prevPack() {
         if (pauseBetween) return;
         pauseBetween = true;
-
         int index = (packs.indexOf(currentPack)-1)%packs.size();
         if (index <0) index = packs.size()+index;
         currentPack = packs.get(index);
@@ -207,9 +201,7 @@ public class Game extends PApplet {
         if(player.dontMove) image(pauseScreen, 0, 0, width, height);
     }
     public void nextLevel() {
-        Map map =  LevelParser.parseLevel(this, Map.levelNum++);
-        if (map != null)
-            current = map;
+        currentPack.nextLevel();
     }
 
 

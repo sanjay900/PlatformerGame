@@ -12,7 +12,6 @@ import static processing.core.PApplet.abs;
 import static processing.core.PConstants.*;
 
 public class Map {
-    public static int levelNum = 0;
     Game game;
     public Tile[][] platforms;
     public Tile playerStart;
@@ -23,8 +22,6 @@ public class Map {
         breakables = new ArrayList<>();
     }
     public void drawKeys() {
-        float tileWidth = (float) playerStart.bounds.getWidth();
-        float tileHeight = (float) playerStart.bounds.getHeight();
         for (int i = 0; i < keys.size(); i++) {
             Key tile = keys.get(i);
             game.pushMatrix();

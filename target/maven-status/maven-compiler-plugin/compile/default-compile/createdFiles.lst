@@ -2,6 +2,7 @@ game\Game.class
 menu\Slider.class
 game\AnimationCycles.class
 levels\Map.class
+menu\SelectionButton.class
 tiles\Key.class
 tiles\Breakable.class
 game\Game$Mode.class

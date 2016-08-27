@@ -3,7 +3,7 @@ package menu;
 import processing.core.PApplet;
 import processing.core.PConstants;
 
-import java.awt.Rectangle;
+import java.awt.*;
 
 /**
  * Created by surface on 26/08/2016.
@@ -37,9 +37,13 @@ public class Button {
         this.bounds = bounds;
         this.text = text;
     }
+    Color c = new Color(100,100,100);
+    public void setColor(int r, int g, int b) {
+        c = new Color(r,g,b);
+    }
     float textSize = 32;
     public void draw() {
-        game.fill(100,100,100);
+        game.fill(c.getRGB());
         if(bounds.contains(game.mouseX,game.mouseY)) {
             if (onClicked != null && game.mousePressed)
                 onClicked.run();
@@ -55,7 +59,9 @@ public class Button {
         game.text(text, bounds.x+ bounds.width/2, bounds.y+textSize/4+ bounds.height/2);
         game.noStroke();
     }
-
+    public void run() {
+        onClicked.run();
+    }
 
     public final void setOnMouseClicked(Runnable value) {
         this.onClicked = value;

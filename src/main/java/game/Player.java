@@ -1,6 +1,7 @@
 package game;
 
 import MD2.MD2Model;
+import processing.core.PConstants;
 import processing.core.PVector;
 import tiles.*;
 
@@ -11,9 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
-import static processing.core.PConstants.HALF_PI;
-import static processing.core.PConstants.PI;
-import static processing.core.PConstants.SHIFT;
+import static processing.core.PConstants.*;
 
 /**
  * Created by sanjay on 26/08/2016.
@@ -122,8 +121,8 @@ public class Player {
         if (getBounds().getY()+getBounds().getHeight()>=game.current.platforms.length*getBounds().getHeight()) die();
     }
     private AnimationCycles last = AnimationCycles.WALKING;
+    public void start(){
 
-    void die() {
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
         game.current.breakables.forEach(Breakable::reset);
@@ -134,6 +133,9 @@ public class Player {
                 if (tile instanceof Coin) ((Coin) tile).reset();
             }
         }
+    }
+    void die() {
+        start();
         game.deaths++;
         game.coins = 0;
     }
@@ -159,6 +161,7 @@ public class Player {
                     }
                     if (tile.type == TileType.EXIT) {
                         if (game.current.keys.stream().anyMatch(key -> !key.gotten)) continue;
+                        game.currentPack.completeLevel();
                         game.nextLevel();
                         collide.clear();
                         velocity = new PVector();
@@ -192,18 +195,26 @@ public class Player {
     boolean right = false;
     boolean down = false;
     public void keyPressed() {
+        if (game.key < 'Z') {
+            game.key = (char) (game.key - 'A');
+            game.key = (char) (game.key + 'a');
+        }
         dontMove = dontMove || game.keyCode == SHIFT;
-        right = game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT || right;
-        left = game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT ||left;
-        down = game.key == 's' || game.keyCode == KeyEvent.VK_DOWN ||down;
-        up = game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE || up;
+        right = game.key == 'd' || game.keyCode == RIGHT || right;
+        left = game.key == 'a' || game.keyCode == LEFT ||left;
+        down = game.key == 's' || game.keyCode == DOWN ||down;
+        up = game.key == 'w' || game.keyCode == UP || game.key == ' ' || up;
     }
     public void keyReleased() {
+        if (game.key < 'Z') {
+            game.key = (char) (game.key - 'A');
+            game.key = (char) (game.key + 'a');
+        }
         if (game.keyCode == SHIFT) dontMove = false;
-        if (game.key == 'D' || game.key == 'd' || game.keyCode == KeyEvent.VK_RIGHT ) right = false;
-        if (game.key == 'A' || game.key == 'a' || game.keyCode == KeyEvent.VK_LEFT) left = false;
-        if (game.key == 'S' || game.key == 's' || game.keyCode == KeyEvent.VK_DOWN) down = false;
-        if (game.key == 'W' || game.key == 'w' || game.keyCode == KeyEvent.VK_UP || game.keyCode == KeyEvent.VK_SPACE ) up = false;
-        if (game.key == 'P' || game.key == 'R' || game.key == 'p' || game.key == 'r') die();
+        if (game.key == 'd' || game.keyCode == RIGHT ) right = false;
+        if (game.key == 'a' || game.keyCode == LEFT) left = false;
+        if (game.key == 's' || game.keyCode == DOWN) down = false;
+        if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up = false;
+        if (game.key == 'p' || game.key == 'r') die();
     }
 }
