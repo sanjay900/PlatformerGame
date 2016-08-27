@@ -107,7 +107,10 @@ public class Player {
         } else if (last != AnimationCycles.JUMP) {
             model.setAnimation((last= AnimationCycles.JUMP).getAnimation(),2f);
         }
-        System.out.println("velocity: " + velocity.x + ", " + velocity.y);
+        if (getBounds().getX()<=0) die();
+        if (getBounds().getX()+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
+        if (getBounds().getY()<=0) die();
+        if (getBounds().getY()+getBounds().getHeight()>=game.current.platforms.length*getBounds().getHeight()) die();
     }
     private AnimationCycles last = AnimationCycles.WALKING;
 
