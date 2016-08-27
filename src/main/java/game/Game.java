@@ -119,13 +119,8 @@ public class Game extends PApplet {
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
-        background(255);
-        fill(255);
         slider.update();
         slider.display();
-
-        stroke(0);
-        line(0, height/2, width, height/2);
     }
     private void drawGame() {
         hint(PConstants.ENABLE_DEPTH_TEST);
