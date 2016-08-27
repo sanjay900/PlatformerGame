@@ -172,6 +172,6 @@ public class Player {
         if (game.key == 'd') right = false;
         if (game.key == 'a') left = false;
         if (game.key == 'w') up = false;
-        if (game.key == 'p') die();
+        if (game.key == 'p' | game.key == 'r') die();
     }
 }
