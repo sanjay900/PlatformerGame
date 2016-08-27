@@ -5,15 +5,18 @@ import MD2.Importer;
 import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import javafx.embed.swing.JFXPanel;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import levels.LevelParser;
 import levels.Map;
 import menu.Button;
+import menu.SelectionButton;
 import menu.Slider;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
+import processing.opengl.PGraphics3D;
 import tiles.TileType;
 
 import java.io.File;
@@ -25,19 +28,19 @@ import java.util.List;
  * Created by sanjay on 26/08/2016.
  */
 public class Game extends PApplet {
-    boolean pauseBetween = false;
+    public boolean pauseBetween = false;
     int deaths = 0;
     int coins = 0;
-    Mode mode = Mode.MENU;
-    Map current;
+    public Mode mode = Mode.MENU;
+    public Map current;
     public Player player;
     List<Button> buttons = new ArrayList<>();
+    List<SelectionButton> packs = new ArrayList<>();
     PImage background;
     PImage backgroundIngame;
     PImage header;
     PImage pauseScreen;
     MD2Model model;
-    Slider slider;
     Importer importer = new Importer();
     public static void main(String[] args) {
         ProcessingRunner.run(new Game());
@@ -47,7 +50,6 @@ public class Game extends PApplet {
     }
     public void keyPressed() {
         if (key ==ENTER && mode == Mode.MENU) {
-            Map.levelNum = (int) slider.getPos();
             nextLevel();
             key = 0;
             player.die();
@@ -78,6 +80,7 @@ public class Game extends PApplet {
         mediaPlayer.play();
     }
     public void setup() {
+        ((PGraphics3D)g).textureSampling(3);
         new Thread(() -> {
             new JFXPanel();
             playSound(new File("assets/RUBBER.mp3"), true);
@@ -129,14 +132,35 @@ public class Game extends PApplet {
         Button temp;
         buttons.add(temp=new Button(this,250,340,300,75,"Play"));
         temp.setOnMouseClicked(()->mode=Mode.GAME);
-        buttons.add(temp=new Button(this,250,340+80,300,75,"Quit"));
+        buttons.add(temp=new Button(this,250,340+80,300,75,"Level Select"));
+        temp.setOnMouseClicked(()->mode=Mode.SELECTION);
+        buttons.add(temp=new Button(this,250,340+170,300,75,"Quit"));
         temp.setOnMouseClicked(()->{
             if (!pauseBetween) {
                 exit();
             }
         });
-        slider = new Slider(250,340+200,300,10,1,"Level Select",this);
+        File[] files = new File("levels").listFiles();
+        for (File f: files) {
+            if (f.isDirectory()) {
+                packs.add(new SelectionButton(f,this));
+            }
+        }
+        currentPack = packs.get(0);
+    }
+    public void nextPack() {
 
+        if (pauseBetween) return;
+        pauseBetween = true;
+        currentPack = packs.get((1+packs.indexOf(currentPack))%packs.size());
+    }
+    public void prevPack() {
+        if (pauseBetween) return;
+        pauseBetween = true;
+
+        int index = (packs.indexOf(currentPack)-1)%packs.size();
+        if (index <0) index = packs.size()+index;
+        currentPack = packs.get(index);
     }
     public void mouseReleased() {
         pauseBetween =false;
@@ -146,16 +170,21 @@ public class Game extends PApplet {
             drawMenu();
         } else if (mode == Mode.GAME) {
             drawGame();
+        } else if (mode == Mode.SELECTION) {
+            drawSelection();
         }
 
+    }
+    SelectionButton currentPack;
+    private void drawSelection() {
+        background(background);
+        currentPack.render();
     }
     private void drawMenu() {
         player.model.drawModel();
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
-        slider.display();
-        slider.update();
     }
     private void drawGame() {
         pushMatrix();
@@ -186,6 +215,6 @@ public class Game extends PApplet {
 
 
     public enum Mode {
-        MENU,GAME
+        MENU,GAME,SELECTION
     }
 }

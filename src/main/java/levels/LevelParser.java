@@ -12,11 +12,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class LevelParser {
-    public static Map parseLevel(Game game, int levelNum) {
+        public static Map parseLevel(Game game, int levelNum) {
+            return parseLevel(game,new File("levels/level" + levelNum + ".png"));
+        }
+
+        public static Map parseLevel(Game game, File f) {
         Map map = new Map(game);
         BufferedImage current;
         try {
-            File f = new File("levels/level" + levelNum + ".png");
             if(!f.exists()) return null;
             current = ImageIO.read(f);
             map.platforms = new Tile[current.getWidth()][current.getHeight()];
