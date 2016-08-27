@@ -34,6 +34,7 @@ public class Game extends PApplet {
     PImage background;
     PImage backgroundIngame;
     PImage header;
+    PImage pauseScreen;
     MD2Model model;
     Importer importer = new Importer();
     public static void main(String[] args) {
@@ -76,6 +77,7 @@ public class Game extends PApplet {
         backgroundIngame = loadImage("assets/BACK.png");
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
+        pauseScreen = loadImage("assets/pause.png");
         try {
             model = importer.importModel(new File("assets/models/block.md2"),loadImage("assets/models/block.png"),this);
 
@@ -160,6 +162,7 @@ public class Game extends PApplet {
         current.drawKeys();
         hint(PConstants.DISABLE_DEPTH_TEST);
         text("Deaths: "+deaths+"    Coins: "+coins,250,40);
+        if(player.dontMove) image(pauseScreen, 0, 0, width, height);
     }
     public void nextLevel() {
         Map map =  LevelParser.parseLevel(this, Map.levelNum++);

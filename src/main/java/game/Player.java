@@ -28,6 +28,7 @@ public class Player {
     float playerHeight;
     float drag = 0.75f;
     float acceleration = 2f;
+    float accelerationFrozen = 0.5f;
     float jump = 12f;
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
@@ -92,7 +93,7 @@ public class Player {
             velocity.add(0, acceleration);
         }
         if ((up && (ground || dontMove))) {
-            velocity.add(0, !dontMove?-jump:-acceleration);
+            velocity.add(0, !dontMove?-jump:-accelerationFrozen);
             ground = false;
         }
         if (ground) {
@@ -107,6 +108,14 @@ public class Player {
         } else if (last != AnimationCycles.JUMP) {
             model.setAnimation((last= AnimationCycles.JUMP).getAnimation(),2f);
         }
+        int lineFront = 20;
+        game.pushMatrix();
+        game.stroke(0);
+        game.strokeWeight(1.25f);
+        game.line(position.x + playerWidth/2, position.y, position.z + lineFront, (velocity.x + position.x) + playerWidth/2, (velocity.y + position.y), (velocity.z + position.z) + lineFront);
+        game.scale(4);
+        game.noStroke();
+        game.popMatrix();
         if (getBounds().getX()<=0) die();
         if (getBounds().getX()+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
         if (getBounds().getY()<=0) die();
