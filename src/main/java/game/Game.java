@@ -1,6 +1,12 @@
+package game;
+
 import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
+import levels.LevelParser;
+import levels.Map;
+import menu.Button;
+import tiles.TileType;
 import com.sanjay900.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PConstants;
@@ -19,7 +25,7 @@ public class Game extends PApplet {
     int coins = 0;
     Mode mode = Mode.MENU;
     Map current;
-    Player player;
+    public Player player;
     List<Button> buttons = new ArrayList<>();
     PImage background;
     PImage backgroundIngame;

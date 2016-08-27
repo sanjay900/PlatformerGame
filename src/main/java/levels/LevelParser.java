@@ -1,3 +1,7 @@
+package levels;
+
+import game.Game;
+import tiles.*;
 import processing.core.PVector;
 
 import javax.imageio.ImageIO;

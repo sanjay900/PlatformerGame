@@ -1,4 +1,7 @@
-import processing.core.PApplet;
+package levels;
+
+import game.Game;
+import tiles.*;
 import processing.core.PVector;
 
 import java.awt.geom.Rectangle2D;
@@ -12,12 +15,12 @@ import static processing.core.PConstants.*;
  * Created by sanjay on 26/08/2016.
  */
 public class Map {
-    static int levelNum = 1;
+    public static int levelNum = 1;
     Game game;
-    Tile[][] platforms;
-    Tile playerStart;
-    List<Breakable> breakables = new ArrayList<>();
-    List<Key> keys = new ArrayList<>();
+    public Tile[][] platforms;
+    public Tile playerStart;
+    public List<Breakable> breakables = new ArrayList<>();
+    public List<Key> keys = new ArrayList<>();
     public Map(Game game) {
         this.game = game;
         breakables = new ArrayList<>();

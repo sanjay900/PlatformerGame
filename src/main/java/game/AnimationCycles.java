@@ -1,3 +1,5 @@
+package game;
+
 import MD2.Animation;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

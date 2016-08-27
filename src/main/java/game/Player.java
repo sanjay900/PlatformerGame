@@ -1,4 +1,8 @@
+package game;
+
 import MD2.MD2Model;
+import game.Game;
+import tiles.*;
 import processing.core.PVector;
 
 import java.awt.geom.Rectangle2D;
@@ -17,7 +21,7 @@ public class Player {
     static final float BOUNDING_BOX_MODIFIER = 1.15f;
     MD2Model model;
     Game game;
-    PVector position;
+    public PVector position;
     float playerWidth;
     float playerHeight;
     float drag = 0.75f;
@@ -88,10 +92,10 @@ public class Player {
                 model.startAnimation();
             }
             if (last != AnimationCycles.WALKING) {
-                model.setAnimation((last=AnimationCycles.WALKING).getAnimation(),2f);
+                model.setAnimation((last= AnimationCycles.WALKING).getAnimation(),2f);
             }
         } else if (last != AnimationCycles.JUMP) {
-            model.setAnimation((last=AnimationCycles.JUMP).getAnimation(),2f);
+            model.setAnimation((last= AnimationCycles.JUMP).getAnimation(),2f);
         }
     }
     private AnimationCycles last = AnimationCycles.WALKING;

@@ -1,4 +1,4 @@
-import org.w3c.dom.css.Rect;
+package tiles;
 
 import java.awt.geom.Rectangle2D;
 
@@ -7,7 +7,7 @@ import java.awt.geom.Rectangle2D;
  */
 
 public class Key extends Tile {
-    boolean gotten = false;
+    public boolean gotten = false;
     Rectangle2D.Float origin;
     public boolean invisible = false;
 
