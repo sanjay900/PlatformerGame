@@ -16,23 +16,28 @@ import org.json.JSONObject;
 @Setter
 public class ScoreObject {
     String pack, name;
-    int score,coins,deaths;
+    int coins,deaths;
+    boolean complete = false;
     public JSONObject toJSON() throws JSONException {
         JSONObject obj = new JSONObject();
         obj.put("pack",pack);
         obj.put("name",name);
-        obj.put("score",score);
         obj.put("coins",coins);
         obj.put("deaths",deaths);
+        obj.put("complete",complete);
         return obj;
     }
 
     @Override
     public String toString() {
-        return  "Level Pack: " + pack +
+        String levelStr = "Level Pack: " + pack +
                 ", Level Name: " + name +
                 ", Coins: " + coins +
-                ", Deaths: " + deaths +
-                '}';
+                ", Deaths: " + deaths;
+        if (complete) {
+            return "Level Complete! "+levelStr;
+        } else {
+            return "Level Failed! "+levelStr;
+        }
     }
 }
