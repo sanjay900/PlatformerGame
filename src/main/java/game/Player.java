@@ -142,6 +142,12 @@ public class Player {
     void die() {
         start();
         game.deaths++;
+        game.currentPack.failLevel();
+        game.coins = 0;
+    }
+    void restart() {
+        start();
+        game.deaths++;
         game.coins = 0;
     }
     private ArrayList<Tile> collides() {
@@ -217,6 +223,6 @@ public class Player {
         if (game.key == 's' || game.keyCode == DOWN) down = false;
         if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up = false;
         if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up2 = false;
-        if (game.key == 'p' || game.key == 'r') die();
+        if (game.key == 'p' || game.key == 'r') restart();
     }
 }

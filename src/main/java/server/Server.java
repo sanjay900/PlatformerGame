@@ -22,7 +22,7 @@ public class Server {
             Field f = UI.class.getDeclaredField("textPane");
             f.setAccessible(true);
             JTextArea area = (JTextArea) f.get(UI.theUI);
-            Font font = new Font("Verdana", Font.BOLD, 30);
+            Font font = new Font("Verdana", Font.BOLD, 25);
             area.setFont(font);
             area.setForeground(Color.BLUE);
         } catch (Exception e) {

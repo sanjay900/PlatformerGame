@@ -59,13 +59,13 @@ public class Game extends PApplet {
         if (key ==ENTER && mode == Mode.MENU) {
             nextLevel();
             key = 0;
-            player.die();
+            player.restart();
             deaths = 0;
         }
         if (key == ESC) {
             nextLevel();
             key = 0;
-            player.die();
+            player.restart();
             deaths = 0;
             mode = Mode.MENU;
         }

@@ -77,11 +77,22 @@ public class SelectionButton {
         this.buttonList.get(names.get(index)).run();
         return true;
     }
-
+    public void failLevel() {
+        toSend.setName((current.startsWith("z")?current.substring(1):current).replace(".png",""));
+        toSend.setCoins(game.coins);
+        toSend.setDeaths(game.deaths);
+        toSend.setComplete(false);
+        try {
+            game.client.emit("scoreGot",toSend.toJSON());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
     public void completeLevel() {
         toSend.setName((current.startsWith("z")?current.substring(1):current).replace(".png",""));
         toSend.setCoins(game.coins);
         toSend.setDeaths(game.deaths);
+        toSend.setComplete(true);
         try {
             game.client.emit("scoreGot",toSend.toJSON());
         } catch (JSONException e) {
