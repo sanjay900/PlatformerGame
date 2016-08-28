@@ -36,7 +36,13 @@ public class LevelParser {
                         continue;
                     }
                     if(c == Color.GRAY.getRGB()) {
-                        Breakable breakable = new Breakable(bounds);
+                        Breakable breakable = new Breakable(bounds,game.frameRate/3);
+                        map.platforms[x][y] = breakable;
+                        map.breakables.add(breakable);
+                        continue;
+                    }
+                    if(c == TileType.BREAKFAST.color) {
+                        Breakable breakable = new Breakable(bounds,game.frameRate/4);
                         map.platforms[x][y] = breakable;
                         map.breakables.add(breakable);
                         continue;
@@ -44,6 +50,16 @@ public class LevelParser {
                     if (c == TileType.COIN.color) {
                         Coin key = new Coin(bounds);
                         map.platforms[x][y] = key;
+                        continue;
+                    }
+                    if (c == TileType.SPIKE.color) {
+                        Tile tile = new Tile(new Rectangle2D.Float(bounds.x+2,bounds.y+2,bounds.width-2,bounds.height-2),TileType.SPIKE);
+                        map.platforms[x][y] = tile;
+                        continue;
+                    }
+                    if (c == TileType.UPSIDE_DOWN_SPIKE.color) {
+                        Tile tile = new Tile(bounds,TileType.UPSIDE_DOWN_SPIKE);
+                        map.platforms[x][y] = tile;
                         continue;
                     }
                     if (c == TileType.KEY.color) {

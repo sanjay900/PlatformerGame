@@ -48,12 +48,12 @@ public class Player {
     public void updatePosition() {
         boolean ground = false;
         if (!dontMove)
-        velocity.add(gravity);
+            velocity.add(gravity);
 
         if (!dontMove)
             position.add(velocity.x,0);
         if (!dontMove)
-        velocity = new PVector(velocity.x*drag,velocity.y);
+            velocity = new PVector(velocity.x*drag,velocity.y);
 
         ArrayList<Tile> collided = collides();
         if (!collided.isEmpty()) {
@@ -68,12 +68,16 @@ public class Player {
             }
         }
         if (!dontMove)
-        position.add(0,velocity.y);
+            position.add(0,velocity.y);
         collided = collides();
+        boolean top = false;
         if (!collided.isEmpty()) {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
                 ground = true;
+                if (test.get().bounds.getY()-getBounds().getY()<0) {
+                    top = up = up2;
+                }
                 if (velocity.y > 0) {
                     position = new PVector(position.x, test.get().bounds.y - playerHeight);
                 } else if (velocity.y < 0) {
@@ -91,7 +95,10 @@ public class Player {
         if ((down && dontMove)) {
             velocity.add(0, acceleration);
         }
-        if ((up && (ground || dontMove))) {
+
+        if ((up && ground) || (up2 && dontMove)) {
+            if (!top)
+                up = false;
             velocity.add(0, !dontMove?-jump:-accelerationFrozen);
             ground = false;
         }
@@ -122,7 +129,7 @@ public class Player {
     }
     private AnimationCycles last = AnimationCycles.WALKING;
     public void start(){
-
+        up = down = left = right = false;
         position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
         velocity = new PVector();
         game.current.breakables.forEach(Breakable::reset);
@@ -191,6 +198,7 @@ public class Player {
         game.popMatrix();
     }
     boolean up = false;
+    boolean up2 = false;
     boolean left = false;
     boolean right = false;
     boolean down = false;
@@ -203,7 +211,8 @@ public class Player {
         right = game.key == 'd' || game.keyCode == RIGHT || right;
         left = game.key == 'a' || game.keyCode == LEFT ||left;
         down = game.key == 's' || game.keyCode == DOWN ||down;
-        up = game.key == 'w' || game.keyCode == UP || game.key == ' ' || up;
+        up = game.key == 'w' || game.keyCode == UP || game.key == ' '||up;
+        up2 = game.key == 'w' || game.keyCode == UP || game.key == ' '||up;
     }
     public void keyReleased() {
         if (game.key < 'Z') {
@@ -215,6 +224,7 @@ public class Player {
         if (game.key == 'a' || game.keyCode == LEFT) left = false;
         if (game.key == 's' || game.keyCode == DOWN) down = false;
         if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up = false;
+        if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up2 = false;
         if (game.key == 'p' || game.key == 'r') die();
     }
 }

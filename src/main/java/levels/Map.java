@@ -17,6 +17,7 @@ public class Map {
     public Tile playerStart;
     public List<Breakable> breakables = new ArrayList<>();
     public List<Key> keys = new ArrayList<>();
+    float lastFlagAngle = 0;
     public Map(Game game) {
         this.game = game;
         breakables = new ArrayList<>();
@@ -74,14 +75,15 @@ public class Map {
                 if (tile instanceof Coin && ((Coin) tile).gotten) {
                     continue;
                 }
+                if (tile.getBounds().getX() > 800+ game.player.getBounds().getX()) continue;
+                if (tile.getBounds().getY() > 800+ game.player.getBounds().getY()) continue;
+                if (tile.getBounds().getX() < game.player.getBounds().getX()-800) continue;
+                if (tile.getBounds().getY() < game.player.getBounds().getY()-800) continue;
                 game.pushMatrix();
                 game.translate(tile.getBounds().x+(float)tile.getBounds().getWidth()/2, tile.getBounds().y+(float)tile.getBounds().getHeight(), 0);
 
                 if (tile.type.model != null) {
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE) {
-                        game.translate(0, -(float) tile.getBounds().getHeight(), 0);
-                    }
-                    if (tile.type == TileType.EXIT) {
                         game.translate(0, -(float) tile.getBounds().getHeight(), 0);
                     }
                 }
@@ -108,7 +110,8 @@ public class Map {
                         }
                     } else {
                         if (tile.type == TileType.EXIT) {
-                            game.rotate(game.random(0,TWO_PI),game.random(0,1),game.random(0,1),game.random(0,1));
+                            game.rotate(lastFlagAngle+=0.1);
+                            if (lastFlagAngle >= TWO_PI) lastFlagAngle = 0;
                         }
                         tile.type.model.drawModel();
                     }

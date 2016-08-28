@@ -31,6 +31,7 @@ public class Game extends PApplet {
     public boolean pauseBetween = false;
     int deaths = 0;
     int coins = 0;
+    float flagAngle = 0;
     public Mode mode = Mode.MENU;
     public Map current;
     public Player player;
@@ -79,12 +80,12 @@ public class Game extends PApplet {
         mediaPlayer.play();
     }
     public void setup() {
-        ((PGraphics3D)g).textureSampling(3);
+        textFont(createFont("assets/munro.ttf",32));
         new Thread(() -> {
             new JFXPanel();
             playSound(new File("assets/RUBBER.mp3"), true);
         }).start();
-                player = new Player(0, 0, this);
+        player = new Player(0, 0, this);
         backgroundIngame = loadImage("assets/BACK.png");
         background = loadImage("assets/menuwood.png");
         header = loadImage("assets/temp_banner_480.png");
@@ -111,9 +112,9 @@ public class Game extends PApplet {
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
-            model = importer.importModel(new File("assets/models/WORLD.md2"),loadImage("assets/models/WORLD.png"),this);
+            model = importer.importModel(new File("assets/models/flag.md2"),loadImage("assets/models/FLAG.png"),this);
             TileType.EXIT.loadModel(model);
-            model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
+            model.setAnimation(new Animation(1,0,1f,0.1f),2f);
             model = importer.importModel(new File("assets/models/key.md2"),loadImage("assets/models/KEY.png"),this);
             TileType.KEY.loadModel(model);
             model.setAnimation(new Animation(1,0,0.2f,0.1f),2f);
@@ -175,12 +176,16 @@ public class Game extends PApplet {
         currentPack.render();
     }
     private void drawMenu() {
+
+        ((PGraphics3D)g).textureSampling(3);
         player.model.drawModel();
         background(background);
         image(header,100,100,width-200,200);
         buttons.forEach(Button::draw);
     }
     private void drawGame() {
+
+        ((PGraphics3D)g).textureSampling(5);
         pushMatrix();
         float scrollAmt = (float) (400-(player.getBounds().getX()+player.getBounds().getWidth()));
         float totalScroll = (float) (800-current.platforms.length*player.getBounds().getWidth());
@@ -197,7 +202,8 @@ public class Game extends PApplet {
         popMatrix();
         current.drawKeys();
         hint(PConstants.DISABLE_DEPTH_TEST);
-        text("Deaths: "+deaths+"    Coins: "+coins,250,40);
+        fill(255);
+        text("DEATHS: "+deaths+"    COINS: "+coins,250,35);
         if(player.dontMove) image(pauseScreen, 0, 0, width, height);
     }
     public void nextLevel() {

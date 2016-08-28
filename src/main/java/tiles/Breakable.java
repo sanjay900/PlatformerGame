@@ -12,8 +12,10 @@ public class Breakable extends Tile {
     Game game = (Game) ProcessingRunner.instance;
     public boolean breaking = false;
     private long lastCount;
-    public Breakable(Rectangle2D.Float bounds) {
+    float delay;
+    public Breakable(Rectangle2D.Float bounds, float delay) {
         this.type = TileType.BREAKABLE;
+        this.delay = delay;
         this.bounds = bounds;
     }
 
@@ -27,6 +29,6 @@ public class Breakable extends Tile {
     }
 
     public boolean broken() {
-        return breaking && game.frameCount - lastCount >= game.frameRate/2;
+        return breaking && game.frameCount - lastCount >= delay;
     }
 }
