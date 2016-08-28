@@ -1,11 +1,9 @@
 package game;
 
 import MD2.MD2Model;
-import processing.core.PConstants;
 import processing.core.PVector;
 import tiles.*;
 
-import java.awt.event.KeyEvent;
 import java.awt.geom.Rectangle2D;
 import java.io.File;
 import java.io.IOException;
@@ -161,7 +159,7 @@ public class Player {
                         ((Coin) tile).gotten = true;
                         continue;
                     }
-                    if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE)  {
+                    if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE || tile.type == TileType.LAVA)  {
                         die();
                         collide.clear();
                         return collide;
