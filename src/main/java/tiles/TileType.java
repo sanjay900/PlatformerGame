@@ -6,7 +6,7 @@ import java.awt.*;
 
 
 public enum TileType {
-    BLOCK(Color.BLACK),SPIKE(Color.RED), EXIT(Color.YELLOW), LAVA(Color.ORANGE),
+    BLOCK(Color.BLACK),SPIKE(Color.RED), EXIT(Color.YELLOW), LEFT_SPIKE(new Color(200,0,0)), RIGHT_SPIKE(new Color(225,0,0)),
     UPSIDE_DOWN_SPIKE(new Color(127, 0, 0)), BREAKABLE(Color.GRAY),
     KEY(new Color(255,0,220)),COIN(Color.BLUE),KEY_SLOT(Color.CYAN), KEY_SLOT_FILLED(new Color(0,1,2)),
     BREAKFAST(new Color(128,128,0));

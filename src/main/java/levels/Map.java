@@ -86,6 +86,12 @@ public class Map {
                 if (tile.type.model != null) {
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE) {
                         game.translate(0, -(float) tile.getBounds().getHeight(), 0);
+                    } else if (tile.type == TileType.LEFT_SPIKE) {
+                        game.rotate(HALF_PI, 0, 0, -1);
+                        game.translate(((float) (tile.getBounds().getHeight() / 2)), ((float) (tile.getBounds().getWidth() / 2)), 0);
+                    } else if (tile.type == TileType.RIGHT_SPIKE) {
+                        game.rotate(HALF_PI, 0, 0, 1);
+                        game.translate(-((float) (tile.getBounds().getHeight() / 2)), ((float) (tile.getBounds().getWidth() / 2)), 0);
                     }
                 }
                 if (tile instanceof Coin) {

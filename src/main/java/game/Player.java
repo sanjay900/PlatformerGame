@@ -165,7 +165,7 @@ public class Player {
                         ((Coin) tile).gotten = true;
                         continue;
                     }
-                    if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE || tile.type == TileType.LAVA)  {
+                    if (tile.type == TileType.UPSIDE_DOWN_SPIKE || tile.type == TileType.SPIKE || tile.type == TileType.LEFT_SPIKE || tile.type == TileType.RIGHT_SPIKE)  {
                         die();
                         collide.clear();
                         return collide;

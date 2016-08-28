@@ -6,21 +6,16 @@ import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.emitter.Emitter;
 import javafx.embed.swing.JFXPanel;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import levels.LevelParser;
 import levels.Map;
 import menu.Button;
 import menu.SelectionButton;
-import menu.Slider;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
 import processing.opengl.PGraphics3D;
-import server.ScoreObject;
 import tiles.TileType;
 
 import java.io.File;
@@ -116,6 +111,8 @@ public class Game extends PApplet {
             model = importer.importModel(new File("assets/models/dapokiy.obj.md2"),loadImage("assets/models/dapokiy.png"),this);
 
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
+            TileType.LEFT_SPIKE.loadModel(model);
+            TileType.RIGHT_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
             model.setAnimation(new Animation(1,0,1,0.1f),2f);
             model = importer.importModel(new File("assets/models/flag.md2"),loadImage("assets/models/FLAG.png"),this);
