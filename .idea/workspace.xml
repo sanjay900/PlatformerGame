@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="Fix collisions, Fix level packs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/models/FLAG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/models/flag.md2" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/Introduction/index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/Introduction/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/Introduction/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/Introduction/level3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/JessePack/index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/JessePack/level6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/JessePack/level7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/JessePack/level8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/JessePack/level9.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/PlatformerGame-1.0-SNAPSHOT-with-dependencies.jar" afterPath="$PROJECT_DIR$/target/PlatformerGame-1.0-SNAPSHOT-with-dependencies.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/PlatformerGame-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/PlatformerGame-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Game$Mode.class" afterPath="$PROJECT_DIR$/target/classes/game/Game$Mode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Game.class" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Player.class" afterPath="$PROJECT_DIR$/target/classes/game/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/levels/LevelParser.class" afterPath="$PROJECT_DIR$/target/classes/levels/LevelParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/levels/Map.class" afterPath="$PROJECT_DIR$/target/classes/levels/Map.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tiles/Breakable.class" afterPath="$PROJECT_DIR$/target/classes/tiles/Breakable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tiles/TileType.class" afterPath="$PROJECT_DIR$/target/classes/tiles/TileType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-PlatformerGame-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-PlatformerGame-1.0-SNAPSHOT.jar" />
+    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Player.java" afterPath="$PROJECT_DIR$/src/main/java/game/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" afterPath="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/src/main/java/levels/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/TileType.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/TileType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Key.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Key.java" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +30,21 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+            <state relative-caret-position="68">
+              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Key.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,6 +121,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Coin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -187,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/java/game/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/tiles/Spike.java" />
         <option value="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/Key.java" />
         <option value="$PROJECT_DIR$/src/main/java/levels/Map.java" />
       </list>
     </option>
@@ -335,6 +333,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -359,6 +361,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="levels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,7 +898,7 @@
       <updated>1472200241532</updated>
       <workItem from="1472200244139" duration="72184000" />
       <workItem from="1472296491378" duration="7637000" />
-      <workItem from="1472344683453" duration="1140000" />
+      <workItem from="1472344683453" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1058,11 +1082,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472337079696</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix collisions, Fix level packs, Add Flag, move flag, Update parser">
+      <created>1472345848762</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1472345848762</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102117000" />
+    <option name="totallyTimeSpent" value="102852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="746" extended-state="6" />
@@ -1077,10 +1108,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36867863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1151,7 +1182,8 @@
     <MESSAGE value="Change key merge distance" />
     <MESSAGE value="temp slider to change level" />
     <MESSAGE value="Removed Slider. Added level packs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Slider. Added level packs." />
+    <MESSAGE value="Fix collisions, Fix level packs, Add Flag, move flag, Update parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix collisions, Fix level packs, Add Flag, move flag, Update parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,8 +1306,8 @@
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="9" selection-start-column="41" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
             <element signature="e#302#303#0" expanded="false" />
             <element signature="e#332#333#0" expanded="false" />
           </folding>
@@ -1376,35 +1408,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="9" selection-start-column="41" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1555,10 +1564,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+        <state relative-caret-position="68">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

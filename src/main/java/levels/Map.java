@@ -49,21 +49,22 @@ public class Map {
             if (tile.gotten) {
                 PVector to = new PVector((float)(game.player.getBounds().getX()+400) - ((i + 1) * tileWidth * 4), tileHeight);
                 PVector from = new PVector(tile.bounds.x, tile.bounds.y);
-                if (abs(from.dist(to)) < 20) {
+                if (abs(from.dist(to)) < 15) {
                     tile.invisible = true;
                 }
-                PVector velocity = to.sub(from).normalize().mult(40);
+                PVector velocity = to.sub(from).normalize().mult(20);
                 PVector dest = from.add(velocity);
                 tile.setBounds(new Rectangle2D.Float(dest.x, dest.y, tileWidth, tileHeight));
+                game.pushMatrix();
+                game.translate(tile.getBounds().x + (float) tile.getBounds().getWidth() / 2, tile.getBounds().y + (float) tile.getBounds().getHeight(), 0);
+                game.scale((float) tile.getBounds().getWidth(), (float) tile.getBounds().getHeight(), (float) tile.getBounds().getWidth());
+                game.rotate(HALF_PI, 1, 0, 0);
+                game.rotate(HALF_PI, 0, 0, 1);
+                if (!tile.invisible)
+                    tile.type.model.drawModel();
+                game.popMatrix();
+
             }
-            game.pushMatrix();
-            game.translate(tile.getBounds().x + (float) tile.getBounds().getWidth() / 2, tile.getBounds().y + (float) tile.getBounds().getHeight(), 0);
-            game.scale((float) tile.getBounds().getWidth(), (float) tile.getBounds().getHeight(), (float) tile.getBounds().getWidth());
-            game.rotate(HALF_PI, 1, 0, 0);
-            game.rotate(HALF_PI, 0, 0, 1);
-            if (!tile.invisible)
-                tile.type.model.drawModel();
-            game.popMatrix();
         }
         Tile tile;
         for (Tile[] platform : platforms) {
@@ -96,11 +97,15 @@ public class Map {
                 if (tile.type.model != null) {
 
                     if (tile instanceof Coin) {
-                        game.rotate(((Coin) tile).lastAngle+=game.random(0.1f,0.5f));
+                        game.rotate(((Coin) tile).lastAngle+=0.1f);
                         if (((Coin) tile).lastAngle >= TWO_PI) ((Coin) tile).lastAngle = 0;
                     }
                     if (tile.type == TileType.UPSIDE_DOWN_SPIKE) {
                         game.rotate(PI,0,1,0);
+                    }
+                    if (tile instanceof Key) {
+                        game.rotate(((Key) tile).lastAngle+=0.1f);
+                        if (((Key) tile).lastAngle >= TWO_PI) ((Key) tile).lastAngle = 0;
                     }
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;

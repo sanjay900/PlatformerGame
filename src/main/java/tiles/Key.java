@@ -7,6 +7,7 @@ import java.awt.geom.Rectangle2D;
  */
 
 public class Key extends Tile {
+    public float lastAngle = 0;
     public boolean gotten = false;
     Rectangle2D.Float origin;
     public boolean invisible = false;
