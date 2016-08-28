@@ -252,7 +252,7 @@ public class Game extends PApplet {
     }
     MD2Model[] credits = new MD2Model[4];
     int currentCredit = 0;
-    String[] text = {"Sanjay Govind - Head Code, manager","Jacob Cohn-Gell - Other coder, map creations","Jesse Walls - Graphic Designer, Map Creator, 3d Models","Grayden Tavendale - Music / Sound Design"};
+    String[] text = {"Sanjay Govind - Head Code, manager","Jacob Cohn-Gell - Other coder, map creations","Jesse Walls - Graphic Designer, Map Creator, 3d Models","Grayden Tavendale - Music / Sound Design", "This game was made by Tangent Games 2016", "In Memory of Harambe - You Will Be Forever With Us"};
     float currentInterp = 0;
     long lastDist = -1;
     private void drawCredits() {
