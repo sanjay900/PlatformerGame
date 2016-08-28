@@ -53,7 +53,7 @@ public class LevelParser {
                         continue;
                     }
                     if (c == TileType.SPIKE.color) {
-                        Tile tile = new Tile(new Rectangle2D.Float(bounds.x+2,bounds.y+2,bounds.width-2,bounds.height-2),TileType.SPIKE);
+                        Tile tile = new Tile(new Rectangle2D.Float(bounds.x+2,bounds.y+2,bounds.width-4,bounds.height-4),TileType.SPIKE);
                         map.platforms[x][y] = tile;
                         continue;
                     }

@@ -4,6 +4,9 @@ import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
 import com.sanjay900.ProcessingRunner;
+import io.socket.client.IO;
+import io.socket.client.Socket;
+import io.socket.emitter.Emitter;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.media.Media;
@@ -17,10 +20,12 @@ import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
 import processing.opengl.PGraphics3D;
+import server.ScoreObject;
 import tiles.TileType;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +33,10 @@ import java.util.List;
  * Created by sanjay on 26/08/2016.
  */
 public class Game extends PApplet {
+    public Socket client;
     public boolean pauseBetween = false;
-    int deaths = 0;
-    int coins = 0;
+    public int deaths = 0;
+    public int coins = 0;
     float flagAngle = 0;
     public Mode mode = Mode.MENU;
     public Map current;
@@ -144,6 +150,15 @@ public class Game extends PApplet {
             }
         }
         currentPack = packs.get(0);
+        try {
+            client = IO.socket("http://10.73.10.176:9092");
+            client.on(Socket.EVENT_CONNECT, args1 -> {
+                client.emit("foo", "hi");
+            }).on("event", args13 -> {}).on(Socket.EVENT_DISCONNECT, args12 -> {});
+            client.connect();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
     public void nextPack() {
         if (pauseBetween) return;
@@ -184,8 +199,7 @@ public class Game extends PApplet {
         buttons.forEach(Button::draw);
     }
     private void drawGame() {
-
-        ((PGraphics3D)g).textureSampling(5);
+        ((PGraphics3D)g).textureSampling(3);
         pushMatrix();
         float scrollAmt = (float) (400-(player.getBounds().getX()+player.getBounds().getWidth()));
         float totalScroll = (float) (800-current.platforms.length*player.getBounds().getWidth());

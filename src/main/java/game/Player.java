@@ -122,10 +122,10 @@ public class Player {
         game.scale(4);
         game.noStroke();
         game.popMatrix();
-        if (getBounds().getX()<=0) die();
-        if (getBounds().getX()+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
-        if (getBounds().getY()<=0) die();
-        if (getBounds().getY()+getBounds().getHeight()>=game.current.platforms.length*getBounds().getHeight()) die();
+        if (getBounds().getX()<=-10) die();
+        if (getBounds().getX()+10+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
+        if (getBounds().getY()<=-10) die();
+        if (getBounds().getY()+10+getBounds().getHeight()>=game.current.platforms.length*getBounds().getHeight()) die();
     }
     private AnimationCycles last = AnimationCycles.WALKING;
     public void start(){
@@ -203,10 +203,7 @@ public class Player {
     boolean right = false;
     boolean down = false;
     public void keyPressed() {
-        if (game.key < 'Z') {
-            game.key = (char) (game.key - 'A');
-            game.key = (char) (game.key + 'a');
-        }
+        game.key = (game.key + "").toLowerCase().charAt(0);
         dontMove = dontMove || game.keyCode == SHIFT;
         right = game.key == 'd' || game.keyCode == RIGHT || right;
         left = game.key == 'a' || game.keyCode == LEFT ||left;
@@ -215,10 +212,7 @@ public class Player {
         up2 = game.key == 'w' || game.keyCode == UP || game.key == ' '||up;
     }
     public void keyReleased() {
-        if (game.key < 'Z') {
-            game.key = (char) (game.key - 'A');
-            game.key = (char) (game.key + 'a');
-        }
+        game.key = (game.key + "").toLowerCase().charAt(0);
         if (game.keyCode == SHIFT) dontMove = false;
         if (game.key == 'd' || game.keyCode == RIGHT ) right = false;
         if (game.key == 'a' || game.keyCode == LEFT) left = false;
