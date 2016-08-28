@@ -1,6 +1,9 @@
 package game;
 
 import MD2.MD2Model;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 import processing.core.PVector;
 import tiles.*;
 
@@ -95,8 +98,11 @@ public class Player {
         }
 
         if ((up && ground) || (up2 && dontMove)) {
-            if (!top)
+            if (!top) {
                 up = false;
+                if (!dontMove)
+                    playSound("JUMP.wav");
+            }
             velocity.add(0, !dontMove?-jump:-accelerationFrozen);
             ground = false;
         }
@@ -140,6 +146,7 @@ public class Player {
         }
     }
     void die() {
+        playSound("DIE.wav");
         start();
         game.deaths++;
         game.currentPack.failLevel();
@@ -157,11 +164,16 @@ public class Player {
                 if (tile == null) continue;
                 if (tile.getBounds().intersects(getBounds())) {
                     if (tile instanceof Key) {
+                        if (!((Key) tile).gotten)
+                            playSound("KEY.wav");
                         ((Key) tile).gotten = true;
                         continue;
                     }
                     if (tile instanceof Coin) {
-                        if (!((Coin) tile).gotten) game.coins++;
+                        if (!((Coin) tile).gotten) {
+                            playSound("COIN.wav");
+                            game.coins++;
+                        }
                         ((Coin) tile).gotten = true;
                         continue;
                     }
@@ -172,6 +184,7 @@ public class Player {
                     }
                     if (tile.type == TileType.EXIT) {
                         if (game.current.keys.stream().anyMatch(key -> !key.gotten)) continue;
+                        playSound("FLAG.wav");
                         game.currentPack.completeLevel();
                         game.nextLevel();
                         collide.clear();
@@ -181,7 +194,10 @@ public class Player {
                     if (tile instanceof Breakable) {
                         Breakable breakTile = (Breakable) tile;
                         if (breakTile.broken()) continue;
-                        else if (!breakTile.breaking) breakTile.startBreak();
+                        else if (!breakTile.breaking) {
+                            breakTile.startBreak();
+                            playSound("bREAK.WAV");
+                        }
                     }
                     collide.add(tile);
                 }
@@ -224,5 +240,10 @@ public class Player {
         if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up = false;
         if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up2 = false;
         if (game.key == 'p' || game.key == 'r') restart();
+    }
+    public void playSound(String filename) {
+        final Media media = new Media(new File("assets/"+filename).toURI().toString());
+        MediaPlayer mplayer = new MediaPlayer(media);
+        mplayer.play();
     }
 }

@@ -51,7 +51,7 @@ public class SelectionButton {
         game.pauseBetween = true;
         this.current = f.getName().replace(".png","");
         game.current = LevelParser.parseLevel(game,f);
-        game.mode = Game.Mode.GAME;
+        game.mode(Game.Mode.GAME);
         game.player.start();
     }
 
@@ -70,7 +70,7 @@ public class SelectionButton {
         index++;
         if (index >= names.size()) {
             game.player.start();
-            game.mode = Game.Mode.SELECTION;
+            game.mode(Game.Mode.SELECTION);
             return false;
         }
         game.pauseBetween = false;
