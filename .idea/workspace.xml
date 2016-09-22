@@ -1151,7 +1151,7 @@
       <workItem from="1474244309049" duration="12550000" />
       <workItem from="1474513667282" duration="5175000" />
       <workItem from="1474539477747" duration="964000" />
-      <workItem from="1474540809091" duration="1957000" />
+      <workItem from="1474540809091" duration="2143000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1405,11 +1405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474541071303</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook">
+      <created>1474542971362</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1474542971362</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162962000" />
+    <option name="totallyTimeSpent" value="163148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-11" width="1456" height="876" extended-state="6" />
@@ -1506,7 +1513,8 @@
     <MESSAGE value="Change font size" />
     <MESSAGE value="It works!!! - Jacob" />
     <MESSAGE value="Reorganise, build as library for processing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganise, build as library for processing." />
+    <MESSAGE value="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
