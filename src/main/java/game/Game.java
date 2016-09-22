@@ -159,7 +159,6 @@ public class Game implements PConstants {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        loadModels();
         mode(Mode.MENU);
     }
 
@@ -199,8 +198,6 @@ public class Game implements PConstants {
             drawGame();
         } else if (mode == Mode.SELECTION) {
             drawSelection();
-        } else if (mode == Mode.CREDITS) {
-            drawCredits();
         }
 
     }
@@ -224,8 +221,8 @@ public class Game implements PConstants {
     private void drawGame() {
         ((PGraphics3D) applet.g).textureSampling(5);
         applet.pushMatrix();
-        float scrollAmt = (float) (400 - (player.getBounds().getX() + player.getBounds().getWidth()));
-        float totalScroll = (float) (800 - current.platforms.length * player.getBounds().getWidth());
+        float scrollAmt = 400 - (player.getBounds().getX() + player.getBounds().getWidth());
+        float totalScroll = 800 - current.platforms.length * player.getBounds().getWidth();
 
         if (scrollAmt < 0) {
             applet.translate(PApplet.constrain(totalScroll, scrollAmt, 0), 0);
@@ -246,57 +243,6 @@ public class Game implements PConstants {
     public void nextLevel() {
         currentPack.nextLevel();
     }
-    MD2Model[] credits = new MD2Model[4];
-    int currentCredit = 0;
-    String[] text = {"Sanjay Govind - Head Code, manager","Jacob Cohn-Gell - Other coder, map creations","Jesse Walls - Graphic Designer, Map Creator, 3d Models","Grayden Tavendale - Music / Sound Design", "This game was made by Tangent Games 2016", "In Memory of Harambe - You Will Be Forever With Us"};
-    float currentInterp = 0;
-    long lastDist = -1;
-    private void drawCredits() {
-        if (currentCredit > 3) {
-            mode(Mode.MENU);
-            mplayer.stop();
-            return;
-        }
-        if (lastDist != -1 && applet.frameCount- lastDist < applet.frameRate) {
-            currentInterp = 1;
-        }
-        applet.clear();
-        applet.pushMatrix();
-        applet.fill(255);
-        applet.text(text[currentCredit],400,applet.lerp(0,200,currentInterp));
-        applet.translate(400,applet.height-applet.lerp(0,200,currentInterp),-50);
-        applet.scale(5);
-        applet.rotateX(HALF_PI);
-        applet.rotateZ(-HALF_PI);
-        credits[currentCredit].drawModel();
-        applet.popMatrix();
-        if (lastDist != -1 && applet.frameCount- lastDist < applet.frameRate *5) {
-            return;
-        }
-        if (lastDist != -1) {
-            lastDist = -1;
-            currentCredit++;
-            currentInterp = 0;
-            return;
-        }
-        currentInterp+=0.003;
-        if (currentInterp >= 1) {
-            currentInterp = 0;
-            lastDist = applet.frameCount;
-        }
-    }
-    private void loadModels() {
-        try {
-            credits[0] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/sanjay.png"),applet);
-            credits[1] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/jacob.png"),applet);
-            credits[2] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/Jesse.png"),applet);
-            credits[3] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/grayden.png"),applet);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
     public enum Mode {
         MENU, GAME, SELECTION, CREDITS
     }

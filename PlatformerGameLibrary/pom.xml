@@ -28,12 +28,16 @@
                         </goals>
                         <!-- With the processing library, exclude everything provided by processing. -->
                         <configuration>
+
+                            <finalName>code</finalName>
+                            <outputDirectory>../sketchbook/libraries/code/library</outputDirectory>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
                                     <excludes>
                                         <exclude>processing/**</exclude>
                                         <exclude>jogamp/**</exclude>
+                                        <exclude>com/jogamp/**</exclude>
                                         <exclude>gluegen/**</exclude>
                                         <exclude>japplemenubar/**</exclude>
                                         <exclude>jogl/**</exclude>
