@@ -11,18 +11,15 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-/**
- * Created by sanjay on 28/08/2016.
- */
 public class SelectionButton {
-    LinkedHashMap<String,Button> buttonList = new LinkedHashMap<>();
-    ArrayList<String> names;
-    ArrayList<Boolean> complete = new ArrayList<>();
-    String name;
-    Game game;
-    String fileName;
-    String current;
-    ScoreObject toSend = new ScoreObject();
+    private LinkedHashMap<String,Button> buttonList = new LinkedHashMap<>();
+    private ArrayList<String> names;
+    private ArrayList<Boolean> complete = new ArrayList<>();
+    private String name;
+    private Game game;
+    private String fileName;
+    private String current;
+    private ScoreObject toSend = new ScoreObject();
     public SelectionButton(File f, Game game) {
         this.game = game;
         name = f.getName();
@@ -34,15 +31,15 @@ public class SelectionButton {
             for (int i = 0; i < files.length; i++) {
                 if (files[i].getName().contains("index.png")) continue;
                 File f2 = files[i];
-                buttonList.put(f2.getName().replace(".png",""),bt = new Button(game,((i-1)%3)*btWidth,150+((i-1)/3)*50,btWidth,50,(f2.getName().startsWith("z")?f2.getName().substring(1):f2.getName()).replace(".png","")));
+                buttonList.put(f2.getName().replace(".png",""),bt = new Button(game.applet,((i-1)%3)*btWidth,150+((i-1)/3)*50,btWidth,50,(f2.getName().startsWith("z")?f2.getName().substring(1):f2.getName()).replace(".png","")));
                 complete.add(false);
                 bt.setOnMouseClicked(()->this.clickedButton(f2));
             }
         }
         names = new ArrayList<>(buttonList.keySet());
-        buttonList.put("<",bt = new Button(game,0,game.height/2,btWidth/4,btWidth/4,"<"));
+        buttonList.put("<",bt = new Button(game.applet,0,game.applet.height/2,btWidth/4,btWidth/4,"<"));
         bt.setOnMouseClicked(game::prevPack);
-        buttonList.put(">",bt = new Button(game,game.width-btWidth/4,game.height/2,btWidth/4,btWidth/4,">"));
+        buttonList.put(">",bt = new Button(game.applet,game.applet.width-btWidth/4,game.applet.height/2,btWidth/4,btWidth/4,">"));
         bt.setOnMouseClicked(game::nextPack);
         toSend.setPack(name.startsWith("z")?name.substring(1):name);
     }
@@ -56,13 +53,13 @@ public class SelectionButton {
     }
 
     public void render() {
-        game.textSize(40);
-        game.text(name.startsWith("z")?name.substring(1):name,400,100);
-        game.imageMode(PConstants.CENTER);
-        ((PGraphics3D)game.g).textureSampling(3);
-        game.image(game.loadImage(fileName),400,100+game.height/2,500,game.height/3);
-        ((PGraphics3D)game.g).textureSampling(5);
-        game.imageMode(PConstants.CORNER);
+        game.applet.textSize(40);
+        game.applet.text(name.startsWith("z")?name.substring(1):name,400,100);
+        game.applet.imageMode(PConstants.CENTER);
+        ((PGraphics3D)game.applet.g).textureSampling(3);
+        game.applet.image(game.applet.loadImage(fileName),400,100+game.applet.height/2,500,game.applet.height/3);
+        ((PGraphics3D)game.applet.g).textureSampling(5);
+        game.applet.imageMode(PConstants.CORNER);
         buttonList.values().forEach(Button::draw);
     }
     public boolean nextLevel() {

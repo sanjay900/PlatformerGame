@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PlatformerGame.iml" filepath="$PROJECT_DIR$/PlatformerGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlatformerGameLibrary/PlatformerGameLibrary.iml" filepath="$PROJECT_DIR$/PlatformerGameLibrary/PlatformerGameLibrary.iml" />
     </modules>
   </component>
 </project>

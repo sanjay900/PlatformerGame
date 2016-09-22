@@ -1,22 +1,22 @@
 package tiles;
 
-import com.sanjay900.ProcessingRunner;
-import game.Game;
 
-import java.awt.geom.Rectangle2D;
+import net.tangentmc.collisions.Rectangle2D;
+import net.tangentmc.processing.ProcessingRunner;
+import processing.core.PApplet;
+
 
 /**
  * tiles.Breakable is special, so it gets its own class
  */
 public class Breakable extends Tile {
-    Game game = (Game) ProcessingRunner.instance;
+    PApplet game = (PApplet) ProcessingRunner.instance;
     public boolean breaking = false;
     private long lastCount;
     float delay;
-    public Breakable(Rectangle2D.Float bounds, float delay) {
-        this.type = TileType.BREAKABLE;
+    public Breakable(Rectangle2D bounds, float delay) {
+        super(bounds,TileType.BREAKABLE);
         this.delay = delay;
-        this.bounds = bounds;
     }
 
     public void reset() {

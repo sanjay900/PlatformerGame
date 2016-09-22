@@ -1,6 +1,6 @@
 package tiles;
 
-import java.awt.geom.Rectangle2D;
+import net.tangentmc.collisions.Rectangle2D;
 
 /**
  * Created by sanjay on 27/08/2016.
@@ -9,16 +9,16 @@ import java.awt.geom.Rectangle2D;
 public class Key extends Tile {
     public float lastAngle = 0;
     public boolean gotten = false;
-    Rectangle2D.Float origin;
+    Rectangle2D origin;
     public boolean invisible = false;
 
-    public Key(Rectangle2D.Float bounds) {
+    public Key(Rectangle2D bounds) {
         super(bounds,TileType.KEY);
-        origin = new Rectangle2D.Float(bounds.x,bounds.y,bounds.width,bounds.height);
+        origin = new Rectangle2D(bounds);
     }
     public void reset() {
         gotten = false;
         invisible = false;
-        bounds = new Rectangle2D.Float(origin.x,origin.y,origin.width,origin.height);
+        bounds = new Rectangle2D(origin);
     }
 }

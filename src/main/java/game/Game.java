@@ -3,7 +3,6 @@ package game;
 import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
-import com.sanjay900.ProcessingRunner;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import javafx.embed.swing.JFXPanel;
@@ -13,6 +12,7 @@ import javafx.util.Duration;
 import levels.Map;
 import menu.Button;
 import menu.SelectionButton;
+import net.tangentmc.processing.ProcessingRunner;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
@@ -24,11 +24,20 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
-/**
- * Created by sanjay on 26/08/2016.
- */
-public class Game extends PApplet {
+
+public class Game implements PConstants {
+    public Game(PApplet other, BiConsumer<String,Boolean> playSound, Consumer<String> playSoundStr) {
+        this.playSoundStr = playSoundStr;
+        this.playSound = playSound;
+        ProcessingRunner.instance = other;
+        applet = other;
+    }
+    BiConsumer<String,Boolean> playSound;
+    Consumer<String> playSoundStr;
+    public PApplet applet;
     public Socket client;
     public boolean pauseBetween = false;
     public int deaths = 0;
@@ -46,24 +55,20 @@ public class Game extends PApplet {
     MD2Model model;
     Importer importer = new Importer();
 
-    public static void main(String[] args) {
-        ProcessingRunner.run(new Game());
-    }
-
     public void settings() {
-        size(800, 600, P3D);
+        applet.size(800, 600, P3D);
     }
 
     public void keyPressed() {
-        if (key == ENTER && mode == Mode.MENU) {
+        if (applet.key == ENTER && mode == Mode.MENU) {
             nextLevel();
-            key = 0;
+            applet.key = 0;
             player.restart();
             deaths = 0;
         }
-        if (key == ESC) {
+        if (applet.key == ESC) {
             nextLevel();
-            key = 0;
+            applet.key = 0;
             player.restart();
             deaths = 0;
             mode(Mode.MENU);
@@ -77,79 +82,71 @@ public class Game extends PApplet {
         player.keyReleased();
     }
 
-    public void playSound(File f, boolean infinite) {
-        if (mplayer != null) mplayer.stop();
-        final Media media = new Media(f.toURI().toString());
-        mplayer = new MediaPlayer(media);
-            mplayer.setOnEndOfMedia(()->{
-                mplayer.seek(Duration.ZERO);
-            });
-        mplayer.play();
+    public File resolve(String fname) {
+        return applet.dataFile(fname);
     }
-
     public void setup() {
         new JFXPanel();
-        textFont(createFont("assets/munro.ttf", 32));
+        applet.textFont(applet.createFont("assets/munro.ttf", 32));
         player = new Player(0, 0, this);
-        backgroundIngame = loadImage("assets/BACK.png");
-        background = loadImage("assets/menuwood.png");
-        header = loadImage("assets/TEMP BANNER.png");
-        pauseScreen = loadImage("assets/pause.png");
+        backgroundIngame = applet.loadImage("assets/BACK.png");
+        background = applet.loadImage("assets/menuwood.png");
+        header = applet.loadImage("assets/TEMP BANNER.png");
+        pauseScreen = applet.loadImage("assets/pause.png");
         try {
-            model = importer.importModel(new File("assets/models/block.md2"), loadImage("assets/models/block.png"), this);
-
+            model = importer.importModel(resolve("assets/models/block.md2"),applet.loadImage("assets/models/block.png"), applet);
             model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
             TileType.BLOCK.loadModel(model);
-            model = importer.importModel(new File("assets/models/keyholefill.md2"), loadImage("assets/models/KEYholefill.png"), this);
 
+            model = importer.importModel(resolve("assets/models/keyholefill.md2"),applet.loadImage("assets/models/KEYholefill.png"), applet);
             model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
             TileType.KEY_SLOT_FILLED.loadModel(model);
-            model = importer.importModel(new File("assets/models/keyhole.md2"), loadImage("assets/models/KEYhole.png"), this);
 
+            model = importer.importModel(resolve("assets/models/keyhole.md2"),applet.loadImage("assets/models/KEYhole.png"), applet);
             model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
             TileType.KEY_SLOT.loadModel(model);
-            model = importer.importModel(new File("assets/models/brokern.md2"), loadImage("assets/models/brokern.png"), this);
 
+            model = importer.importModel(resolve("assets/models/brokern.md2"),applet.loadImage("assets/models/brokern.png"), applet);
             model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
             TileType.BREAKABLE.loadModel(model);
-            model = importer.importModel(new File("assets/models/dapokiy.obj.md2"), loadImage("assets/models/dapokiy.png"), this);
 
+            model = importer.importModel(resolve("assets/models/dapokiy.obj.md2"),applet.loadImage("assets/models/dapokiy.png"), applet);
             TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
             TileType.LEFT_SPIKE.loadModel(model);
             TileType.RIGHT_SPIKE.loadModel(model);
             TileType.SPIKE.loadModel(model);
             model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
 
-            model = importer.importModel(new File("assets/models/flag.md2"), loadImage("assets/models/FLAG.png"), this);
+            model = importer.importModel(resolve("assets/models/flag.md2"),applet.loadImage("assets/models/FLAG.png"), applet);
             TileType.EXIT.loadModel(model);
             model.setAnimation(new Animation(1, 0, 2f, 0.1f), 2f);
 
-            model = importer.importModel(new File("assets/models/key.md2"), loadImage("assets/models/KEY.png"), this);
+            model = importer.importModel(resolve("assets/models/key.md2"),applet.loadImage("assets/models/KEY.png"), applet);
             TileType.KEY.loadModel(model);
             model.setAnimation(new Animation(1, 0, 0.2f, 0.1f), 2f);
 
-            model = importer.importModel(new File("assets/models/coin.md2"), loadImage("assets/models/COIN.png"), this);
+            model = importer.importModel(resolve("assets/models/coin.md2"),applet.loadImage("assets/models/COIN.png"), applet);
             TileType.COIN.loadModel(model);
             model.setAnimation(new Animation(1, 0, 0.2f, 0.1f), 2f);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        noStroke();
+        applet.noStroke();
         player.readImages(this);
         player.model.setAnimation(AnimationCycles.WALKING.getAnimation(), 2f);
         Button temp;
-        buttons.add(temp = new Button(this, 250, 340, 300, 75, "Play"));
+        buttons.add(temp = new Button(applet, 250, 340, 300, 75, "Play"));
         temp.setOnMouseClicked(() -> mode(Mode.SELECTION));
-        buttons.add(temp = new Button(this, 250, 340 + 80, 300, 75, "Credits"));
+        buttons.add(temp = new Button(applet, 250, 340 + 80, 300, 75, "Credits"));
         temp.setOnMouseClicked(() -> mode(Mode.CREDITS));
-        buttons.add(temp = new Button(this, 250, 340 + 170, 300, 75, "Quit"));
+        buttons.add(temp = new Button(applet, 250, 340 + 170, 300, 75, "Quit"));
         temp.setOnMouseClicked(() -> {
             if (!pauseBetween) {
-                exit();
+                applet.exit();
             }
         });
-        File[] files = new File("levels").listFiles();
+        File[] files = resolve("levels").listFiles();
         for (File f : files) {
             if (f.isDirectory()) {
                 packs.add(new SelectionButton(f, this));
@@ -157,7 +154,7 @@ public class Game extends PApplet {
         }
         currentPack = packs.get(0);
         try {
-            client = IO.socket("http://10.73.10.176:9092");
+            client = IO.socket("http://localhost:9092");
             client.connect();
         } catch (URISyntaxException e) {
             e.printStackTrace();
@@ -168,11 +165,11 @@ public class Game extends PApplet {
 
     public void mode(Mode menu) {
         if (mode != menu && mode != Mode.SELECTION && (menu == Mode.MENU || menu == Mode.SELECTION)) {
-            playSound(new File("assets/Djent.mp3"), true);
+            playSound.accept("Djent.mp3", true);
         } else if (mode != Mode.GAME && menu == Mode.GAME) {
-            playSound(new File("assets/fkhalkf.mp3"), true);
+            playSound.accept("fkhalkf.mp3", true);
         }if (mode != Mode.CREDITS && menu == Mode.CREDITS) {
-            playSound(new File("assets/Another Night that Fades Away (Credits).mp3"), false);
+            playSound.accept("Another Night that Fades Away (Credits).mp3", false);
         }
         this.mode = menu;
     }
@@ -211,40 +208,39 @@ public class Game extends PApplet {
     SelectionButton currentPack;
 
     private void drawSelection() {
-        background(background);
+        applet.background(background);
         currentPack.render();
     }
 
     private void drawMenu() {
 
-        ((PGraphics3D) g).textureSampling(3);
+        ((PGraphics3D) applet.g).textureSampling(3);
         player.model.drawModel();
-        background(background);
-        image(header, 100, 100, width - 200, 200);
+        applet.background(background);
+        applet.image(header, 100, 100, applet.width - 200, 200);
         buttons.forEach(Button::draw);
     }
 
     private void drawGame() {
-        ((PGraphics3D) g).textureSampling(5);
-        pushMatrix();
+        ((PGraphics3D) applet.g).textureSampling(5);
+        applet.pushMatrix();
         float scrollAmt = (float) (400 - (player.getBounds().getX() + player.getBounds().getWidth()));
         float totalScroll = (float) (800 - current.platforms.length * player.getBounds().getWidth());
 
         if (scrollAmt < 0) {
-            translate(constrain(totalScroll, scrollAmt, 0), 0);
+            applet.translate(PApplet.constrain(totalScroll, scrollAmt, 0), 0);
         }
-        hint(PConstants.ENABLE_DEPTH_TEST);
-        background(255);
+        applet.hint(PConstants.ENABLE_DEPTH_TEST);
+        applet.background(255);
         current.drawFrame();
         player.updatePosition();
         player.draw();
-        textSize(40);
-        popMatrix();
+        applet.textSize(40);
+        applet.popMatrix();
         current.drawKeys();
-        hint(PConstants.DISABLE_DEPTH_TEST);
-        fill(255);
-        text("DEATHS: " + deaths + "    COINS: " + coins, 250, 35);
-        if (player.dontMove) image(pauseScreen, 0, 0, width, height);
+        applet.hint(PConstants.DISABLE_DEPTH_TEST);
+        applet.fill(255);
+        applet.text("DEATHS: " + deaths + "    COINS: " + coins, 250, 35);
     }
 
     public void nextLevel() {
@@ -261,20 +257,20 @@ public class Game extends PApplet {
             mplayer.stop();
             return;
         }
-        if (lastDist != -1 && frameCount- lastDist < frameRate) {
+        if (lastDist != -1 && applet.frameCount- lastDist < applet.frameRate) {
             currentInterp = 1;
         }
-        clear();
-        pushMatrix();
-        fill(255);
-        text(text[currentCredit],400,lerp(0,200,currentInterp));
-        translate(400,height-lerp(0,200,currentInterp),-50);
-        scale(5);
-        rotateX(HALF_PI);
-        rotateZ(-HALF_PI);
+        applet.clear();
+        applet.pushMatrix();
+        applet.fill(255);
+        applet.text(text[currentCredit],400,applet.lerp(0,200,currentInterp));
+        applet.translate(400,applet.height-applet.lerp(0,200,currentInterp),-50);
+        applet.scale(5);
+        applet.rotateX(HALF_PI);
+        applet.rotateZ(-HALF_PI);
         credits[currentCredit].drawModel();
-        popMatrix();
-        if (lastDist != -1 && frameCount- lastDist < frameRate *5) {
+        applet.popMatrix();
+        if (lastDist != -1 && applet.frameCount- lastDist < applet.frameRate *5) {
             return;
         }
         if (lastDist != -1) {
@@ -286,15 +282,15 @@ public class Game extends PApplet {
         currentInterp+=0.003;
         if (currentInterp >= 1) {
             currentInterp = 0;
-            lastDist = frameCount;
+            lastDist = applet.frameCount;
         }
     }
     private void loadModels() {
         try {
-            credits[0] = importer.importModel(new File("assets/models/bob.md2"),loadImage("assets/character/sanjay.png"),this);
-            credits[1] = importer.importModel(new File("assets/models/bob.md2"),loadImage("assets/character/jacob.png"),this);
-            credits[2] = importer.importModel(new File("assets/models/bob.md2"),loadImage("assets/character/Jesse.png"),this);
-            credits[3] = importer.importModel(new File("assets/models/bob.md2"),loadImage("assets/character/grayden.png"),this);
+            credits[0] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/sanjay.png"),applet);
+            credits[1] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/jacob.png"),applet);
+            credits[2] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/Jesse.png"),applet);
+            credits[3] = importer.importModel(resolve("assets/models/bob.md2"),applet.loadImage("assets/character/grayden.png"),applet);
         } catch (IOException e) {
             e.printStackTrace();
         }

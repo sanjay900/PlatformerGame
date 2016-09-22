@@ -1,9 +1,11 @@
 package menu;
 
+import net.tangentmc.collisions.Rectangle2D;
 import processing.core.PApplet;
 import processing.core.PConstants;
 
 import java.awt.*;
+
 
 /**
  * Created by surface on 26/08/2016.
@@ -11,28 +13,28 @@ import java.awt.*;
 public class Button {
     private Runnable onClicked;
     private PApplet game;
-    private Rectangle bounds;
+    private Rectangle2D bounds;
     String text;
 
     public Button(PApplet app, double x, double y, double width, double height, String text) {
-        bounds = new Rectangle((int)x, (int)y, (int)width, (int)height);
+        bounds = new Rectangle2D((int)x, (int)y, (int)width, (int)height);
         game = app;
         this.text = text;
     }
 
     public Button(PApplet app, float x, float y, float width, float height, String text) {
-        bounds = new Rectangle((int)x, (int)y, (int)width, (int)height);
+        bounds = new Rectangle2D((int)x, (int)y, (int)width, (int)height);
         game = app;
         this.text = text;
     }
 
     public Button(PApplet app, int x, int y, int width, int height, String text) {
-        bounds = new Rectangle(x, y, width, height);
+        bounds = new Rectangle2D(x, y, width, height);
         game = app;
         this.text = text;
     }
 
-    public Button(PApplet app, Rectangle bounds, String text) {
+    public Button(PApplet app, Rectangle2D bounds, String text) {
         game = app;
         this.bounds = bounds;
         this.text = text;
@@ -52,11 +54,11 @@ public class Button {
             }
         }
         game.stroke(0,0,0);
-        game.rect(bounds.x, bounds.y, bounds.width, bounds.height);
+        game.rect(bounds.getX(), bounds.getY(), bounds.getWidth(), bounds.getHeight());
         game.textAlign(PConstants.CENTER);
         game.fill(0);
         game.textSize(textSize);
-        game.text(text, bounds.x+ bounds.width/2, bounds.y+textSize/4+ bounds.height/2);
+        game.text(text, bounds.getX() + bounds.getWidth() /2, bounds.getY() +textSize/4+ bounds.getHeight() /2);
         game.noStroke();
     }
     public void run() {

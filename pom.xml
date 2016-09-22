@@ -6,19 +6,22 @@
 
     <groupId>net.tangentmc</groupId>
     <artifactId>PlatformerGame</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>PlatformerGameLibrary</module>
+    </modules>
     <dependencies>
         <dependency>
-            <groupId>com.sanjay900</groupId>
-            <artifactId>ProcessingWrapper</artifactId>
-            <version>1.2</version>
+            <groupId>net.tangentmc</groupId>
+            <artifactId>ProcessingUtils</artifactId>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.sanjay900</groupId>
-            <artifactId>ImportersForProcessing</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
+            <artifactId>UIHandler</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -36,11 +39,12 @@
             <artifactId>socket.io-client</artifactId>
             <version>0.7.0</version>
         </dependency>
+
     </dependencies>
 
     <repositories>
         <repository>
-            <url>http://socketio.tangentmc.net:8081/repository/victoria</url>
+            <url>http://maven.tangentmc.net/repository/victoria</url>
             <id>tangentmc</id>
         </repository>
     </repositories>
@@ -67,28 +71,6 @@
                                 </transformer>
                             </transformers>
                         </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.example.main.SomeMainClassHere</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptors>
-                        <descriptor>src/main/assembly/application.xml</descriptor>
-                    </descriptors>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
                     </execution>
                 </executions>
             </plugin>

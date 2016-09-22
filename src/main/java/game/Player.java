@@ -1,29 +1,30 @@
 package game;
 
 import MD2.MD2Model;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.util.Duration;
+import lombok.Getter;
+import net.tangentmc.collisions.Rectangle2D;
 import processing.core.PVector;
 import tiles.*;
 
-import java.awt.geom.Rectangle2D;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 import static processing.core.PConstants.*;
 
 /**
  * Created by sanjay on 26/08/2016.
  */
+@Getter
 public class Player {
     static final float BOUNDING_BOX_MODIFIER = 1.15f;
     MD2Model model;
     Game game;
     boolean dontMove = false;
     public PVector position;
+    Consumer<String> playSound;
     float playerWidth;
     float playerHeight;
     float drag = 0.75f;
@@ -33,15 +34,16 @@ public class Player {
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
     public Player(float x, float y, Game game) {
-        playerHeight = BOUNDING_BOX_MODIFIER *(game.height/24);
-        playerWidth = game.width/32;
+        playSound = game.playSoundStr;
+        playerHeight = BOUNDING_BOX_MODIFIER *(game.applet.height/24);
+        playerWidth = game.applet.width/32;
         position = new PVector(x,y);
         this.game = game;
     }
 
     public void readImages(Game applet) {
         try {
-            model = applet.importer.importModel(new File("assets/models/bob.md2"),applet.loadImage("assets/models/bob_3d2.png"),applet);
+            model = applet.importer.importModel(applet.resolve("assets/models/bob.md2"),applet.applet.loadImage("assets/models/bob_3d2.png"),game.applet);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -61,9 +63,9 @@ public class Player {
             Optional<Tile> test = collided.stream().filter(c -> c.bounds.intersects(getBounds())).findAny();
             if (test.isPresent()) {
                 if (velocity.x > 0f) {
-                    position = new PVector(test.get().bounds.x - (playerWidth), position.y);
+                    position = new PVector(test.get().bounds.getX() - (playerWidth), position.y);
                 } else if (velocity.x < 0f) {
-                    position = new PVector(test.get().bounds.x + (playerWidth), position.y);
+                    position = new PVector(test.get().bounds.getX() + (playerWidth), position.y);
                 }
                 velocity = new PVector(0, velocity.y);
             }
@@ -80,9 +82,9 @@ public class Player {
                     top = up = up2;
                 }
                 if (velocity.y > 0) {
-                    position = new PVector(position.x, test.get().bounds.y - playerHeight);
+                    position = new PVector(position.x, test.get().bounds.getY() - playerHeight);
                 } else if (velocity.y < 0) {
-                    position = new PVector(position.x, test.get().bounds.y + playerHeight);
+                    position = new PVector(position.x, test.get().bounds.getY() + playerHeight);
                 }
                 velocity = new PVector(velocity.x, 0);
             }
@@ -101,7 +103,7 @@ public class Player {
             if (!top) {
                 up = false;
                 if (!dontMove)
-                    playSound("JUMP.wav");
+                    playSound.accept("JUMP.wav");
             }
             velocity.add(0, !dontMove?-jump:-accelerationFrozen);
             ground = false;
@@ -119,13 +121,13 @@ public class Player {
             model.setAnimation((last= AnimationCycles.JUMP).getAnimation(),2f);
         }
         int lineFront = 20;
-        game.pushMatrix();
-        game.stroke(0);
-        game.strokeWeight(1.25f);
-        game.line(position.x + playerWidth/2, position.y, position.z + lineFront, (velocity.x + position.x) + playerWidth/2, (velocity.y + position.y), (velocity.z + position.z) + lineFront);
-        game.scale(4);
-        game.noStroke();
-        game.popMatrix();
+        game.applet.pushMatrix();
+        game.applet.stroke(0);
+        game.applet.strokeWeight(1.25f);
+        game.applet.line(position.x + playerWidth/2, position.y, position.z + lineFront, (velocity.x + position.x) + playerWidth/2, (velocity.y + position.y), (velocity.z + position.z) + lineFront);
+        game.applet.scale(4);
+        game.applet.noStroke();
+        game.applet.popMatrix();
         if (getBounds().getX()<=-10) die();
         if (getBounds().getX()+10+getBounds().getWidth()>=game.current.platforms.length*getBounds().getWidth()) die();
         if (getBounds().getY()<=-10) die();
@@ -134,7 +136,7 @@ public class Player {
     private AnimationCycles last = AnimationCycles.WALKING;
     public void start(){
         up = down = left = right = false;
-        position = new PVector(game.current.playerStart.bounds.x, game.current.playerStart.bounds.y);
+        position = new PVector(game.current.playerStart.bounds.getX(), game.current.playerStart.bounds.getY());
         velocity = new PVector();
         game.current.breakables.forEach(Breakable::reset);
         game.current.keys.forEach(Key::reset);
@@ -146,7 +148,7 @@ public class Player {
         }
     }
     void die() {
-        playSound("DIE.wav");
+        playSound.accept("DIE.wav");
         start();
         game.deaths++;
         game.currentPack.failLevel();
@@ -165,13 +167,13 @@ public class Player {
                 if (tile.getBounds().intersects(getBounds())) {
                     if (tile instanceof Key) {
                         if (!((Key) tile).gotten)
-                            playSound("KEY.wav");
+                            playSound.accept("KEY.wav");
                         ((Key) tile).gotten = true;
                         continue;
                     }
                     if (tile instanceof Coin) {
                         if (!((Coin) tile).gotten) {
-                            playSound("COIN.wav");
+                            playSound.accept("COIN.wav");
                             game.coins++;
                         }
                         ((Coin) tile).gotten = true;
@@ -184,7 +186,7 @@ public class Player {
                     }
                     if (tile.type == TileType.EXIT) {
                         if (game.current.keys.stream().anyMatch(key -> !key.gotten)) continue;
-                        playSound("FLAG.wav");
+                        playSound.accept("FLAG.wav");
                         game.currentPack.completeLevel();
                         game.nextLevel();
                         collide.clear();
@@ -196,7 +198,7 @@ public class Player {
                         if (breakTile.broken()) continue;
                         else if (!breakTile.breaking) {
                             breakTile.startBreak();
-                            playSound("bREAK.WAV");
+                            playSound.accept("bREAK.WAV");
                         }
                     }
                     collide.add(tile);
@@ -206,16 +208,16 @@ public class Player {
         }
         return collide;
     }
-    public Rectangle2D.Float getBounds() {
-        return new Rectangle2D.Float(position.x, position.y,playerWidth,playerHeight);
+    public Rectangle2D getBounds() {
+        return new Rectangle2D(position.x, position.y,playerWidth,playerHeight);
     }
     public void draw() {
-        game.pushMatrix();
-        game.translate(position.x+playerWidth/2,position.y+playerHeight);
-        game.rotateX(HALF_PI);
-        if(velocity.x > 0) game.rotateZ(PI);
+        game.applet.pushMatrix();
+        game.applet.translate(position.x+playerWidth/2,position.y+playerHeight);
+        game.applet.rotateX(HALF_PI);
+        if(velocity.x > 0) game.applet.rotateZ(PI);
         model.drawModel();
-        game.popMatrix();
+        game.applet.popMatrix();
     }
     boolean up = false;
     boolean up2 = false;
@@ -223,27 +225,22 @@ public class Player {
     boolean right = false;
     boolean down = false;
     public void keyPressed() {
-        game.key = (game.key + "").toLowerCase().charAt(0);
-        dontMove = dontMove || game.keyCode == SHIFT;
-        right = game.key == 'd' || game.keyCode == RIGHT || right;
-        left = game.key == 'a' || game.keyCode == LEFT ||left;
-        down = game.key == 's' || game.keyCode == DOWN ||down;
-        up = game.key == 'w' || game.keyCode == UP || game.key == ' '||up;
-        up2 = game.key == 'w' || game.keyCode == UP || game.key == ' '||up;
+        game.applet.key = (game.applet.key + "").toLowerCase().charAt(0);
+        dontMove = dontMove || game.applet.keyCode == SHIFT;
+        right = game.applet.key == 'd' || game.applet.keyCode == RIGHT || right;
+        left = game.applet.key == 'a' || game.applet.keyCode == LEFT ||left;
+        down = game.applet.key == 's' || game.applet.keyCode == DOWN ||down;
+        up = game.applet.key == 'w' || game.applet.keyCode == UP || game.applet.key == ' '||up;
+        up2 = game.applet.key == 'w' || game.applet.keyCode == UP || game.applet.key == ' '||up;
     }
     public void keyReleased() {
-        game.key = (game.key + "").toLowerCase().charAt(0);
-        if (game.keyCode == SHIFT) dontMove = false;
-        if (game.key == 'd' || game.keyCode == RIGHT ) right = false;
-        if (game.key == 'a' || game.keyCode == LEFT) left = false;
-        if (game.key == 's' || game.keyCode == DOWN) down = false;
-        if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up = false;
-        if (game.key == 'w' || game.keyCode == UP || game.key == ' ') up2 = false;
-        if (game.key == 'p' || game.key == 'r') restart();
-    }
-    public void playSound(String filename) {
-        final Media media = new Media(new File("assets/"+filename).toURI().toString());
-        MediaPlayer mplayer = new MediaPlayer(media);
-        mplayer.play();
+        game.applet.key = (game.applet.key + "").toLowerCase().charAt(0);
+        if (game.applet.keyCode == SHIFT) dontMove = false;
+        if (game.applet.key == 'd' || game.applet.keyCode == RIGHT ) right = false;
+        if (game.applet.key == 'a' || game.applet.keyCode == LEFT) left = false;
+        if (game.applet.key == 's' || game.applet.keyCode == DOWN) down = false;
+        if (game.applet.key == 'w' || game.applet.keyCode == UP || game.applet.key == ' ') up = false;
+        if (game.applet.key == 'w' || game.applet.keyCode == UP || game.applet.key == ' ') up2 = false;
+        if (game.applet.key == 'p' || game.applet.key == 'r') restart();
     }
 }
