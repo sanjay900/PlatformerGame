@@ -1,15 +1,13 @@
 package game;
 
-import MD2.Animation;
 import MD2.Importer;
 import MD2.MD2Model;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import javafx.embed.swing.JFXPanel;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.util.Duration;
 import levels.Map;
+import lombok.Getter;
 import menu.Button;
 import menu.SelectionButton;
 import net.tangentmc.processing.ProcessingRunner;
@@ -20,23 +18,21 @@ import processing.opengl.PGraphics3D;
 import tiles.TileType;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-
+@Getter
 public class Game implements PConstants {
-    public Game(PApplet other, BiConsumer<String,Boolean> playSound, Consumer<String> playSoundStr) {
-        this.playSoundStr = playSoundStr;
-        this.playSound = playSound;
+    public Game(PApplet other, Consumer<String> musicResolver, Consumer<String> soundResolver) {
+        this.soundResolver = soundResolver;
+        this.musicResolver = musicResolver;
         ProcessingRunner.instance = other;
         applet = other;
     }
-    BiConsumer<String,Boolean> playSound;
-    Consumer<String> playSoundStr;
+    Consumer<String> musicResolver;
+    Consumer<String> soundResolver;
     public PApplet applet;
     public Socket client;
     public boolean pauseBetween = false;
@@ -45,108 +41,70 @@ public class Game implements PConstants {
     float flagAngle = 0;
     public Mode mode = null;
     public Map current;
-    public Player player;
+    public ArrayList<Player> players = new ArrayList<>();
+    public Player currentPlayer;
     List<Button> buttons = new ArrayList<>();
     List<SelectionButton> packs = new ArrayList<>();
     PImage background;
     PImage backgroundIngame;
     PImage header;
-    PImage pauseScreen;
     MD2Model model;
     Importer importer = new Importer();
 
-    public void settings() {
+    void settings() {
         applet.size(800, 600, P3D);
     }
 
-    public void keyPressed() {
-        if (applet.key == ENTER && mode == Mode.MENU) {
-            nextLevel();
-            applet.key = 0;
-            player.restart();
-            deaths = 0;
+    void keyPressed() {
+        if (applet.key == ENTER && mode == Mode.GAME ) {
+            if (!players.isEmpty()) {
+                currentPlayer.stop();
+                currentPlayer = players.get((players.indexOf(currentPlayer)+1)%players.size());
+            }
         }
         if (applet.key == ESC) {
             nextLevel();
             applet.key = 0;
-            player.restart();
+            players.forEach(Player::restart);
             deaths = 0;
             mode(Mode.MENU);
         }
-        player.keyPressed();
+        currentPlayer.keyPressed();
     }
 
     MediaPlayer mplayer;
 
-    public void keyReleased() {
-        player.keyReleased();
+    void keyReleased() {
+        currentPlayer.keyReleased();
     }
 
     public File resolve(String fname) {
         return applet.dataFile(fname);
     }
-    public void setup() {
+    void setup() {
         new JFXPanel();
-        applet.textFont(applet.createFont("assets/munro.ttf", 32));
-        player = new Player(0, 0, this);
-        backgroundIngame = applet.loadImage("assets/BACK.png");
-        background = applet.loadImage("assets/menuwood.png");
-        header = applet.loadImage("assets/TEMP BANNER.png");
-        pauseScreen = applet.loadImage("assets/pause.png");
-        try {
-            model = importer.importModel(resolve("assets/models/block.md2"),applet.loadImage("assets/models/block.png"), applet);
-            model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
-            TileType.BLOCK.loadModel(model);
-
-            model = importer.importModel(resolve("assets/models/keyholefill.md2"),applet.loadImage("assets/models/KEYholefill.png"), applet);
-            model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
-            TileType.KEY_SLOT_FILLED.loadModel(model);
-
-            model = importer.importModel(resolve("assets/models/keyhole.md2"),applet.loadImage("assets/models/KEYhole.png"), applet);
-            model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
-            TileType.KEY_SLOT.loadModel(model);
-
-            model = importer.importModel(resolve("assets/models/brokern.md2"),applet.loadImage("assets/models/brokern.png"), applet);
-            model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
-            TileType.BREAKABLE.loadModel(model);
-
-            model = importer.importModel(resolve("assets/models/dapokiy.obj.md2"),applet.loadImage("assets/models/dapokiy.png"), applet);
-            TileType.UPSIDE_DOWN_SPIKE.loadModel(model);
-            TileType.LEFT_SPIKE.loadModel(model);
-            TileType.RIGHT_SPIKE.loadModel(model);
-            TileType.SPIKE.loadModel(model);
-            model.setAnimation(new Animation(1, 0, 1, 0.1f), 2f);
-
-            model = importer.importModel(resolve("assets/models/flag.md2"),applet.loadImage("assets/models/FLAG.png"), applet);
-            TileType.EXIT.loadModel(model);
-            model.setAnimation(new Animation(1, 0, 2f, 0.1f), 2f);
-
-            model = importer.importModel(resolve("assets/models/key.md2"),applet.loadImage("assets/models/KEY.png"), applet);
-            TileType.KEY.loadModel(model);
-            model.setAnimation(new Animation(1, 0, 0.2f, 0.1f), 2f);
-
-            model = importer.importModel(resolve("assets/models/coin.md2"),applet.loadImage("assets/models/COIN.png"), applet);
-            TileType.COIN.loadModel(model);
-            model.setAnimation(new Animation(1, 0, 0.2f, 0.1f), 2f);
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        applet.textFont(applet.createFont("assets/fonts/munro.ttf", 32));
+        backgroundIngame = applet.loadImage("assets/textures/backgrounds/main.png");
+        background = applet.loadImage("assets/textures/backgrounds/menu.png");
+        header = applet.loadImage("assets/textures/banner.png");
+        for (TileType type: TileType.values()) {
+            type.loadModel(this);
         }
         applet.noStroke();
-        player.readImages(this);
-        player.model.setAnimation(AnimationCycles.WALKING.getAnimation(), 2f);
         Button temp;
         buttons.add(temp = new Button(applet, 250, 340, 300, 75, "Play"));
         temp.setOnMouseClicked(() -> mode(Mode.SELECTION));
-        buttons.add(temp = new Button(applet, 250, 340 + 80, 300, 75, "Credits"));
-        temp.setOnMouseClicked(() -> mode(Mode.CREDITS));
-        buttons.add(temp = new Button(applet, 250, 340 + 170, 300, 75, "Quit"));
+        buttons.add(temp = new Button(applet, 250, 340 + 80, 300, 75, "Quit"));
         temp.setOnMouseClicked(() -> {
             if (!pauseBetween) {
                 applet.exit();
             }
         });
         File[] files = resolve("levels").listFiles();
+        if (files == null) {
+            System.out.println("Unable to load textures!");
+            return;
+        }
         for (File f : files) {
             if (f.isDirectory()) {
                 packs.add(new SelectionButton(f, this));
@@ -164,12 +122,13 @@ public class Game implements PConstants {
 
     public void mode(Mode menu) {
         if (mode != menu && mode != Mode.SELECTION && (menu == Mode.MENU || menu == Mode.SELECTION)) {
-            playSound.accept("Djent.mp3", true);
+            musicResolver.accept("Djent.mp3");
         } else if (mode != Mode.GAME && menu == Mode.GAME) {
-            playSound.accept("fkhalkf.mp3", true);
-        }if (mode != Mode.CREDITS && menu == Mode.CREDITS) {
-            playSound.accept("Another Night that Fades Away (Credits).mp3", false);
+            musicResolver.accept("fkhalkf.mp3");
         }
+        /*if (mode != Mode.CREDITS && menu == Mode.CREDITS) {
+            musicResolver.accept("Another Night that Fades Away (Credits).mp3");
+        }*/
         this.mode = menu;
     }
 
@@ -187,11 +146,11 @@ public class Game implements PConstants {
         currentPack = packs.get(index);
     }
 
-    public void mouseReleased() {
+    void mouseReleased() {
         pauseBetween = false;
     }
 
-    public void draw() {
+    void draw() {
         if (mode == Mode.MENU) {
             drawMenu();
         } else if (mode == Mode.GAME) {
@@ -212,17 +171,16 @@ public class Game implements PConstants {
     private void drawMenu() {
 
         ((PGraphics3D) applet.g).textureSampling(3);
-        player.model.drawModel();
+        players.forEach(Player::render);
         applet.background(background);
         applet.image(header, 100, 100, applet.width - 200, 200);
         buttons.forEach(Button::draw);
     }
-
     private void drawGame() {
         ((PGraphics3D) applet.g).textureSampling(5);
         applet.pushMatrix();
-        float scrollAmt = 400 - (player.getBounds().getX() + player.getBounds().getWidth());
-        float totalScroll = 800 - current.platforms.length * player.getBounds().getWidth();
+        float scrollAmt = applet.width/2 - (currentPlayer.getBounds().getX() + currentPlayer.getBounds().getWidth());
+        float totalScroll = applet.width - current.platforms.length * currentPlayer.getBounds().getWidth();
 
         if (scrollAmt < 0) {
             applet.translate(PApplet.constrain(totalScroll, scrollAmt, 0), 0);
@@ -230,8 +188,9 @@ public class Game implements PConstants {
         applet.hint(PConstants.ENABLE_DEPTH_TEST);
         applet.background(255);
         current.drawFrame();
-        player.updatePosition();
-        player.draw();
+        new ArrayList<>(players).forEach(Player::updatePosition);
+        players.forEach(Player::draw);
+        currentPlayer.highlight();
         applet.textSize(40);
         applet.popMatrix();
         current.drawKeys();
@@ -240,10 +199,15 @@ public class Game implements PConstants {
         applet.text("DEATHS: " + deaths + "    COINS: " + coins, 250, 35);
     }
 
-    public void nextLevel() {
+    void nextLevel() {
         currentPack.nextLevel();
     }
+
+    public void begin() {
+        players.forEach(Player::start);
+    }
+
     public enum Mode {
-        MENU, GAME, SELECTION, CREDITS
+        MENU, GAME, SELECTION
     }
 }

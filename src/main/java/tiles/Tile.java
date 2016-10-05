@@ -1,5 +1,6 @@
 package tiles;
 
+import game.Player;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,4 +13,13 @@ import net.tangentmc.collisions.Rectangle2D;
 public class Tile {
     public Rectangle2D bounds;
     public TileType type;
+
+    /**
+     * Collision events with player
+     * @param pl the player
+     * @return true if this object is solid, false otherwise
+     */
+    public boolean collide(Player pl) {
+        return true;
+    }
 }

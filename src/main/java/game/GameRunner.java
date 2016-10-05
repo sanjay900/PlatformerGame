@@ -15,7 +15,7 @@ public class GameRunner extends PApplet {
         ProcessingRunner.run(new GameRunner());
     }
     public GameRunner() {
-        game = new Game(this,this::playSound,this::playSound);
+        game = new Game(this,this::playMusic,this::playSound);
     }
     public void setup() {
         game.setup();
@@ -35,18 +35,18 @@ public class GameRunner extends PApplet {
     public void mouseReleased() {game.mouseReleased();}
 
     public void playSound(String filename) {
-        final Media media = new Media(game.resolve("assets/"+filename).toURI().toString());
+        final Media media = new Media(game.resolve("assets/sounds/"+filename).toURI().toString());
         MediaPlayer mplayer = new MediaPlayer(media);
-        mplayer.play();
+        //mplayer.play();
     }
     private MediaPlayer mplayer;
-    public void playSound(String fileName, boolean infinite) {
+    public void playMusic(String fileName) {
         if (mplayer != null) mplayer.stop();
-        final Media media = new Media(game.resolve("assets/"+fileName).toURI().toString());
+        final Media media = new Media(game.resolve("assets/music/"+fileName).toURI().toString());
         mplayer = new MediaPlayer(media);
         mplayer.setOnEndOfMedia(()->{
             mplayer.seek(Duration.ZERO);
         });
-        mplayer.play();
+        //mplayer.play();
     }
 }

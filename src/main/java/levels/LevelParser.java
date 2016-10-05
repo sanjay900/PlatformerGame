@@ -1,6 +1,7 @@
 package levels;
 
 import game.Game;
+import game.Player;
 import net.tangentmc.collisions.Rectangle2D;
 import processing.core.PImage;
 import processing.core.PVector;
@@ -19,13 +20,14 @@ public class LevelParser {
         map.platforms = new Tile[current.width][current.height];
         float squareHeight = game.applet.height / 24;
         float squareWidth = game.applet.width / 32;
+        game.players.clear();
         for (int x = 0; x < current.width; x++) {
             for (int y = 0; y < current.height; y++) {
                 Rectangle2D bounds = new Rectangle2D(x * squareWidth, y * squareHeight, squareWidth, squareHeight);
                 int c = current.pixels[y*current.width+x];
                 if(c == Color.WHITE.getRGB()) continue;
                 if(c == Color.GREEN.getRGB()) {
-                    game.player.position = new PVector(x * squareWidth, y * squareHeight);
+                    game.players.add(new Player(x * squareWidth, y * squareHeight,game));
                     map.playerStart = new Tile(bounds, null);
                     continue;
 
@@ -71,6 +73,7 @@ public class LevelParser {
                 }
             }
         }
+        game.currentPlayer = game.players.get(0);
 
         return map;
     }

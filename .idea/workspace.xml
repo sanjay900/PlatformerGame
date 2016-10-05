@@ -2,358 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Analysis/AmplitudeRMS/data/beat.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Analysis/FFTSpectrum/data/beat.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/data/1.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/data/2.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/data/3.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/data/4.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/data/5.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/data/1.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/data/2.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/data/3.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/data/4.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/data/5.aif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Spectrum/data/beat.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/FreeVerb/data/vibraphon.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/Variable_Delay/data/vibraphon.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Soundfile/Sample/data/vibraphon.aiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux32/libmpg123.so.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux32/libsndfile.so.1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux64/libmpg123.so.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux64/libsndfile.so.1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libFLAC.8.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libMethClaInterface.jnilib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libltdl.7.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libmethcla.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libmpg123.0.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libogg.0.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libsndfile.1.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libvorbis.0.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/macosx/libvorbisenc.2.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libMethClaInterface.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libgcc_s_sjlj-1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libmethcla.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libmpg123-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libsndfile-1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows32/libwinpthread-1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows64/libMethClaInterface.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows64/libmethcla.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows64/libmpg123-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows64/libsndfile-1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/windows64/libwinpthread-1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/resources/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/resources/tab.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/resources/titlebar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/resources/titlebar_end.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/libMethClaInterface.jnilib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/processing_sound_MethClaInterface.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/CGRAGame.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Analysis/AmplitudeRMS/AmplitudeRMS.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Analysis/FFTSpectrum/FFTSpectrum.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Envelopes/Envelopes.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Keyboard/Keyboard.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Sampler/Sampler.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/SineCluster/SineCluster.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Demos/Spectrum/Spectrum.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/Filter/BPF/BPF.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/Filter/HPF/HPF.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/Filter/LPF/LPF.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/FreeVerb/FreeVerb.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Effects/Variable_Delay/Variable_Delay.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/IO/AudioInput/AudioInput.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Noise/Brown/Brown.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Noise/Pink/Pink.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Noise/White/White.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Oscillators/PulseWidth/PulseWidth.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Oscillators/SawWave/SawWave.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Oscillators/SineWave/SineWave.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Oscillators/SqrWave/SqrWave.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Oscillators/TriWave/TriWave.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/examples/Soundfile/Sample/Sample.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux32/libMethClaInterface.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux32/libmethcla.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux64/libMethClaInterface.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/library/linux64/libmethcla.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/allclasses-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/allclasses-noframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/constant-values.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/deprecated-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/help-doc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/index-all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/overview-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/package-list" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Amplitude.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/AudioDevice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/AudioIn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/BandPass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/BrownNoise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Delay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Engine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Env.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/FFT.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/HighPass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/LowPass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/MethClaInterface.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Mix.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/PinkNoise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Pulse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/Reverb.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/SawOsc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/SinOsc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/SoundFile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/SqrOsc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/TriOsc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/WhiteNoise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/processing/sound/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/reference/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/MakeFile_Linux" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/MakeFile_Win" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/common.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/detail.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/detail/result.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/engine.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/engine.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/file.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/file.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/log.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/log.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/platform/ios.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/platform/pepper.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/platform/rtaudio.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugin.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugin.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ampfol.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/audio_in.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/bpf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/brownnoise.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/delay.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/disksampler.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/Array.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/Array.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/DynArray.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/DynArray.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTReal.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTReal.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealFixLen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealFixLen.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealFixLenParam.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealPassDirect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealPassDirect.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealPassInverse.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealPassInverse.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealSelect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealSelect.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealUseTrigo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/FFTRealUseTrigo.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/OscSinCos.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/OscSinCos.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/def.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestAccuracy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestAccuracy.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestHelperFixLen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestHelperFixLen.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestHelperNormal.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestHelperNormal.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestSpeed.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestSpeed.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestWhiteNoiseGen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/TestWhiteNoiseGen.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/conf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/fnc.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/fnc.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/ClockCycleCounter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/ClockCycleCounter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/ClockCycleCounter.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/Int64.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/StopWatch.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/StopWatch.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/StopWatch.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/def.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/fnc.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/ffft/test/stopwatch/fnc.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/fft.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/freeverb/allpass.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/freeverb/comb.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/freeverb/denormals.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/freeverb/revmodel.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/freeverb/tuning.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/hpf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/lpf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/mix.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/newshadeofpink/pink.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/node-control.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/osc.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/pan.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/pan2.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/patch-cable.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/pinknoise.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/pulse.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/reverb.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/sampler.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/saw.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/sine.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/soundfile_api_dummy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/soundfile_api_extaudiofile.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/soundfile_api_libsndfile.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/soundfile_api_mpg123.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/tri.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/plugins/whitenoise.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/methcla/types.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/client.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/detail/endian.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/detail/host.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/detail/stream.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/error.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/print.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/server.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/types.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/oscpp/util.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/include/processing_sound_MethClaInterface.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/cpp/processing_sound_MethClaInterface.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Amplitude.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/AudioDevice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/AudioIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/BandPass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/BrownNoise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Delay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Engine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Env.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/FFT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/HighPass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/LowPass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/MethClaInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Mix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Noise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Oscillator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/PinkNoise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Pulse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/Reverb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/SawOsc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/SinOsc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/SoundFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/SoundObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/SqrOsc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/TriOsc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/processing/sound/WhiteNoise.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/scripts/change_rundir.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/sound/src/scripts/createHeaders.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/game/AnimationCycles.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/game/Game$Mode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/game/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/game/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/levels/LevelParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/levels/Map.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/menu/Button.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/menu/Slider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tiles/Breakable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tiles/Coin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tiles/Key.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tiles/Tile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tiles/TileType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test1.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/Another Night that Fades Away (Credits).mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Another Night that Fades Away (Credits).mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/BACK.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/BACK.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/Bob Gone Wild.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Bob Gone Wild.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/COIN.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/COIN.wav" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/DIE.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/DIE.wav" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/Djent.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Djent.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/FLAG.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/FLAG.wav" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/JUMP.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/JUMP.wav" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/KEY.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/KEY.wav" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/LEADS.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/LEADS.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/Pause MP3.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Pause MP3.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/RUBBER.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/RUBBER.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/TEMP BANNER.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/TEMP BANNER.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/a.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/a.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/bREAK.WAV" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/bREAK.WAV" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/Jesse.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/Jesse.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/character_left.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/character_left.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/character_right.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/character_right.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/grayden.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/grayden.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/jacob.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/jacob.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/character/sanjay.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/sanjay.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charator1.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charator2.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charator3.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charator5.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charator6.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/charatorDEAD.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charatorDEAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/fkhalkf.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/fkhalkf.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/menuwood.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/menuwood.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/COIN.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/COIN.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/FLAG.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/FLAG.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/KEY.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEY.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/KEYhole.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEYhole.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/KEYholefill.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEYholefill.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/WORLD.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/WORLD.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/WORLD.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/WORLD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/block.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/block.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/block.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/block.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/bob.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/bob.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/bob_3d2.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/bob_3d2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/bomb.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/bomb.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/break.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/break.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/brokern.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/brokern.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/brokern.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/brokern.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/coin.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/coin.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/dapokiy.obj.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/dapokiy.obj.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/dapokiy.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/dapokiy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/flag.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/flag.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/key.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/keyhole.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/keyhole.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/keyholefill.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/keyholefill.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/sticky.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/sticky.md2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/models/sticky.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/sticky.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/munro.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/munro_narrow.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro_narrow.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/munro_small.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro_small.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/pause.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/pause.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/temp_banner_480.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/temp_banner_480.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/block.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/block.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/breakable.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/breakable.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/breakable_breaking.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/breakable_breaking.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/exit.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/exit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/spike.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/spike.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/assets/tiles/spike_upside_down.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/tiles/spike_upside_down.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 1.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 2.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 3.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 4.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 5.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 6.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/Level 7.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Long/index.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/index.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/Level 10.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/Level 11.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/Level 12.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 12.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/Level 13.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 13.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/Level 14.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 14.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/index.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/index.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small -/zEND!!!.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/zEND!!!.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 1.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 2.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 3.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 4.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 5.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 6.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 7.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/Level 8.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/index.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/index.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/Small/level9.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/level9.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/zDEV/index.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/index.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/zDEV/templatelong.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templatelong.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/levels/zDEV/templateshort.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charatorDEAD.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/WORLD.md2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/bomb.md2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/brokern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/sticky.md2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/sticky.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/temp_banner_480.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/game/AnimationCycles.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Another Night that Fades Away (Credits).mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Another Night that Fades Away (Credits).mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/BACK.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/backgrounds/main.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Bob Gone Wild.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Bob Gone Wild.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/COIN.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/COIN.wav" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/DIE.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/DIE.wav" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Djent.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Djent.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/FLAG.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/FLAG.wav" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/JUMP.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/JUMP.wav" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/KEY.wav" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/KEY.wav" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/LEADS.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/LEADS.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/Pause MP3.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Pause MP3.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/RUBBER.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/RUBBER.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/TEMP BANNER.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/bREAK.WAV" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/sounds/bREAK.WAV" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/Jesse.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/Jesse.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/character_left.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/character_left.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/character_right.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/character_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/grayden.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/grayden.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/jacob.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/jacob.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/character/sanjay.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/sanjay.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/fkhalkf.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/fkhalkf.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/menuwood.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/backgrounds/menu.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/COIN.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/FLAG.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/exit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEY.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEYhole.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/KEYholefill.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot_filled.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/WORLD.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/breakable.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/block.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/bob_3d2.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/bob_3d2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/break.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/break.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/brokern.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/breakable.md2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/dapokiy.obj.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/spike.md2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/dapokiy.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/spike.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/flag.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/exit.md2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/keyhole.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot.md2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/keyholefill.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot_filled.md2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/fonts/munro.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro_narrow.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/fonts/munro_narrow.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/munro_small.ttf" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/fonts/munro_small.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/index.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/index.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameLibrary/pom.xml" afterPath="$PROJECT_DIR$/PlatformerGameLibrary/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGame.iml" afterPath="$PROJECT_DIR$/PlatformerGame.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/CGRAGame.pde" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/CGRAGame.pde" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/GameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/game/GameRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Player.java" afterPath="$PROJECT_DIR$/src/main/java/game/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" afterPath="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/src/main/java/levels/Map.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menu/SelectionButton.java" afterPath="$PROJECT_DIR$/src/main/java/menu/SelectionButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Coin.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Coin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Key.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Key.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/Tile.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/Tile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tiles/TileType.java" afterPath="$PROJECT_DIR$/src/main/java/tiles/TileType.java" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -376,42 +95,64 @@
     <favorites_list name="PlatformerGame" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameLibrary/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+            <state relative-caret-position="544">
+              <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectionButton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/SelectionButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/GameRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/levels/LevelParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="29" column="88" selection-start-line="29" selection-start-column="88" selection-end-line="29" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -449,13 +190,11 @@
         <option value="$PROJECT_DIR$/src/main/java/AnimationCycles.java" />
         <option value="$PROJECT_DIR$/src/main/java/TileType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Key.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/LevelParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Coin.java" />
         <option value="$PROJECT_DIR$/src/main/java/Map.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tiles/TileType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/AnimationCycles.java" />
         <option value="$PROJECT_DIR$/src/main/assembly/applicaiton.xml" />
         <option value="$PROJECT_DIR$/src/main/java/menu/Slider.java" />
         <option value="$PROJECT_DIR$/src/main/java/tiles/Spike.java" />
@@ -463,22 +202,25 @@
         <option value="$MAVEN_REPOSITORY$/nz/ac/victoria/ecs/ecs/100/ecs-100.jar!/ecs100/Ecs100TextArea.class" />
         <option value="$PROJECT_DIR$/src/main/java/server/ScoreObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mondrian.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tiles/TileType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/menu/SelectionButton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tiles/Coin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/GameRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tiles/Key.java" />
-        <option value="$PROJECT_DIR$/src/main/java/levels/Map.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/Button.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tiles/Tile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/PlatformerGameLibrary/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/TileType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/Tile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/Coin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tiles/Key.java" />
+        <option value="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/SelectionButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/GameRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/AnimationCycles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/levels/Map.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Player.java" />
       </list>
     </option>
   </component>
@@ -501,10 +243,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-11" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -531,6 +273,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -540,9 +288,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -562,10 +307,261 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="levels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CGRAGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CGRAGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="levels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zDEV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CGRAGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="levels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CGRAGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -581,22 +577,22 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\data" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\levels\JessePack" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets\models" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\levels" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\src\main\java" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\levels\Long" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets\models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\character" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\models" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\backgrounds" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\fonts" />
+    </key>
   </component>
-  <component name="RunManager" selected="Maven.Build for Processing">
+  <component name="RunManager" selected="Application.GameRunner">
     <configuration default="false" name="Server" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -617,7 +613,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="GameRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GameRunner" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="game.*" />
@@ -628,6 +624,21 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/sketchbook/CGRAGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PlatformerGame" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -1109,15 +1120,17 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Maven.Build for Processing" />
       <item index="1" class="java.lang.String" itemvalue="Application.Server" />
       <item index="2" class="java.lang.String" itemvalue="Application.GameRunner" />
+      <item index="3" class="java.lang.String" itemvalue="Application.main" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.GameRunner" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="1" class="java.lang.String" itemvalue="Application.main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -1151,7 +1164,13 @@
       <workItem from="1474244309049" duration="12550000" />
       <workItem from="1474513667282" duration="5175000" />
       <workItem from="1474539477747" duration="964000" />
-      <workItem from="1474540809091" duration="2143000" />
+      <workItem from="1474540809091" duration="11171000" />
+      <workItem from="1474679491670" duration="5142000" />
+      <workItem from="1474888030450" duration="3620000" />
+      <workItem from="1475132707821" duration="5497000" />
+      <workItem from="1475188077917" duration="597000" />
+      <workItem from="1475223531169" duration="674000" />
+      <workItem from="1475626825309" duration="470000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1412,30 +1431,37 @@
       <option name="project" value="LOCAL" />
       <updated>1474542971362</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="exclude the sketchbook from the workspace">
+      <created>1474543152769</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1474543152769</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163148000" />
+    <option name="totallyTimeSpent" value="188176000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-11" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31852654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31832796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4051144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32166892" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46522412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33954155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25872535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1448,7 +1474,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1514,7 +1540,8 @@
     <MESSAGE value="It works!!! - Jacob" />
     <MESSAGE value="Reorganise, build as library for processing." />
     <MESSAGE value="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook" />
+    <MESSAGE value="exclude the sketchbook from the workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="exclude the sketchbook from the workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1527,77 +1554,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/assets/models/bomb.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/block.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/break.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/bob.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/levels/level1.png" />
-    <entry file="file://$PROJECT_DIR$/assets/models/doorframe.md2" />
-    <entry file="file://$PROJECT_DIR$/assets/models/door.md2" />
-    <entry file="file://$PROJECT_DIR$/data/assets/models/sticky.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="178" selection-start-line="6" selection-start-column="178" selection-end-line="6" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/WORLD.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/brokern.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/keyholefill.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/levels/JessePack/level6.png" />
-    <entry file="file://$PROJECT_DIR$/data/assets/models/keyhole.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/assets/models/keyhole.md2" />
     <entry file="file://$PROJECT_DIR$/assets/character/spikes.mtl" />
-    <entry file="file://$PROJECT_DIR$/data/assets/models/key.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/assets/models/key.md2" />
     <entry file="file://$PROJECT_DIR$/levels/level0.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/menu/Slider.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1613,27 +1573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/dapokiy.obj.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/block.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/models/flag.md2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/assets/models/dapokiy.obj.md2" />
+    <entry file="file://$PROJECT_DIR$/data/assets/models/block.md2" />
+    <entry file="file://$PROJECT_DIR$/data/assets/models/flag.md2" />
     <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Spike.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/victoria/ecs/ecs/100/ecs-100.jar!/ecs100/Ecs100TextArea.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1649,21 +1591,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/assets/Djent.mp3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/assets/Djent.mp3" />
     <entry file="file://$PROJECT_DIR$/src/main/java/game/Credits.java" />
-    <entry file="file://$PROJECT_DIR$/data/assets/Another Night that Fades Away (Credits).mp3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/assets/Another Night that Fades Away (Credits).mp3" />
     <entry file="file://$PROJECT_DIR$/src/main/java/server/ScoreObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1679,38 +1609,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mondrian.java" />
-    <entry file="file://$PROJECT_DIR$/data/levels/Long/index.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/AnimationCycles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/levels/Long/Level 1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/levels/Long/index.png" />
+    <entry file="file://$PROJECT_DIR$/data/levels/Long/Level 1.png" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1719,66 +1619,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/assembly/application.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/SelectionButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="67" column="67" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8045#8046#0" expanded="false" />
-            <element signature="e#8132#8133#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/levels/LevelParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" column="120" selection-start-line="50" selection-start-column="120" selection-end-line="50" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menu/Button.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -1787,58 +1627,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Key.java">
+    <entry file="file://$PROJECT_DIR$/PlatformerGameLibrary/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="663">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/charator1.png" />
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/banner.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Breakable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/banner.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/temp_banner_480.png" />
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/backgrounds/main.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/character_left.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/character/grayden.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="1309">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+        <state relative-caret-position="425">
+          <caret line="25" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameLibrary/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Breakable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        <state relative-caret-position="527">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/TileType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tiles/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/AnimationCycles.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Another Night that Fades Away (Credits).mp3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/SelectionButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/levels/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+        <state relative-caret-position="544">
+          <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/levels/LevelParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="29" column="88" selection-start-line="29" selection-start-column="88" selection-end-line="29" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
           <folding />
         </state>
       </provider>

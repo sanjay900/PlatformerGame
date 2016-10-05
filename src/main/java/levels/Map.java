@@ -46,8 +46,8 @@ public class Map {
         float tileHeight = playerStart.bounds.getHeight();
         for (int i = 0; i < keys.size(); i++) {
             Key tile = keys.get(i);
-            if (tile.gotten) {
-                PVector to = new PVector(game.player.getBounds().getX()+400 - ((i + 1) * tileWidth * 4), tileHeight);
+            if (tile.isGotten()) {
+                PVector to = new PVector(game.currentPlayer.getBounds().getX()+400 - ((i + 1) * tileWidth * 4), tileHeight);
                 PVector from = new PVector(tile.bounds.getX(), tile.bounds.getY());
                 if (abs(from.dist(to)) < 15) {
                     tile.invisible = true;
@@ -70,16 +70,16 @@ public class Map {
         for (Tile[] platform : platforms) {
             for (Tile aPlatform : platform) {
                 if ((tile = aPlatform) == null) continue;
-                if (tile instanceof Key && ((Key) tile).gotten) {
+                if (tile instanceof Key && ((Key) tile).isGotten()) {
                     continue;
                 }
                 if (tile instanceof Coin && ((Coin) tile).gotten) {
                     continue;
                 }
-                if (tile.getBounds().getX() > 800+ game.player.getBounds().getX()) continue;
-                if (tile.getBounds().getY() > 800+ game.player.getBounds().getY()) continue;
-                if (tile.getBounds().getX() < game.player.getBounds().getX()-800) continue;
-                if (tile.getBounds().getY() < game.player.getBounds().getY()-800) continue;
+                //Clip elements to the screen
+                int xBuff = game.applet.width/2+50;
+                if (tile.getBounds().getX() > xBuff+ Math.max(game.currentPlayer.getBounds().getX(),xBuff)) continue;
+                if (tile.getBounds().getX() < Math.min(game.currentPlayer.getBounds().getX(),platforms.length * game.currentPlayer.getBounds().getWidth()-xBuff)-xBuff) continue;
                 game.applet.pushMatrix();
                 game.applet.translate(tile.getBounds().getX()+ tile.getBounds().getWidth() /2, tile.getBounds().getY()+ tile.getBounds().getHeight(), 0);
 

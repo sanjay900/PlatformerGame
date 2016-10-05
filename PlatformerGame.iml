@@ -7,7 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/sketchbook" />
+      <excludeFolder url="file://$MODULE_DIR$/sketchbook/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/sketchbook/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/sketchbook/modes" />
+      <excludeFolder url="file://$MODULE_DIR$/sketchbook/templates" />
+      <excludeFolder url="file://$MODULE_DIR$/sketchbook/tools" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

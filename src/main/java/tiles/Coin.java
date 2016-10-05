@@ -1,11 +1,9 @@
 package tiles;
 
 
+import game.Player;
 import net.tangentmc.collisions.Rectangle2D;
 
-/**
- * Created by sanjay on 27/08/2016.
- */
 public class Coin extends Tile {
     public float lastAngle = 0;
     public Coin(Rectangle2D rect) {
@@ -14,5 +12,13 @@ public class Coin extends Tile {
     public boolean gotten = false;
     public void reset() {
         gotten = false;
+    }
+    public boolean collide(Player pl) {
+        if (!gotten) {
+            pl.getGame().getSoundResolver().accept("COIN.wav");
+            pl.getGame().coins++;
+        }
+        gotten = true;
+        return false;
     }
 }

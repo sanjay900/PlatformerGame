@@ -49,7 +49,7 @@ public class SelectionButton {
         this.current = f.getName().replace(".png","");
         game.current = LevelParser.parseLevel(game,f);
         game.mode(Game.Mode.GAME);
-        game.player.start();
+        game.begin();
     }
 
     public void render() {
@@ -66,7 +66,7 @@ public class SelectionButton {
         int index = names.indexOf(current);
         index++;
         if (index >= names.size()) {
-            game.player.start();
+            game.begin();
             game.mode(Game.Mode.SELECTION);
             return false;
         }

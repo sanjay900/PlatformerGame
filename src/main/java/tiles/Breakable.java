@@ -1,6 +1,7 @@
 package tiles;
 
 
+import game.Player;
 import net.tangentmc.collisions.Rectangle2D;
 import net.tangentmc.processing.ProcessingRunner;
 import processing.core.PApplet;
@@ -30,5 +31,14 @@ public class Breakable extends Tile {
 
     public boolean broken() {
         return breaking && game.frameCount - lastCount >= delay;
+    }
+
+    @Override
+    public boolean collide(Player pl) {
+        if (broken()) return false;
+        if (breaking) return true;
+        startBreak();
+        pl.getGame().getSoundResolver().accept("bREAK.WAV");
+        return true;
     }
 }

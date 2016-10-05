@@ -30,15 +30,11 @@ SoundFile soundFile;
       //IntelliJ and Processing treat media files differently.
      game = new Game(this,new MusicConsumer(), new EffectConsumer()); 
     }
-    public class MusicConsumer implements BiConsumer<String,Boolean> {
-      public void accept(String fileName, Boolean b) {
+    public class MusicConsumer implements Consumer<String> {
+      public void accept(String fileName) {
           if (soundFile != null) soundFile.stop();
           soundFile = new SoundFile(CGRAGame.this, fileName);
-           if (b) {
               soundFile.loop(); 
-           } else {
-              soundFile.play(); 
-           }
         }
     }
     //Consumer that plays sound effects when given a string based filename

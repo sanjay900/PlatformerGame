@@ -1,5 +1,7 @@
 package tiles;
 
+import game.Player;
+import lombok.Getter;
 import net.tangentmc.collisions.Rectangle2D;
 
 /**
@@ -8,7 +10,8 @@ import net.tangentmc.collisions.Rectangle2D;
 
 public class Key extends Tile {
     public float lastAngle = 0;
-    public boolean gotten = false;
+    @Getter
+    private boolean gotten = false;
     Rectangle2D origin;
     public boolean invisible = false;
 
@@ -20,5 +23,11 @@ public class Key extends Tile {
         gotten = false;
         invisible = false;
         bounds = new Rectangle2D(origin);
+    }
+    @Override
+    public boolean collide(Player pl) {
+        if (!gotten) pl.getGame().getSoundResolver().accept("KEY.wav");
+        gotten = true;
+        return false;
     }
 }
