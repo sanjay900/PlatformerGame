@@ -1,57 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="Reorganise">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGameCode/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Button.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Gate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/circ.md2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/gate.md2" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/CGRAGame.pde" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Bob Gone Wild.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/backgrounds/main.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/break.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 7.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/game/GameRunner.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/game/Player.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/levels/LevelParser.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/menu/Button.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/menu/SelectionButton.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/SelectionButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/menu/Slider.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/ScoreObject.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tiles/Breakable.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Breakable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tiles/Coin.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Coin.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tiles/Key.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tiles/Tile.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Tile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tiles/TileType.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/block.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/block.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/breakable.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/breakable.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/spike.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/spike.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 4.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="Fix some maven problems, retexture, add background, allow scaling, fix bugs, add teleporters, gates and boxes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGame.iml" afterPath="$PROJECT_DIR$/PlatformerGame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameLibrary/PlatformerGameLibrary.iml" afterPath="$PROJECT_DIR$/PlatformerGameLibrary/PlatformerGameLibrary.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameLibrary/pom.xml" afterPath="$PROJECT_DIR$/PlatformerGameLibrary/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/block.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/block.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/breakable.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/breakable.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/spike.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/spike.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Djent.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/Djent.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/fkhalkf.mp3" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/music/fkhalkf.mp3" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -347,6 +299,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1178,7 +1144,7 @@
       <workItem from="1475223531169" duration="674000" />
       <workItem from="1475626825309" duration="10368000" />
       <workItem from="1475795310828" duration="6484000" />
-      <workItem from="1475840786978" duration="51046000" />
+      <workItem from="1475840786978" duration="51168000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1453,11 +1419,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475627323891</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fix some maven problems, retexture, add background, allow scaling, fix bugs, add teleporters, gates and boxes">
+      <created>1476016527266</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1476016527266</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255604000" />
+    <option name="totallyTimeSpent" value="255726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1470,7 +1443,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1368" y="-5" width="1376" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1480,12 +1453,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46215782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46215782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35334346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35334346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1542,7 +1515,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix collisions." />
     <MESSAGE value="Write Menu" />
     <MESSAGE value="Begin 3D and shit" />
     <MESSAGE value="Done some 3d shit" />
@@ -1567,7 +1539,8 @@
     <MESSAGE value="Include the sketchbook inside the project, build straight from maven to processing, use data from sketchbook" />
     <MESSAGE value="exclude the sketchbook from the workspace" />
     <MESSAGE value="Reorganise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganise" />
+    <MESSAGE value="Fix some maven problems, retexture, add background, allow scaling, fix bugs, add teleporters, gates and boxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix some maven problems, retexture, add background, allow scaling, fix bugs, add teleporters, gates and boxes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
