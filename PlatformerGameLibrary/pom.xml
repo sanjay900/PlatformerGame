@@ -9,7 +9,7 @@
     <artifactId>PlatformerGameLibrary</artifactId>
     <dependencies>
         <dependency>
-            <artifactId>PlatformerGame</artifactId>
+            <artifactId>PlatformerGameCode</artifactId>
             <groupId>net.tangentmc</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -29,8 +29,8 @@
                         <!-- With the processing library, exclude everything provided by processing. -->
                         <configuration>
 
-                            <finalName>code</finalName>
-                            <outputDirectory>../sketchbook/libraries/code/library</outputDirectory>
+                            <finalName>game</finalName>
+                            <outputDirectory>../sketchbook/libraries/game/library</outputDirectory>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>

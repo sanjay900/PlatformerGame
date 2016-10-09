@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="PlatformerGameCode" />
         <module name="PlatformerGameLibrary" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="PlatformerGame" target="1.8" />
+      <module name="PlatformerGameCode" target="1.8" />
       <module name="PlatformerGameLibrary" target="1.5" />
     </bytecodeTargetLevel>
   </component>
