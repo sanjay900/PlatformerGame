@@ -9,9 +9,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.Field;
 
-/**
- * Created by sanjay on 28/08/2016.
- */
 public class Server {
     public static void main(String[] args) throws InterruptedException {
         Configuration config = new Configuration();

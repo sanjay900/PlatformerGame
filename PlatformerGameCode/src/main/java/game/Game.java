@@ -11,10 +11,7 @@ import lombok.Getter;
 import menu.Button;
 import menu.SelectionButton;
 import net.tangentmc.processing.ProcessingRunner;
-import processing.core.PApplet;
-import processing.core.PConstants;
-import processing.core.PImage;
-import processing.core.PShape;
+import processing.core.*;
 import processing.opengl.PGraphics3D;
 import tiles.TileType;
 
@@ -24,6 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 
+//This isnt useful since we access from processing which is a different package.
+@SuppressWarnings("WeakerAccess")
 @Getter
 public class Game implements PConstants {
     public Game(PApplet other, BiConsumer<Boolean,String> soundResolver) {
@@ -72,6 +71,7 @@ public class Game implements PConstants {
         currentPlayer.keyPressed();
     }
 
+
     MediaPlayer mplayer;
 
     public void keyReleased() {
@@ -82,7 +82,6 @@ public class Game implements PConstants {
         return applet.dataFile(fname);
     }
     public void setup() {
-        applet.frameRate(100);
         new JFXPanel();
         applet.textFont(applet.createFont("assets/fonts/munro.ttf", 32));
         backgroundIngame = applet.loadImage("assets/textures/backgrounds/backdrop1.png");
@@ -93,9 +92,9 @@ public class Game implements PConstants {
         }
         applet.noStroke();
         Button temp;
-        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8, 300, applet.height/10, "Play"));
+        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8+ applet.height/8, 300, applet.height/10, "Play"));
         temp.setOnMouseClicked(() -> mode(Mode.SELECTION));
-        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8 + applet.height/8, 300, applet.height/10, "Quit"));
+        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8 + applet.height/8+ applet.height/8, 300, applet.height/10, "Quit"));
         temp.setOnMouseClicked(() -> {
             if (!pauseBetween) {
                 applet.exit();
@@ -186,7 +185,9 @@ public class Game implements PConstants {
 
         ((PGraphics3D) applet.g).textureSampling(3);
         players.forEach(Player::render);
-        applet.background(background);
+        ((PGraphics3D) applet.g).textureSampling(3);
+        applet.clear();
+        applet.shape(backgroundShape);
         applet.image(header, 100, 100, applet.width - 200, applet.height/2.5f);
         buttons.forEach(Button::draw);
     }

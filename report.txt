@@ -1,0 +1,32 @@
+CGRA 151, T2 2016, Assignment 5 Report
+
+Student name: Sanjay Govind
+Student ID: 300383656
+Name of game/artwork: Bob's Adventure
+
+Vision
+1. Game concept: A platformer exploring the concept of being able to stick to the ceiling
+2. Game play: A 3d side scrolling game where the player is stuck on a 2d plane and can move freely
+around the level. This is where 2.5D comes into play, and my goal is to have it be a multiplayer
+game where players must work together too free themselves and get to the goal. The gameplay requires players to
+collect keys and coins while avoiding spikes, and they can interact with objects in the world
+to open gates and get to the exit. The player has a unique ability where they can stick to the ceiling.
+3. Visual design: A 2.5D game with assets made in MagicaVoxel, a 3d modelling application for
+making models out of voxels.
+Achievement
+I managed to make a simple platformer in processing, using 3d. It has a simple level format that makes it easy to edit, and you control multiple characters to add a puzzle element.
+I was talked out of making it truley multiplayer, so i implemented a character switching mechanic instead.
+
+Technical Challenges
+I found out that loading a background added a big amount of lag to processing, and this ruined many of my plans, until i worked out that creating my own 2d plane and rendering my image
+to that had no issues vs using background(). I feel this may be due to how object rendering is optimised for opengl, while background() may not be since it will be used a lot in Java2D.
+
+Rendering 3d objects was a big issue at first as loading normal obj models meant i could not use animations and many models would lag out if they were too complex. However, i found some
+models from quake and realised that its file format was very simple, and ported it to processing, after working out there was an exporter for blender. This meant i could animate my models
+in blender and render them in processing.
+Reflection
+I found that this assessment was much easier since i had done most of my game during pxljm. However, i found that i managed my time poorly, and most of my code was done in the last few
+days. I am proud of what my game turned out like, and feel many of my problems were issues with processing on its own. I think that processing could be a very useful application for art,
+however it is not suited to games as it has many performance issues that require complex hacks to get past, something that a game developer would not want to spen their time on.
+
+Many of my textures were created by Daniel Pinfold, however i had to attach them to models myself.

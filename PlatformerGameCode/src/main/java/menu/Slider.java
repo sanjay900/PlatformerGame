@@ -1,25 +1,18 @@
 package menu;
-
-/**
- * Created by sanjay on 27/08/2016.
- */
-
 import processing.core.PApplet;
-
-/**
- * Created by surface on 26/08/2016.
- */
+//This class currently is not used.
+@SuppressWarnings("ALL")
 public class Slider {
-    int swidth, sheight;    // width and height of bar
-    float xpos, ypos;       // x and y position of bar
-    float spos, newspos;    // x position of slider
-    float sposMin, sposMax; // max and min values of slider
-    int loose;              // how loose/heavy
-    boolean over;           // is the mouse over the slider?
-    boolean locked;
-    float ratio;
-    String name;;
-    PApplet applet;
+    private int swidth, sheight;    // width and height of bar
+    private float xpos, ypos;       // x and y position of bar
+    private float spos, newspos;    // x position of slider
+    private float sposMin, sposMax; // max and min values of slider
+    private int loose;              // how loose/heavy
+    private boolean over;           // is the mouse over the slider?
+    private boolean locked;
+    private float ratio;
+    private String name;
+    private PApplet applet;
     public Slider(float xp, float yp, int sw, int sh, int l, String name, PApplet applet) {
         this.applet = applet;
         swidth = sw;
@@ -56,7 +49,7 @@ public class Slider {
         return PApplet.min(PApplet.max(val, minv), maxv);
     }
 
-    boolean overEvent() {
+    private boolean overEvent() {
         if (applet.mouseX > xpos && applet.mouseX < xpos+swidth &&
                 applet.mouseY > ypos && applet.mouseY < ypos+sheight) {
             return true;
@@ -79,7 +72,7 @@ public class Slider {
         applet.rect(spos, ypos, sheight, sheight);
     }
 
-    public float getPos() {
+    private float getPos() {
         // Convert spos to be values between
         // 0 and the total width of the scrollbar
         return (spos-xpos)/10;

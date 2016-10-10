@@ -9,15 +9,11 @@ import tiles.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import static processing.core.PConstants.*;
 
-/**
- * Created by sanjay on 26/08/2016.
- */
 @Getter
 public class Player extends Tile {
     static final float BOUNDING_BOX_MODIFIER = 1.15f;
@@ -129,7 +125,7 @@ public class Player extends Tile {
             }
         }
     }
-    public void start(){
+    void start(){
         //Reset control variables when you start a level.
         up = up2 = down = left = right = false;
         position = startPos.copy();
@@ -226,11 +222,11 @@ public class Player extends Tile {
         if (game.applet.key == 'p' || game.applet.key == 'r') restart();
     }
 
-    public void render() {
+    void render() {
         model.drawModel();
     }
 
-    public void highlight() {
+    void highlight() {
         game.applet.noFill();
         game.applet.stroke(255,0,0);
         game.applet.rect(position.x-10, position.y-10,playerWidth+20,playerHeight+10);
@@ -241,7 +237,7 @@ public class Player extends Tile {
     private final Animation JUMP = new Animation(11,12,0,1,0.05f,0.3f);
     private Animation last = WALKING;
 
-    public void stop() {
+    void stop() {
         velocity = new PVector(0,0);
     }
     Teleporter lastTp = null;

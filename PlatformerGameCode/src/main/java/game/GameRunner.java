@@ -6,15 +6,13 @@ import javafx.util.Duration;
 import net.tangentmc.processing.ProcessingRunner;
 import processing.core.PApplet;
 
-/**
- * Created by sanjay on 19/09/2016.
- */
+
 public class GameRunner extends PApplet {
-    Game game;
+    private Game game;
     public static void main(String[] args) {
         ProcessingRunner.run(new GameRunner());
     }
-    public GameRunner() {
+    private GameRunner() {
         game = new Game(this,this::playSound);
     }
     public void setup() {
@@ -34,7 +32,7 @@ public class GameRunner extends PApplet {
     }
     public void mouseReleased() {game.mouseReleased();}
 
-    public void playSound(boolean loop, String filename) {
+    private void playSound(boolean loop, String filename) {
         final Media media = new Media(game.resolve("assets/"+(loop?"music/":"sounds/")+filename).toURI().toString());
         if (loop && mplayer != null) mplayer.stop();
         mplayer = new MediaPlayer(media);

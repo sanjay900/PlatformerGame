@@ -7,9 +7,6 @@ import lombok.Setter;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by sanjay on 28/08/2016.
- */
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

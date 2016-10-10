@@ -4,7 +4,6 @@ import game.Game;
 import game.Player;
 import net.tangentmc.collisions.Rectangle2D;
 import processing.core.PImage;
-import processing.core.PVector;
 import tiles.*;
 import tiles.Button;
 
@@ -20,16 +19,15 @@ public class LevelParser {
         if(!f.exists()) return null;
         map.xLength = current.width;
         map.yLength = current.height;
-        float squareHeight = game.applet.height / 24;
-        float squareWidth = squareHeight;
+        float squareSize = game.applet.height / 24;
         game.players.clear();
         for (int x = 0; x < current.width; x++) {
             for (int y = 0; y < current.height; y++) {
-                Rectangle2D bounds = new Rectangle2D(x * squareWidth, y * squareHeight, squareWidth, squareHeight);
+                Rectangle2D bounds = new Rectangle2D(x * squareSize, y * squareSize, squareSize, squareSize);
                 int c = current.pixels[y*current.width+x];
                 if(c == Color.WHITE.getRGB()) continue;
                 if(c == Color.GREEN.getRGB()) {
-                    game.players.add(new Player(x * squareWidth, y * squareHeight,game));
+                    game.players.add(new Player(x * squareSize, y * squareSize,game));
                     map.playerStart = new Tile(bounds, null);
                     continue;
 

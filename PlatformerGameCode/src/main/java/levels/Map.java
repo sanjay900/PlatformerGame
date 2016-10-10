@@ -1,10 +1,9 @@
 package levels;
 
 import game.Game;
-import game.Player;
 import net.tangentmc.collisions.Rectangle2D;
-import tiles.*;
 import processing.core.PVector;
+import tiles.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,20 +12,20 @@ import static processing.core.PApplet.abs;
 import static processing.core.PConstants.*;
 
 public class Map {
-    Game game;
+    private Game game;
     public List<Tile> platforms = new ArrayList<>();
     public int xLength = 0;
-    public int yLength = 0;
+    int yLength = 0;
     public Tile playerStart;
     public List<Breakable> breakables = new ArrayList<>();
     public List<Key> keys = new ArrayList<>();
     public List<Gate> gates = new ArrayList<>();
     public List<Button> buttons = new ArrayList<>();
     public List<Box> boxs = new ArrayList<>();
-    float lastFlagAngle = 0;
+    private float lastFlagAngle = 0;
     public List<Teleporter> teleporters = new ArrayList<>();
 
-    public Map(Game game) {
+    Map(Game game) {
         this.game = game;
         breakables = new ArrayList<>();
     }
