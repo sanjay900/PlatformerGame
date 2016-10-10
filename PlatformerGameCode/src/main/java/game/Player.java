@@ -191,6 +191,7 @@ public class Player extends Tile {
                 if (tile.type == TileType.EXIT) {
                     if (!game.current.keys.stream().allMatch(Key::isGotten)) continue;
                     won = true;
+                    game.players.stream().filter(player -> !player.won).forEach(player -> game.currentPlayer = player);
                     if (!game.players.stream().allMatch(Player::hasWon)) continue;
                     playSound.accept("FLAG.wav");
                     game.currentPack.completeLevel();
@@ -209,7 +210,9 @@ public class Player extends Tile {
         return won;
     }
     public Rectangle2D getBounds() {
-        return new Rectangle2D(position.x, position.y,playerWidth,playerHeight);
+        //Disable collisions when you win
+        if (won) return new Rectangle2D(MAX_INT,MAX_INT,MAX_INT,MAX_INT);
+        else return new Rectangle2D(position.x, position.y,playerWidth,playerHeight);
     }
     void draw() {
         if (won) return;

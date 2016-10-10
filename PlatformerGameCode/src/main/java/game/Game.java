@@ -60,7 +60,11 @@ public class Game implements PConstants {
         if (applet.key == ENTER && mode == Mode.GAME ) {
             if (!players.isEmpty()) {
                 currentPlayer.stop();
-                currentPlayer = players.get((players.indexOf(currentPlayer)+1)%players.size());
+                if (players.stream().allMatch(Player::hasWon)) return;
+                //Find the first player that hasnt won.
+                do {
+                    currentPlayer = players.get((players.indexOf(currentPlayer) + 1) % players.size());
+                } while(currentPlayer.won);
             }
         }
         if (applet.key == ESC) {
