@@ -55,6 +55,7 @@ public class Game implements PConstants {
     }
 
     public void keyPressed() {
+        if (mode == Mode.MENU) return;
         if (applet.key == ENTER && mode == Mode.GAME ) {
             if (!players.isEmpty()) {
                 currentPlayer.stop();
@@ -68,19 +69,23 @@ public class Game implements PConstants {
             deaths = 0;
             mode(Mode.MENU);
         }
-        currentPlayer.keyPressed();
+        if (!players.isEmpty()) {
+            currentPlayer.keyPressed();
+        }
     }
 
 
     MediaPlayer mplayer;
 
     public void keyReleased() {
+        if (currentPlayer != null)
         currentPlayer.keyReleased();
     }
 
     public File resolve(String fname) {
         return applet.dataFile(fname);
     }
+    Button ret;
     public void setup() {
         new JFXPanel();
         applet.textFont(applet.createFont("assets/fonts/munro.ttf", 32));
@@ -94,12 +99,12 @@ public class Game implements PConstants {
         Button temp;
         buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8+ applet.height/8, 300, applet.height/10, "Play"));
         temp.setOnMouseClicked(() -> mode(Mode.SELECTION));
-        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8 + applet.height/8+ applet.height/8, 300, applet.height/10, "Quit"));
-        temp.setOnMouseClicked(() -> {
-            if (!pauseBetween) {
-                applet.exit();
-            }
-        });
+        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8 + applet.height/8+ applet.height/8, 300, applet.height/10, "Instructions"));
+        temp.setOnMouseClicked(() -> mode = Mode.INST);
+        buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8+applet.height/8 + applet.height/8+ applet.height/8, 300, applet.height/10, "Quit"));
+        temp.setOnMouseClicked(() -> applet.exit());
+        ret = new Button(applet, applet.width/30, applet.height - applet.height/8, 300, applet.height/10, "Back");
+        ret.setOnMouseClicked(() -> mode = Mode.MENU);
         File[] files = resolve("levels").listFiles();
         if (files == null) {
             System.out.println("Unable to load textures!");
@@ -170,14 +175,34 @@ public class Game implements PConstants {
             drawGame();
         } else if (mode == Mode.SELECTION) {
             drawSelection();
+        } else {
+            drawInstructions();
         }
 
+    }
+
+    private void drawInstructions() {
+        applet.shape(backgroundShape);
+        applet.fill(0,0,0,128);
+        applet.rect(30,30,applet.width-60,applet.height-200);
+        applet.fill(255,255,255);
+        applet.text("Welcome to Bob's Adventure!\n"+
+                "This game is a simple platformer with a twist.\n" +
+                "By holding the [JUMP] key, you can stick to the ceiling.\n"+
+                "By using [ENTER], you can switch between controlling\n"+
+                "different characters, and your goal is to get them all to\n"+
+                "the end flag. You can open gates by standing on their\n"+
+                "respective buttons, and you can push boxes onto buttons.\n"+
+                "star teleporter pads will teleport the player between them.\n"+
+                "Note: You can restart a level with [R]."
+                ,applet.width/2,90);
+        ret.draw();
     }
 
     SelectionButton currentPack;
 
     private void drawSelection() {
-        applet.background(background);
+        applet.shape(backgroundShape);
         currentPack.render();
     }
 
@@ -233,6 +258,6 @@ public class Game implements PConstants {
     }
 
     public enum Mode {
-        MENU, GAME, SELECTION
+        MENU, GAME, SELECTION, INST;
     }
 }

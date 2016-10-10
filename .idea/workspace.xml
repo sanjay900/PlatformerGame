@@ -2,22 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/PlatformerGameLibrary-1.0-SNAPSHOT-shaded.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/game.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/original-game.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/banner.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/banner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/zEND!!!.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/level9.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot_filled.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot_filled.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/coin.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/coin.md2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key.md2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot.md2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot_filled.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot_filled.md2" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+            <state relative-caret-position="-526">
+              <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,31 +72,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java">
+      <file leaf-file-name="TileType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="136">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectionButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/SelectionButton.java">
+      <file leaf-file-name="Teleporter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="355">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="101">
+              <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -96,11 +128,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java">
+      <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="226">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Coin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,43 +161,13 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3587">
-              <caret line="224" column="13" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
+            <state relative-caret-position="167">
+              <caret line="246" column="22" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7340#7341#0" expanded="true" />
-                <element signature="e#7427#7428#0" expanded="true" />
+                <element signature="e#7725#7726#0" expanded="true" />
+                <element signature="e#7751#7752#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="report.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LevelParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -208,20 +230,20 @@
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Button.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Breakable.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Tile.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java" />
         <option value="$PROJECT_DIR$/report.txt" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
       </list>
     </option>
   </component>
@@ -242,6 +264,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -326,7 +351,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
+              <option name="myItemId" value="CGRAGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,15 +369,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
+              <option name="myItemId" value="CGRAGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
+              <option name="myItemId" value="levels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CGRAGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,6 +454,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGameCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,7 +604,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PlatformerGame" />
+      <module name="PlatformerGameCode" />
       <envs />
       <method />
     </configuration>
@@ -1047,8 +1124,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.GameRunner" />
-        <item index="1" class="java.lang.String" itemvalue="Application.main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="2" class="java.lang.String" itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -1090,7 +1167,7 @@
       <workItem from="1475223531169" duration="674000" />
       <workItem from="1475626825309" duration="10368000" />
       <workItem from="1475795310828" duration="6484000" />
-      <workItem from="1475840786978" duration="61447000" />
+      <workItem from="1475840786978" duration="78382000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1386,11 +1463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476073300171</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Push the library so we can pull it">
+      <created>1476073332117</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1476073332117</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266005000" />
+    <option name="totallyTimeSpent" value="282940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1403,7 +1487,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1412,14 +1496,14 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46215782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28663447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5636071" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1637,33 +1721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#284#285#0" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Breakable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Button.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -1697,24 +1754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Gate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1733,30 +1772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
@@ -1765,28 +1780,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/report.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="321">
           <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Breakable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="217">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1799,15 +1820,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Coin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3587">
-          <caret line="224" column="13" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7340#7341#0" expanded="true" />
-            <element signature="e#7427#7428#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/SelectionButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1821,19 +1846,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/SelectionButton.java">
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="226">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="101">
+          <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="246" column="22" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7725#7726#0" expanded="true" />
+            <element signature="e#7751#7752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526">
+          <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

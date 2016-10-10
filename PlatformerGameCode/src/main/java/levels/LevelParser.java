@@ -9,6 +9,7 @@ import tiles.Button;
 
 import java.awt.*;
 import java.io.File;
+import java.util.HashMap;
 
 public class LevelParser {
 
@@ -21,6 +22,7 @@ public class LevelParser {
         map.yLength = current.height;
         float squareSize = game.applet.height / 24;
         game.players.clear();
+        HashMap<TileType,Teleporter> teleporterMap = new HashMap<>();
         for (int x = 0; x < current.width; x++) {
             for (int y = 0; y < current.height; y++) {
                 Rectangle2D bounds = new Rectangle2D(x * squareSize, y * squareSize, squareSize, squareSize);
@@ -76,6 +78,13 @@ public class LevelParser {
                             Teleporter tele = new Teleporter(bounds,tileType,game);
                             map.platforms.add(tele);
                             map.teleporters.add(tele);
+                            if (teleporterMap.containsKey(tileType)) {
+                                teleporterMap.get(tileType).link = tele;
+                                tele.link = teleporterMap.get(tileType);
+                                teleporterMap.remove(tileType);
+                            } else {
+                                teleporterMap.put(tileType,tele);
+                            }
                         } else if (tileType.name().contains("GATE")) {
                             Gate gate = new Gate(bounds, tileType);
                             map.platforms.add(gate);

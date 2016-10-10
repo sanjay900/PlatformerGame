@@ -30,6 +30,7 @@ public class Player extends Tile {
     PVector gravity = new PVector(0,20/30f);
     PVector velocity = new PVector(0,0);
     PVector startPos;
+    boolean won = false;
     public Player(float x, float y, Game game) {
         super(null,null);
         playSound = sound -> game.soundResolver.accept(false,sound);
@@ -38,7 +39,7 @@ public class Player extends Tile {
         position = new PVector(x,y);
         startPos = position.copy();
         //Jump was coded for block heights based on a resolution of 800. we should fix that.
-        jump *= game.applet.height/800f;
+        jump *= game.applet.height/700f;
         this.game = game;
         initModel(game);
     }
@@ -52,7 +53,14 @@ public class Player extends Tile {
         }
     }
     void updatePosition() {
+        if (won) return;
         boolean ground = false;
+        if (newPos != null) {
+            velocity = new PVector();
+            position = newPos;
+            newPos = null;
+            return;
+        }
         velocity.add(gravity);
         position.add(velocity.x, 0);
         velocity = new PVector(velocity.x * drag, velocity.y);
@@ -126,6 +134,7 @@ public class Player extends Tile {
         }
     }
     void start(){
+        won = false;
         //Reset control variables when you start a level.
         up = up2 = down = left = right = false;
         position = startPos.copy();
@@ -150,6 +159,7 @@ public class Player extends Tile {
         game.coins = 0;
     }
     void restart() {
+
         start();
         game.deaths++;
         game.coins = 0;
@@ -161,7 +171,9 @@ public class Player extends Tile {
 
         for (Tile tile : game.current.platforms) {
             if (tile.getBounds().intersects(getBounds())) {
-                if (tile instanceof Teleporter && boxFound) continue;
+                if (tile != dest && tile instanceof Teleporter && boxFound) {
+                    continue;
+                }
                 if (tile == dest || !tile.collide(this)) {
                     continue;
                 }
@@ -172,6 +184,8 @@ public class Player extends Tile {
                 }
                 if (tile.type == TileType.EXIT) {
                     if (!game.current.keys.stream().allMatch(Key::isGotten)) continue;
+                    won = true;
+                    if (!game.players.stream().allMatch(Player::hasWon)) continue;
                     playSound.accept("FLAG.wav");
                     game.currentPack.completeLevel();
                     game.nextLevel();
@@ -185,10 +199,14 @@ public class Player extends Tile {
         collide.addAll(game.players.stream().filter(pl -> pl != this && pl.getBounds().intersects(getBounds())).collect(Collectors.toList()));
         return collide;
     }
+    boolean hasWon() {
+        return won;
+    }
     public Rectangle2D getBounds() {
         return new Rectangle2D(position.x, position.y,playerWidth,playerHeight);
     }
     void draw() {
+        if (won) return;
         game.applet.pushMatrix();
         game.applet.translate(position.x+playerWidth/2,position.y+playerHeight);
         game.applet.scale(getBounds().getWidth()*0.75f,getBounds().getHeight()*0.63f,getBounds().getWidth()*0.75f);
@@ -227,6 +245,7 @@ public class Player extends Tile {
     }
 
     void highlight() {
+        if (won) return;
         game.applet.noFill();
         game.applet.stroke(255,0,0);
         game.applet.rect(position.x-10, position.y-10,playerWidth+20,playerHeight+10);
@@ -241,13 +260,12 @@ public class Player extends Tile {
         velocity = new PVector(0,0);
     }
     Teleporter lastTp = null;
-    public void teleport(Teleporter dest) {
-        if (lastTp == dest || lastTp == dest.getLink()) return;
-        PVector old = position;
-        this.position = new PVector(dest.getBounds().getX(),dest.getBounds().getY()-80);
-        if (!collides(false,dest).isEmpty() || game.current.boxs.stream().anyMatch(s -> s.getBounds().intersects(getBounds()))) {
-            position = old;
-        }
+    PVector newPos;
+    public boolean teleport(Teleporter dest) {
+        if (lastTp != null && lastTp.getType() == dest.getType()) return false;
+
+        newPos = new PVector(dest.getBounds().getX(),dest.getBounds().getY());
         lastTp=dest;
+        return true;
     }
 }

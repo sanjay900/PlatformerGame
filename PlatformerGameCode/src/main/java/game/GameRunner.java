@@ -35,11 +35,13 @@ public class GameRunner extends PApplet {
     private void playSound(boolean loop, String filename) {
         final Media media = new Media(game.resolve("assets/"+(loop?"music/":"sounds/")+filename).toURI().toString());
         if (loop && mplayer != null) mplayer.stop();
+        MediaPlayer mplayer;
         mplayer = new MediaPlayer(media);
         if (loop) {
             mplayer.setOnEndOfMedia(() -> mplayer.seek(Duration.ZERO));
+            this.mplayer = mplayer;
         }
-        //mplayer.play();
+        mplayer.play();
     }
     private MediaPlayer mplayer;
 }

@@ -35,10 +35,10 @@ public class Map {
             game.applet.pushMatrix();
             float dx = 32-((i+1)*4)-0.5f;
             float dy = 2;
-            game.applet.translate(dx* tile.getBounds().getWidth(), dy* tile.getBounds().getHeight(), 0);
+            game.applet.translate(dx* tile.getBounds().getWidth(), dy* tile.getBounds().getHeight(), 20);
             game.applet.scale(tile.getBounds().getWidth(), tile.getBounds().getHeight(), tile.getBounds().getWidth());
             game.applet.rotate(HALF_PI,1,0,0);
-            game.applet.rotate(HALF_PI,0,0,1);
+            //game.applet.rotate(HALF_PI,0,0,1);
             game.applet.rotate(PI,0,0,1);
             if (tile.invisible) {
                 TileType.KEY_SLOT_FILLED.model.drawModel();
@@ -104,10 +104,6 @@ public class Map {
                     game.applet.rotate(HALF_PI, 0, 0, 1);
                     game.applet.translate(-(tile.getBounds().getHeight() / 2), tile.getBounds().getWidth() / 2, 0);
                 }
-            }
-
-            if (tile instanceof Coin) {
-                game.applet.scale(0.75f);
             }
             game.applet.scale(tile.getBounds().getWidth(), tile.getBounds().getHeight(), tile.getBounds().getWidth());
             game.applet.rotate(HALF_PI,1,0,0);

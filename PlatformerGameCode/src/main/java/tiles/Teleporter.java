@@ -9,6 +9,7 @@ import net.tangentmc.collisions.Rectangle2D;
  */
 public class Teleporter extends Tile {
     private static Game game;
+    public Teleporter link;
     public Teleporter(Rectangle2D bounds, TileType type, Game game) {
         super(bounds, type);
         Teleporter.game = game;
@@ -26,6 +27,6 @@ public class Teleporter extends Tile {
     }
 
     public Teleporter getLink() {
-        return game.current.teleporters.stream().filter(tele -> tele != this && tele.getType() == getType()).findAny().orElse(null);
+        return link;
     }
 }
