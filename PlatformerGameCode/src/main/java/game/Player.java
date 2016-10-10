@@ -63,6 +63,7 @@ public class Player extends Tile {
         }
         velocity.add(gravity);
         position.add(velocity.x, 0);
+        //Test x and y seperately to avoid diagonal collisions.
         velocity = new PVector(velocity.x * drag, velocity.y);
         ArrayList<Tile> collided = collides(false, null);
         Tile test;
@@ -133,6 +134,7 @@ public class Player extends Tile {
             }
         }
     }
+
     void start(){
         won = false;
         //Reset control variables when you start a level.
@@ -141,6 +143,7 @@ public class Player extends Tile {
         velocity = new PVector();
         game.current.breakables.forEach(Breakable::reset);
         game.current.keys.forEach(Key::reset);
+        //Reset tiles
         for (Tile tile : game.current.platforms) {
             if (tile.type == TileType.KEY_SLOT_FILLED) tile.type = TileType.KEY_SLOT;
             if (tile instanceof Coin) ((Coin) tile).reset();
@@ -157,12 +160,15 @@ public class Player extends Tile {
         game.deaths++;
         game.currentPack.failLevel();
         game.coins = 0;
+        //Restart all other players
+        game.players.stream().filter(s -> s != this).forEach(Player::start);
     }
     void restart() {
-
         start();
         game.deaths++;
         game.coins = 0;
+        //Restart all other players
+        game.players.stream().filter(s -> s != this).forEach(Player::start);
     }
     private ArrayList<Tile> collides(boolean vert, Teleporter dest) {
         ArrayList<Tile> collide = new ArrayList<>();
@@ -215,6 +221,8 @@ public class Player extends Tile {
         model.drawModel();
         game.applet.popMatrix();
     }
+    //Controls. We store the controls as booleans, and then read them from draw so we can handle
+    //multiple keys at once.
     static boolean up = false;
     static boolean up2 = false;
     static boolean left = false;
@@ -263,7 +271,7 @@ public class Player extends Tile {
     PVector newPos;
     public boolean teleport(Teleporter dest) {
         if (lastTp != null && lastTp.getType() == dest.getType()) return false;
-
+        //Queue a teleport
         newPos = new PVector(dest.getBounds().getX(),dest.getBounds().getY());
         lastTp=dest;
         return true;

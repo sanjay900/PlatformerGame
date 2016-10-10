@@ -30,6 +30,7 @@ public class Game implements PConstants {
         ProcessingRunner.instance = other;
         applet = other;
     }
+    //Sound resolver for both processing and intelliJ, as they handle sound differently.
     BiConsumer<Boolean, String> soundResolver;
     public PApplet applet;
     public Socket client;
@@ -81,13 +82,12 @@ public class Game implements PConstants {
         if (currentPlayer != null)
         currentPlayer.keyReleased();
     }
-
+    //Resolve a data file from the data folder
     public File resolve(String fname) {
         return applet.dataFile(fname);
     }
     Button ret;
     public void setup() {
-        new JFXPanel();
         applet.textFont(applet.createFont("assets/fonts/munro.ttf", 32));
         backgroundIngame = applet.loadImage("assets/textures/backgrounds/backdrop1.png");
         background = applet.loadImage("assets/textures/backgrounds/menu.png");
@@ -96,6 +96,7 @@ public class Game implements PConstants {
             type.loadModel(this);
         }
         applet.noStroke();
+        //Create buttons
         Button temp;
         buttons.add(temp = new Button(applet, (applet.width-300)/2, applet.height/3+applet.height/8+ applet.height/8, 300, applet.height/10, "Play"));
         temp.setOnMouseClicked(() -> mode(Mode.SELECTION));
@@ -107,15 +108,17 @@ public class Game implements PConstants {
         ret.setOnMouseClicked(() -> mode = Mode.MENU);
         File[] files = resolve("levels").listFiles();
         if (files == null) {
-            System.out.println("Unable to load textures!");
+            System.out.println("Unable to load levels!");
             return;
         }
+        //Create level packs based on the levels
         for (File f : files) {
             if (f.isDirectory()) {
                 packs.add(new SelectionButton(f, this));
             }
         }
         currentPack = packs.get(0);
+        //Start a websocket server that keeps track of deaths
         try {
             client = IO.socket("http://localhost:9092");
             client.connect();
@@ -127,6 +130,7 @@ public class Game implements PConstants {
         background.resize(applet.width, applet.height);
         //With processing, its faster to texture a plane and draw that then use background.
         //Im assuming this is because of some technicalities with OPENGL
+        //TODO: Should really consider making this a helper function in ProcessingUtils
         backgroundShape = applet.createShape();
         backgroundShape.beginShape(PConstants.QUAD);
         backgroundShape.texture(backgroundIngame);
@@ -207,10 +211,9 @@ public class Game implements PConstants {
     }
 
     private void drawMenu() {
-
+        //Pixelate images instead of interpolating
         ((PGraphics3D) applet.g).textureSampling(3);
         players.forEach(Player::render);
-        ((PGraphics3D) applet.g).textureSampling(3);
         applet.clear();
         applet.shape(backgroundShape);
         applet.image(header, 100, 100, applet.width - 200, applet.height/2.5f);
@@ -234,7 +237,7 @@ public class Game implements PConstants {
             scroll = currentPlayer.getBounds().getX()-applet.width/2;
         }
         applet.translate(-scroll, 0);
-
+        //draw 3d
         applet.hint(PConstants.ENABLE_DEPTH_TEST);
         current.drawFrame();
         new ArrayList<>(players).forEach(Player::updatePosition);
@@ -243,6 +246,7 @@ public class Game implements PConstants {
         applet.textSize(40);
         applet.popMatrix();
         current.drawKeys();
+        //2d objects dont have a z axis, so don't test it
         applet.hint(PConstants.DISABLE_DEPTH_TEST);
         applet.fill(255);
         applet.text("DEATHS: " + deaths + "    COINS: " + coins, 250, 35);
@@ -258,6 +262,6 @@ public class Game implements PConstants {
     }
 
     public enum Mode {
-        MENU, GAME, SELECTION, INST;
+        MENU, GAME, SELECTION, INST
     }
 }

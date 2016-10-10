@@ -2,40 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/Level 14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small -/zEND!!!.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/Level 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Small/level9.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot_filled.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key_slot_filled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_main_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_aarch64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6hf_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_macosx_universal_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_main_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_aarch64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6hf_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_macosx_universal_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_main_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_aarch64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6hf_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_macosx_universal_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_osx_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_win_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_x11_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_android_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_old_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_vc_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_intelgdl_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_kd_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_linux_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_osx_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_win_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_x11_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_event_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_main_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_aarch64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6hf_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_macosx_universal_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_amd64_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_i586_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_jogamp_jogl_newt_ogl_2_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_processing_core_3_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/collisions/Rectangle2D.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/Animation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/Frame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/Header.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/Importer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/MD2Model.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/NormalTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/TweenAnimation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/MD2/Vertex.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/model/obj/OBJModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/processing/PDEConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/main/java/net/tangentmc/processing/ProcessingRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/test/java/ModelImportTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProcessingUtils/src/test/java/StinkyAnimations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/zDEV/templateshort.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/PlatformerGameLibrary-1.0-SNAPSHOT-shaded.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/PlatformerGameLibrary-1.0-SNAPSHOT-shaded.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/game.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/game.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/original-game.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/original-game.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/coin.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/coin.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot.md2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot_filled.md2" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/models/key_slot_filled.md2" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +125,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-526">
-              <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="264" column="35" selection-start-line="264" selection-start-column="35" selection-end-line="264" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileType.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TileType.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -141,18 +206,8 @@
       <file leaf-file-name="GameRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Coin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -161,12 +216,24 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="246" column="22" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+            <state relative-caret-position="188">
+              <caret line="273" column="26" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7725#7726#0" expanded="true" />
-                <element signature="e#7751#7752#0" expanded="true" />
+                <element signature="e#8037#8038#0" expanded="true" />
+                <element signature="e#8063#8064#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Box.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,20 +297,20 @@
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Button.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Breakable.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Tile.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Button.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/ScoreObject.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/server/Server.java" />
         <option value="$PROJECT_DIR$/report.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Teleporter.java" />
-        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
+        <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java" />
       </list>
     </option>
   </component>
@@ -323,226 +390,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sketchbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sketchbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CGRAGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sketchbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CGRAGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="levels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sketchbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CGRAGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlatformerGameCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -580,9 +427,9 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\models" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\src\main\java" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\levels\Long" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets" />
     </key>
@@ -1167,7 +1014,7 @@
       <workItem from="1475223531169" duration="674000" />
       <workItem from="1475626825309" duration="10368000" />
       <workItem from="1475795310828" duration="6484000" />
-      <workItem from="1475840786978" duration="78382000" />
+      <workItem from="1475840786978" duration="79334000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1470,11 +1317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476073332117</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Fix teleporters, replace many textures, level overhaul">
+      <created>1476117022763</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1476117022764</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282940000" />
+    <option name="totallyTimeSpent" value="283892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1487,7 +1341,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1502,7 +1356,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5636071" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1559,7 +1413,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Begin 3D and shit" />
     <MESSAGE value="Done some 3d shit" />
     <MESSAGE value="Animations and shiz" />
     <MESSAGE value="Fix escape menu, reload levels on exit" />
@@ -1584,7 +1437,8 @@
     <MESSAGE value="Reorganise" />
     <MESSAGE value="Fix some maven problems, retexture, add background, allow scaling, fix bugs, add teleporters, gates and boxes" />
     <MESSAGE value="Push the library so we can pull it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push the library so we can pull it" />
+    <MESSAGE value="Fix teleporters, replace many textures, level overhaul" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix teleporters, replace many textures, level overhaul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1742,18 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2821#2822#0" expanded="true" />
-            <element signature="e#2867#2868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Gate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1862,39 +1704,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/LevelParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="246" column="22" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7725#7726#0" expanded="true" />
-            <element signature="e#7751#7752#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1910,13 +1724,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+        <state relative-caret-position="272">
+          <caret line="264" column="35" selection-start-line="264" selection-start-column="35" selection-end-line="264" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="273" column="26" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8063#8064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
