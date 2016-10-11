@@ -249,11 +249,13 @@ public class Game implements PConstants {
         currentPlayer.highlight();
         applet.textSize(40);
         applet.popMatrix();
+        applet.fill(0,0,0,128);
+        applet.rect(0,0,applet.width,applet.height/9);
         current.drawKeys();
         //2d objects dont have a z axis, so don't test it
         applet.hint(PConstants.DISABLE_DEPTH_TEST);
         applet.fill(255);
-        applet.text("DEATHS: " + deaths + "    COINS: " + coins, 250, 35);
+        applet.text("DEATHS: " + deaths + "    COINS: " + coins, 250, (applet.height/15));
         applet.noStroke();
     }
 
