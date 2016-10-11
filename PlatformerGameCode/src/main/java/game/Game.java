@@ -4,14 +4,16 @@ import MD2.Importer;
 import MD2.MD2Model;
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import javafx.embed.swing.JFXPanel;
 import javafx.scene.media.MediaPlayer;
 import levels.Map;
 import lombok.Getter;
 import menu.Button;
 import menu.SelectionButton;
 import net.tangentmc.processing.ProcessingRunner;
-import processing.core.*;
+import processing.core.PApplet;
+import processing.core.PConstants;
+import processing.core.PImage;
+import processing.core.PShape;
 import processing.opengl.PGraphics3D;
 import tiles.TileType;
 

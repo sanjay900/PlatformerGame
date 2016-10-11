@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlatformerGame.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/Untitled.3ds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/coin.blend" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.blend" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/key.blend1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/keyhole.blend" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/models/keyhole.blend1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Gates And Buttons/Level 1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Gates And Buttons/index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Hard/Level 4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Hard/Level 5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Hard/index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Hard/level9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/key.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sketchbook/CGRAGame/data/assets/textures/key.obj" />
+    <list default="true" id="2b88c773-ce88-47d0-83a1-ece975237ccc" name="Default" comment="Push changed levels and models">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/PlatformerGameLibrary-1.0-SNAPSHOT-shaded.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/PlatformerGameLibrary-1.0-SNAPSHOT-shaded.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/game.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/game.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchbook/libraries/game/library/original-game.jar" afterPath="$PROJECT_DIR$/sketchbook/libraries/game/library/original-game.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGame.iml" afterPath="$PROJECT_DIR$/PlatformerGame.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="PlatformerGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +45,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Level 1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TileType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="-459">
               <caret line="30" column="29" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="29" />
               <folding />
             </state>
@@ -98,41 +86,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/levels/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Slider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/Slider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="51">
               <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatformerGameCode/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -214,7 +192,6 @@
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Test2.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/test.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Y.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/menu/SelectionButton.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Key.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Gate.java" />
@@ -236,6 +213,7 @@
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Player.java" />
         <option value="$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -314,6 +292,10 @@
               <option name="myItemId" value="PlatformerGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,6 +304,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +332,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PlatformerGameCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformerGameCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,17 +461,10 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\models" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\character" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\models" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\backgrounds" />
-      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -467,6 +474,13 @@
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\src\main\java" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\levels\Long" />
       <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\models" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\character" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\models" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures\backgrounds" />
+      <recent name="C:\Users\sanjay\IdeaProjects\PlatformerGame\sketchbook\CGRAGame\data\assets\textures" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GameRunner">
@@ -1050,7 +1064,7 @@
       <workItem from="1475626825309" duration="10368000" />
       <workItem from="1475795310828" duration="6484000" />
       <workItem from="1475840786978" duration="82094000" />
-      <workItem from="1476144193887" duration="73000" />
+      <workItem from="1476144193887" duration="3320000" />
     </task>
     <task id="LOCAL-00001" summary="ajsdfpoadjajdposafjpaosjospfjpsasjafpsjfoasjpfjpasjof">
       <created>1472204571438</created>
@@ -1374,11 +1388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476118397149</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Push changed levels and models">
+      <created>1476144281102</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1476144281102</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286725000" />
+    <option name="totallyTimeSpent" value="289972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1391,18 +1412,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31239936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28617364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28502417" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1417,7 +1439,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31239936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1463,7 +1484,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix escape menu, reload levels on exit" />
     <MESSAGE value="Implemented keys" />
     <MESSAGE value="Added coins." />
     <MESSAGE value="Fixed coins" />
@@ -1488,7 +1508,8 @@
     <MESSAGE value="Fix teleporters, replace many textures, level overhaul" />
     <MESSAGE value="Include a copy of ProcessingUtils for marking." />
     <MESSAGE value="Fix bugs with multiplayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs with multiplayer" />
+    <MESSAGE value="Push changed levels and models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push changed levels and models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1501,9 +1522,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Users/Sanjay/Downloads/Mondrian.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mondrian.java" />
-    <entry file="file://$PROJECT_DIR$/data/levels/Long/index.png" />
     <entry file="file://$PROJECT_DIR$/data/levels/Long/Level 1.png" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1561,14 +1579,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 2.png" />
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Long/Level 1.png" />
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Test2.java" />
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Y.java" />
@@ -1594,18 +1604,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameLibrary/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1613,6 +1616,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1631,6 +1637,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,6 +1655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1668,6 +1686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1675,6 +1694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1682,6 +1702,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1737,14 +1758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/Box.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -1752,14 +1765,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1775,13 +1780,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Gates And Buttons/Level 1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Gates And Buttons/index.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/tiles/TileType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchbook/CGRAGame/data/levels/Easy/Level 1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/src/main/java/game/GameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatformerGameCode/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
